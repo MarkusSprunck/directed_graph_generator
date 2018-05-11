@@ -1,2 +1,4 @@
-# directed_graph_generator
-Directed Graph Generator creates animated diagrams from MS Excel Sheets
+# Directed Graph Generator
+
+This application animated diagrams from MS Excel Sheets. The generated html files need no additional libraries, so you
+may open them in the browser.
