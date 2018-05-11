@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>DGG</title>
+
+        <!-- Inline main.css -->
+        <style>
+            ##MY_CSS_DATA##
+        </style>
+
+    </head>
+    <body>
+        <div id="split-container">
+            <div id="graph-container">
+                <div id="graph"></div>
+            </div>
+            <div id="docs-container">
+                <a id="docs-close" href="#">&times;</a>
+                <div id="docs" class="docs"></div>
+            </div>
+        </div>
+
+        <!-- Inline https://code.jquery.com/jquery-1.10.2.min.js -->
+        <script>
+            ##MY_JQUERRY_A_LIB##
+        </script>
+
+        <!-- Inline https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js -->
+        <script>
+            ##MY_JQUERRY_B_LIB##
+        </script>
+
+        <!-- Inline https://d3js.org/d3.v3.min.js -->
+        <script>
+            ##MY_D3_LIB##
+        </script>
+
+        <!-- Graph data & configuration -->
+        <script>
+            var graph          =    {};
+            graph.linkDistance =    80;
+            graph.charge       = -1200;
+            graph.gravity      =   0.5;
+            graph.height       =   600;
+            graph.labelPadding = {
+                "left"   : 2,
+                "right"  : 2,
+                "top"    : 2,
+                "bottom" : 2
+            };
+            graph.labelMargin = {
+                "left"     : 6,
+                "right"    : 6,
+                "top"      : 6,
+                "bottom"   : 6
+            };
+            graph.margin = {
+                "left"     : 20,
+                "right"    : 20,
+                "top"      : 20,
+                "bottom"   : 20
+            };
+            graph.ticksWithoutCollisions =      10;
+            graph.maxLineChars           =      20;
+            graph.wrapChars    = ' /_-.'.split('');
+            graph.docsClosePadding       =       5;
+            graph.desiredDocsHeight      =     360;
+            graph.showingDocs            =   false;
+            graph.highlighted            =    null;
+            graph.selected               =      {};
+            graph.colors = [
+                "#efedf5","#dadaeb","#bcbddc","#9e9ac8","#807dba",
+                "#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6",
+                "#e5f5e0","#c7e9c0","#a1d99b","#74c476","#41ab5d",
+                "#fee6ce","#fdd0a2","#fdae6b","#fd8d3c","#f16913",
+                "#fff7bc","#fee391","#fec44f","#fe9929","#ec7014",
+                "#fee0d2","#fcbba1","#fc9272","#fb6a4a","#ef3b2c"
+            ];
+            graph.data = ##MY_GENERATED_DATA## ;
+        </script>
+
+        <!-- Inline geometry.js -->
+        <script>
+            ##MY_GEOMETRY_LIB##
+        </script>
+
+        <!-- Inline main.js -->
+        <script>
+            ##MY_JS_CODE##
+        </script>
+    </body>
+</html>
