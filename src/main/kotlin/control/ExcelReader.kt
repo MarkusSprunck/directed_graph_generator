@@ -15,72 +15,78 @@ object ExcelReader {
 
     fun parseExcelSheet(excelFileName: String, sourceApplicationPattern: String): Model {
         log.info("SOURCE_PATTERN = '$sourceApplicationPattern'")
-        val sh = openSheet(excelFileName)
         val result = Model()
 
+        val sh = openSheet(excelFileName)
         if (sh == null) {
-            log.info("*** SKIP PROCESSING OF NODES & LINKS")
+            log.info("*** SKIP PROCESSING - UNABLE TO OPEN SHEET $excelFileName")
             return result
         }
 
-        log.info("PROCESS NODES")
-        for (row in 3..sh.lastRowNum) {
+        parseNodes(sh, sourceApplicationPattern, result)
+        parseLinks(sh, sourceApplicationPattern, result)
+        return result
+    }
 
-            val currentRow = sh.getRow(row)
-
-            val source = currentRow.getCell(ExcelColumnID.FIRST_APP_ID.value).stringCellValue
-            val sourceLong = currentRow.getCell(ExcelColumnID.FIRST_APP_NAME.value).stringCellValue
-            val sourceDescription = currentRow.getCell(ExcelColumnID.FIRST_APP_DESCRIPTION.value).stringCellValue
-
-            val sourceMC = currentRow.getCell(ExcelColumnID.FIRST_APP_MC.value).stringCellValue
-
-            val target = currentRow.getCell(ExcelColumnID.SECOND_APP_ID.value).stringCellValue
-            val targetLong = currentRow.getCell(ExcelColumnID.SECOND_APP_NAME.value).stringCellValue
-            val targetDescription = currentRow.getCell(ExcelColumnID.SECOND_APP_DESCRIPTION.value).stringCellValue
-            val targetMC = currentRow.getCell(ExcelColumnID.SECOND_APP_MC.value).stringCellValue
-
-            val appIdPattern = Pattern.compile(sourceApplicationPattern)
-            val sourceMatcher = appIdPattern.matcher(source)
-            val targetMatcher = appIdPattern.matcher(target)
-
-            if (source.isEmpty() || target.isEmpty()) {
-                continue
-            }
-
-            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(source)) {
-                result.setNode(source, Node(source, sourceLong, sourceMC, sourceDescription))
-                log.info("> add node $source")
-            }
-
-            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(target)) {
-                result.setNode(target, Node(target, targetLong, targetMC, targetDescription))
-                log.info("> add node $target")
-            }
-        }
-
+    private fun parseLinks(sheet: XSSFSheet, sourceApplicationPattern: String, result: Model) {
         log.info("PROCESS LINKS")
-        for (row in 3..sh.lastRowNum) {
-            val currentRow = sh.getRow(row)
+        for (currentRow in 3..sheet.lastRowNum) {
+            val row = sheet.getRow(currentRow)
 
-            val source = currentRow.getCell(ExcelColumnID.FIRST_APP_ID.value).stringCellValue
-            val target = currentRow.getCell(ExcelColumnID.SECOND_APP_ID.value).stringCellValue
+            val sourceID = row.getCell(ExcelColumnNumber.FIRST_APP_ID.value).stringCellValue
+            val targetID = row.getCell(ExcelColumnNumber.SECOND_APP_ID.value).stringCellValue
 
-            if (source.isEmpty() || target.isEmpty()) {
+            if (sourceID.isEmpty() || targetID.isEmpty()) {
                 continue
             }
 
             val appPattern = Pattern.compile(sourceApplicationPattern)
-            val sourceMatcher = appPattern.matcher(source)
-            val targetMatcher = appPattern.matcher(target)
+            val sourceMatcher = appPattern.matcher(sourceID)
+            val targetMatcher = appPattern.matcher(targetID)
 
             if (sourceMatcher.find(0) || targetMatcher.find(0)) {
-                result.getNode(source)?.addDependedOnBy(target)
-                result.getNode(target)?.addDepends(source)
-                log.info("> add link from $source to $target")
+                result.getNode(sourceID)?.addDependedOnBy(targetID)
+                result.getNode(targetID)?.addDepends(sourceID)
+                log.info("> add link from $sourceID to $targetID")
             }
         }
+    }
 
-        return result
+    private fun parseNodes(sheet: XSSFSheet, sourceApplicationPattern: String, result: Model) {
+        log.info("PROCESS NODES")
+        for (currentRow in 3..sheet.lastRowNum) {
+
+            val row = sheet.getRow(currentRow)
+
+            val sourceID = row.getCell(ExcelColumnNumber.FIRST_APP_ID.value).stringCellValue
+            val sourceName = row.getCell(ExcelColumnNumber.FIRST_APP_NAME.value).stringCellValue
+            val sourceDescription = row.getCell(ExcelColumnNumber.FIRST_APP_DESCRIPTION.value).stringCellValue
+            val sourceCluster = row.getCell(ExcelColumnNumber.FIRST_APP_CLUSTER.value).stringCellValue
+
+            val targetID = row.getCell(ExcelColumnNumber.SECOND_APP_ID.value).stringCellValue
+            val targetName = row.getCell(ExcelColumnNumber.SECOND_APP_NAME.value).stringCellValue
+            val targetDescription = row.getCell(ExcelColumnNumber.SECOND_APP_DESCRIPTION.value).stringCellValue
+            val targetCluster = row.getCell(ExcelColumnNumber.SECOND_APP_CLUSTER.value).stringCellValue
+
+            // Don't process emnty rows
+            if (sourceID.isEmpty() || targetID.isEmpty()) {
+                continue
+            }
+
+            val appIdPattern = Pattern.compile(sourceApplicationPattern)
+            val sourceMatcher = appIdPattern.matcher(sourceID)
+            val targetMatcher = appIdPattern.matcher(targetID)
+
+            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(sourceID)) {
+                result.setNode(sourceID, Node(sourceID, sourceName, sourceCluster, sourceDescription))
+                log.info("> add node $sourceID")
+            }
+
+            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(targetID)) {
+                result.setNode(targetID, Node(targetID, targetName, targetCluster, targetDescription))
+                log.info("> add node $targetID")
+            }
+        }
     }
 
     private fun openSheet(excelFileName: String): XSSFSheet? {
@@ -96,7 +102,7 @@ object ExcelReader {
             log.info("> firstRowNum = " + result?.firstRowNum)
             log.info("> lastRowNum  = " + result?.lastRowNum)
         } catch (e: Exception) {
-            log.info("*** SHEET FAILED $e")
+            log.info("*** OPEN SHEET FAILED : $e")
         } finally {
             wb?.close()
             fis?.close()

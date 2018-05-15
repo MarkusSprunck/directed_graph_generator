@@ -10,9 +10,9 @@ class Model {
 
     fun setNode(name: String, node: Node? = null) {
         if (node != null) {
-            nodes.set(name, node)
+            nodes[name] = node
         } else {
-            nodes.set(name, Node())
+            nodes[name] = Node()
         }
     }
 

@@ -3,12 +3,12 @@ package control
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class ExcelColumnIDTest {
+class ExcelColumnNumberTest {
 
     @Test
     fun getValueOfFirstAppId() {
         // given
-        val sut = ExcelColumnID.FIRST_APP_ID
+        val sut = ExcelColumnNumber.FIRST_APP_ID
 
         // when
         val actual = sut.value
@@ -21,7 +21,7 @@ class ExcelColumnIDTest {
     @Test
     fun getValueOfSecondAppId() {
         // given
-        val sut = ExcelColumnID.SECOND_APP_ID
+        val sut = ExcelColumnNumber.SECOND_APP_ID
 
         // when
         val actual = sut.value
@@ -36,7 +36,7 @@ class ExcelColumnIDTest {
         val expected = 8
 
         // when
-        val actual = ExcelColumnID.values()
+        val actual = ExcelColumnNumber.values()
 
         // then
         assertEquals(expected, actual.size)
