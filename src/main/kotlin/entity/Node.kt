@@ -55,7 +55,6 @@ class Node constructor(name: String = "",
         this.type = type
         this.nameLong = nameLong
         this.description = HtmlUtil.escape(description)
-        document
     }
 
     fun addDepends(name: String) {
@@ -67,8 +66,6 @@ class Node constructor(name: String = "",
     }
 
     override fun toString(): String {
-        document
-
         val sb = StringBuilder()
         sb.append("\"$name\": {\n")
         sb.append("    \"name\": \"$nameLong\",\n")
