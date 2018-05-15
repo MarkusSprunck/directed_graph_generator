@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class MainRestService {
+class DiagramController {
 
     @GetMapping("/diagram")
     fun diagram(@RequestParam(value = "filter", defaultValue = "") filter: String,
