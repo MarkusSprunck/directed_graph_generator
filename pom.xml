@@ -44,6 +44,11 @@
             <version>${kotlin.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-kotlin</artifactId>
+        </dependency>
+
         <!-- Libraries for testing support -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

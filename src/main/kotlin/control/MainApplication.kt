@@ -1,11 +1,13 @@
 package control
 
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
-import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration
 import org.springframework.context.annotation.ComponentScan
+import org.springframework.context.annotation.Configuration
 
-@SpringBootApplication
-@EnableAutoConfiguration
-@ComponentScan(basePackages = ["control", "boundary", "entity"])
+@Configuration
+@EnableAutoConfiguration(exclude = [DataSourceAutoConfiguration::class, ThymeleafAutoConfiguration::class])
+@ComponentScan(basePackages = ["control", "boundary"], lazyInit = true)
 class MainApplication
 
