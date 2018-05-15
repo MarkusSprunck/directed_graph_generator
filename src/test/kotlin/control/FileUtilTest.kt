@@ -9,7 +9,7 @@ class FileUtilTest {
     @Test
     fun readTemplateHtml() {
         // given
-        val expected = 2942
+        val expected = 2921
 
         // when
         val result = FileUtil.load("templates/main.html")
