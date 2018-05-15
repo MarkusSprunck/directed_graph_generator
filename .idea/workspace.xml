@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a167cc4-64f9-44b1-aeb3-7807fb3f72f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +41,8 @@
       <file leaf-file-name="Model.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Model.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="199">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -251,6 +246,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
@@ -460,16 +462,17 @@
       <option name="project" value="LOCAL" />
       <updated>1526373342664</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactoring (better naming)">
+      <created>1526374539003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526374539003</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IndexControllerTestIT - 2018.05.15 at 10h 26m 40s.xml">
-      <configuration name="IndexControllerTestIT" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IndexControllerTestIT - 2018.05.15 at 10h 27m 10s.xml">
-      <configuration name="IndexControllerTestIT" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IndexControllerTestIT - 2018.05.15 at 10h 27m 44s.xml">
       <configuration name="IndexControllerTestIT" configurationId="JUnit" />
     </history-entry>
@@ -494,10 +497,15 @@
     <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 10h 47m 24s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 10h 52m 38s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 10h 53m 20s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="733" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -512,15 +520,15 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.33962265" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.33962265" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32232705" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32232705" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.5016835" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.5016835" side_tool="true" visible="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -536,10 +544,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update Spring Boot version to 2.0.2" />
-    <MESSAGE value="Refactoring (better naming)" />
     <MESSAGE value="Refactoring (cleanup code &amp; fix analysis warnings from IntelliJ)" />
     <MESSAGE value="Add smoke test for IndexController.kt (better naming)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add smoke test for IndexController.kt (better naming)" />
+    <MESSAGE value="Refactoring (better naming)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring (better naming)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Start.kt">
@@ -771,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Model.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="199">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
