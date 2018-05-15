@@ -14,6 +14,7 @@
         <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
         <org.junit.platform.version>1.1.1</org.junit.platform.version>
         <org.junit.jupiter.version>5.1.1</org.junit.jupiter.version>
+        <org.apache.poi.version>3.17</org.apache.poi.version>
     </properties>
 
     <dependencyManagement>
@@ -62,7 +63,6 @@
             <scope>test</scope>
         </dependency>
 
-
         <!-- Spring dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -92,13 +92,6 @@
             <version>1.18</version>
         </dependency>
 
-        <!-- Other libraries -->
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-
         <!-- Additional libaries for testing  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -106,65 +99,18 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-            <version>4.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.github.virtuald/curvesapi -->
-        <dependency>
-            <groupId>com.github.virtuald</groupId>
-            <artifactId>curvesapi</artifactId>
-            <version>1.04</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>3.17</version>
+            <version>${org.apache.poi.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>3.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml-schemas</artifactId>
-            <version>3.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-scratchpad</artifactId>
-            <version>3.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
-        <dependency>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>xmlbeans</artifactId>
-            <version>2.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
+            <version>${org.apache.poi.version}</version>
         </dependency>
 
     </dependencies>
@@ -263,9 +209,9 @@
             </plugin>
 
             <!-- Disable Maven deploy plugin
-                Specifies if this artifact should be deployed to nexus. This is only necessary,
-                if other application need to download the ear to the local machine as a binary
-                project. Default is true. So the ear file will not be included in the nexus-staging.zip -->
+                 Specifies if this artifact should be deployed to nexus. This is only necessary,
+                 if other application need to download the jar to the local machine as a binary
+                 project. Default is true. So the jar file will not be included in the nexus-staging.zip -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>

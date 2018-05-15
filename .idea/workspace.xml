@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a167cc4-64f9-44b1-aeb3-7807fb3f72f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_kotlin_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_microutils_kotlin_logging_1_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_17.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DirectedGraphGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DirectedGraphGenerator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -24,8 +26,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+            <state relative-caret-position="407">
+              <caret line="211" column="96" lean-forward="true" selection-start-line="211" selection-start-column="96" selection-end-line="211" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelReader.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -381,16 +392,17 @@
       <option name="project" value="LOCAL" />
       <updated>1526379384579</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactoring (cleanup pom)">
+      <created>1526383206409</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526383206409</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 11h 35m 54s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 11h 48m 17s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 11h 49m 10s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
@@ -415,6 +427,12 @@
     <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 13h 16m 00s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 13h 18m 01s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.05.15 at 13h 18m 47s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="733" extended-state="6" />
@@ -433,11 +451,11 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.33962265" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.33962265" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41509435" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31603774" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Coverage" sideWeight="0.5016835" side_tool="true" weight="0.26875" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -655,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Start.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -686,10 +697,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="407">
+          <caret line="211" column="96" lean-forward="true" selection-start-line="211" selection-start-column="96" selection-end-line="211" selection-end-column="96" />
         </state>
       </provider>
     </entry>
