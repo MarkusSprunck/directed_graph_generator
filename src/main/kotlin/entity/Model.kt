@@ -12,7 +12,7 @@ class Model {
         if (node != null) {
             nodes[name] = node
         } else {
-            nodes[name] = Node()
+            nodes[name] = Node(  name )
         }
     }
 

@@ -72,4 +72,23 @@ class NodeTest {
         assertEquals(expected, actual)
     }
 
+    @Test
+    fun constructorDefault() {
+        // given
+        val sut = Node()
+        val expected = """"": {
+                        |    "name": "",
+                        |    "type": "",
+                        |    "depends":[],
+                        |    "dependedOnBy":[],
+                        |    "docs": "<h3> - </h3><p/><em><em><p/>"
+                        |}""".trimMargin()
+
+        // when
+        val actual = sut.toString()
+
+        // then
+        assertEquals(expected, actual)
+    }
+
 }
