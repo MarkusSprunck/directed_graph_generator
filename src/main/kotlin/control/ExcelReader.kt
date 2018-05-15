@@ -84,9 +84,9 @@ object ExcelReader {
     }
 
     private fun openSheet(excelFileName: String): XSSFSheet? {
-        var result : XSSFSheet? = null
-        var fis : FileInputStream? = null
-        var wb : XSSFWorkbook? = null
+        var result: XSSFSheet? = null
+        var fis: FileInputStream? = null
+        var wb: XSSFWorkbook? = null
         try {
             val file = File("./Input/$excelFileName")
             fis = FileInputStream(file)
@@ -95,11 +95,9 @@ object ExcelReader {
             log.info("SHEET OPENED")
             log.info("> firstRowNum = " + result?.firstRowNum)
             log.info("> lastRowNum  = " + result?.lastRowNum)
-        }
-        catch (e: Exception) {
+        } catch (e: Exception) {
             log.info("*** SHEET FAILED $e")
-        }
-        finally {
+        } finally {
             wb?.close()
             fis?.close()
         }

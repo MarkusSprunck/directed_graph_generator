@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 class MainRestService {
 
     @GetMapping("/diagram")
-    fun diagram(@RequestParam(value = "filter", defaultValue = ""              ) filter : String,
-                @RequestParam(value = "file",   defaultValue = "data_test.xlsx") file   : String) : String {
+    fun diagram(@RequestParam(value = "filter", defaultValue = "") filter: String,
+                @RequestParam(value = "file", defaultValue = "data_test.xlsx") file: String): String {
 
         return DiagramGenerator.run(FilenameUtils.getName(file), filter)
     }

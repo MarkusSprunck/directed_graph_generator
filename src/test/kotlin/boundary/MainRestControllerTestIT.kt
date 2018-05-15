@@ -10,8 +10,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.test.context.junit4.SpringRunner
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-@RunWith( SpringRunner::class )
-@SpringBootTest(classes= [MainApplication::class] ,  webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT )
+@RunWith(SpringRunner::class)
+@SpringBootTest(classes = [MainApplication::class], webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class MainRestControllerTestIT {
 
     @Autowired
@@ -27,9 +27,9 @@ class MainRestControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(274502, result.body.length)
+        Assert.assertEquals(274253, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("!e||\"object\"!==x.type(e)||", result.body.subSequence( 5913, 5939))
+        Assert.assertEquals("tructor.prototype,\"isProto", result.body.subSequence(5913, 5939))
     }
 
 
@@ -43,9 +43,9 @@ class MainRestControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(271668, result.body.length)
+        Assert.assertEquals(271419, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("!e||\"object\"!==x.type(e)||", result.body.subSequence( 5913, 5939))
+        Assert.assertEquals("tructor.prototype,\"isProto", result.body.subSequence(5913, 5939))
     }
 
 

@@ -1,15 +1,14 @@
 package control
 
-import org.junit.jupiter.api.Test
-
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class FileUtilTest {
 
     @Test
     fun readTemplateHtml() {
         // given
-        val expected = 2921
+        val expected = 2672
 
         // when
         val result = FileUtil.load("templates/main.html")

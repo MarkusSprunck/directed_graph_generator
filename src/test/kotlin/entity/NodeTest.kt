@@ -1,8 +1,7 @@
 package entity
 
-import org.junit.jupiter.api.Test
-
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class NodeTest {
 
@@ -14,7 +13,7 @@ class NodeTest {
         sut.addDepends("Name C")
         sut.addDependedOnBy("Name D")
         sut.addDependedOnBy("Name F")
-        val expected =  """"Name A": {
+        val expected = """"Name A": {
                         |    "name": "Name Long A",
                         |    "type": "Group XYZ",
                         |    "depends":["Name C", "Name B"],
@@ -39,7 +38,7 @@ class NodeTest {
         sut.addDependedOnBy("Name D")
         sut.addDependedOnBy("Name D")
         sut.addDependedOnBy("Name F")
-        val expected =  """"Name A": {
+        val expected = """"Name A": {
                         |    "name": "Name Long A",
                         |    "type": "Group XYZ",
                         |    "depends":["Name C", "Name B"],
@@ -58,7 +57,7 @@ class NodeTest {
     fun constructor() {
         // given
         val sut = Node("Name A", "Name Long A", "Group XYZ", "XXX")
-        val expected =  """"Name A": {
+        val expected = """"Name A": {
                         |    "name": "Name Long A",
                         |    "type": "Group XYZ",
                         |    "depends":[],

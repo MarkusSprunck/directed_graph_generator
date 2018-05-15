@@ -1,11 +1,8 @@
 package entity
 
 import java.util.concurrent.ConcurrentHashMap
-import java.util.logging.Logger
 
 class Model {
-
-    private val log = Logger.getLogger(Model::class.java.name)
 
     private val nodes = ConcurrentHashMap<String, Node>()
 
@@ -14,7 +11,7 @@ class Model {
     fun addNode(name: String, node: Node? = null) =
             nodes.set(name, node ?: Node("", "", "", ""))
 
-    fun getNode(name: String): Node? = nodes.get(name)
+    fun getNode(name: String): Node? = nodes[name]
 
     override fun toString(): String {
         val graphData = StringBuilder()
