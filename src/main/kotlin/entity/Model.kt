@@ -6,10 +6,15 @@ class Model {
 
     private val nodes = ConcurrentHashMap<String, Node>()
 
-    fun isNodeExisting(name: String) = nodes.containsKey(name)
+    fun containsNode(name: String) = nodes.containsKey(name)
 
-    fun addNode(name: String, node: Node? = null) =
-            nodes.set(name, node ?: Node("", "", "", ""))
+    fun setNode(name: String, node: Node? = null) {
+        if (node != null) {
+            nodes.set(name, node)
+        } else {
+            nodes.set(name, Node())
+        }
+    }
 
     fun getNode(name: String): Node? = nodes[name]
 

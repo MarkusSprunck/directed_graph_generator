@@ -5,11 +5,11 @@ import java.util.logging.Logger
 
 object DiagramGenerator {
 
-    private val LOGGER = Logger.getLogger(DiagramGenerator::class.java.name)
+    private val log = Logger.getLogger(DiagramGenerator::class.java.name)
 
     @Throws(IOException::class)
     fun run(excelFileName: String, sourceApplicationPattern: String): String {
-        LOGGER.info("### START ###")
+        log.info("### START ###")
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern)
         val resultHtml = FileUtil.load("templates/main.html")
                 .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
@@ -19,7 +19,7 @@ object DiagramGenerator {
                 .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                 .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
                 .replace("##GENERATED_DATA##", model.toString())
-        LOGGER.info("###  END  ###")
+        log.info("###  END  ###")
         return resultHtml
     }
 

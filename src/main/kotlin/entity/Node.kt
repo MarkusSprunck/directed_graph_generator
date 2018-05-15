@@ -3,10 +3,10 @@ package entity
 import control.HtmlUtil
 import java.util.*
 
-class Node constructor(name: String,
-                       nameLong: String,
-                       type: String,
-                       description: String) {
+class Node constructor(name: String = "",
+                       nameLong: String = "",
+                       type: String = "",
+                       description: String = "") {
 
     private var name = ""
     private var nameLong = ""

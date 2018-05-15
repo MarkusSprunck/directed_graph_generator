@@ -47,13 +47,13 @@ object ExcelReader {
                 continue
             }
 
-            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.isNodeExisting(source)) {
-                result.addNode(source, Node(source, sourceLong, sourceMC, sourceDescription))
+            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(source)) {
+                result.setNode(source, Node(source, sourceLong, sourceMC, sourceDescription))
                 log.info("> add node $source")
             }
 
-            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.isNodeExisting(target)) {
-                result.addNode(target, Node(target, targetLong, targetMC, targetDescription))
+            if ((sourceMatcher.find(0) || targetMatcher.find(0)) && !result.containsNode(target)) {
+                result.setNode(target, Node(target, targetLong, targetMC, targetDescription))
                 log.info("> add node $target")
             }
         }
