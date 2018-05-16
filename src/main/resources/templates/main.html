@@ -13,15 +13,6 @@
 
 </head>
 <body>
-<div id="split-container">
-    <div id="graph-container">
-        <div id="graph"></div>
-    </div>
-    <div id="docs-container">
-        <a id="docs-close" href="#">&times;</a>
-        <div id="docs" class="docs"></div>
-    </div>
-</div>
 
 <!-- Inline https://code.jquery.com/jquery-1.10.2.min.js -->
 <script>
@@ -35,6 +26,34 @@
 
 </script>
 
+<!-- Inline https://github.com/jcubic/jquery.splitter/blob/master/js/jquery.splitter.js -->
+<script>
+            ##JQUERRY_SPLITTER_LIB##
+
+</script>
+
+
+<div id="split-container">
+    <div id="graph">
+    </div>
+    <div id="docs-container">
+        <a id="docs-close" href="#">&times;</a>
+        <div id="docs" class="docs"></div>
+    </div>
+</div>
+
+<script>
+    var splitter = $('#split-container').height(window.innerHeight).split({
+            orientation: 'vertical',
+            limit: 10,
+            position: '75%', // if there is no percentage it interpret it as pixels
+            onDrag: function(event) {
+                 console.log(splitter.position());
+        }
+    });
+</script>
+
+
 <!-- Inline https://d3js.org/d3.v3.min.js -->
 <script>
             ##D3_LIB##
@@ -47,7 +66,6 @@
             graph.linkDistance =    80;
             graph.charge       = -1200;
             graph.gravity      =   0.5;
-            graph.height       =   600;
             graph.labelPadding = {
                 "left"   : 2,
                 "right"  : 2,
@@ -70,8 +88,7 @@
             graph.maxLineChars           =      20;
             graph.wrapChars    = ' /_-.'.split('');
             graph.docsClosePadding       =       5;
-            graph.desiredDocsHeight      =     360;
-            graph.showingDocs            =   false;
+            graph.showingDocs            =   true;
             graph.highlighted            =    null;
             graph.selected               =      {};
             graph.colors = [

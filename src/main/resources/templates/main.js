@@ -2,9 +2,7 @@
 function drawGraph() {
 
 	// Set size of graph
-	$('#graph').empty();
 	var display = $('#graph').css('display');
-	$('#graph').css('display', 'block').css('height', graph.height + 'px');
 	graph.width = $('#graph').width() - graph.margin.left - graph.margin.right;
 	graph.height = $('#graph').height() - graph.margin.top - graph.margin.bottom;
 	$('#graph').css('display', display);
@@ -150,7 +148,7 @@ function drawGraph() {
 			return d;
 		});
 
-	$('#graph-container').on('scroll', function() {
+	$('#graph').on('scroll', function() {
 		graph.legend.attr('transform', 'translate(0,' + $(this).scrollTop() + ')');
 	});
 
@@ -191,7 +189,7 @@ function drawGraph() {
 			d.fixed &= ~6;
 		});
 
-	$('#graph-container').on('click', function(e) {
+	$('#graph').on('click', function(e) {
 		if (!$(e.target).closest('.node').length) {
 			deselectObject();
 		}
@@ -314,7 +312,7 @@ function drawGraph() {
 			graph.force.tick();
 		}
 		graph.preventCollisions = true;
-		$('#graph-container').css('visibility', 'visible');
+		$('#graph').css('visibility', 'visible');
 	});
 }
 
@@ -539,7 +537,9 @@ function selectObject(obj, el) {
 	$('#docs-container').scrollTop(0);
 	resize(true);
 
-	var $graph = $('#graph-container'),
+/*
+
+	var $graph = $('#graph'),
 		nodeRect = {
 			left: obj.x + obj.extent.left + graph.margin.left,
 			top: obj.y + obj.extent.top + graph.margin.top,
@@ -562,6 +562,7 @@ function selectObject(obj, el) {
 			scrollTop: nodeRect.top + nodeRect.height / 2 - graphRect.height / 2
 		}, 500);
 	}
+	*/
 }
 
 
@@ -599,29 +600,25 @@ function highlightObject(obj) {
 
 
 function resize(showDocs) {
-	var docsHeight = 0,
-		graphHeight = 0,
-		$docs = $('#docs-container'),
-		$graph = $('#graph-container'),
+	var $docs = $('#docs-container'),
+		$graph = $('#graph'),
 		$close = $('#docs-close');
+    	$splitter = $('.vsplitter')
+
+	$close[showDocs ? 'show' : 'hide']();
+    $splitter[showDocs ? 'show' : 'hide']();
+
+    graph.height = window.innerHeight;
+    $docs.css('height', graph.height  + 'px');
+    $splitter.css('height', graph.height  + 'px');
+    $graph.css('height', graph.height  + 'px');
+
+    graph.force.size([graph.width, graph.height]).resume();
 
 	if (typeof showDocs == 'boolean') {
 		graph.showingDocs = showDocs;
 		$docs[showDocs ? 'show' : 'hide']();
 	}
-
-	if (graph.showingDocs) {
-		docsHeight = graph.desiredDocsHeight;
-		$docs.css('height', docsHeight + 'px');
-	}
-
-	graphHeight = window.innerHeight - docsHeight - 30;
-	$graph.css('height', graphHeight + 'px');
-
-	$close.css({
-		top: graphHeight + graph.docsClosePadding + 'px',
-		right: window.innerWidth - $docs[0].clientWidth + graph.docsClosePadding + 'px'
-	});
 }
 
 
@@ -665,7 +662,9 @@ function dragged(d) {
 
 // Start
 $(function() {
-	resize();
-	drawGraph();
-	registerEventHandlers();
+ 	drawGraph();
+    registerEventHandlers();
+    var object = graph.data[Object.keys(graph.data)[0]];
+    selectObject(object);
+    resize(true);
 });

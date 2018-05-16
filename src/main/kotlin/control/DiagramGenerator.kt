@@ -14,6 +14,7 @@ object DiagramGenerator {
         val resultHtml = FileUtil.load("templates/main.html")
                 .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
                 .replace("##GEOMETRY_LIB##", FileUtil.load("libs/geometry.js"))
+                .replace("##JQUERRY_SPLITTER_LIB##", FileUtil.load("libs/jquery.splitter.js"))
                 .replace("##JQUERRY_A_LIB##", FileUtil.load("libs/jquery-1.10.2.min.js"))
                 .replace("##JQUERRY_B_LIB##", FileUtil.load("libs/jquery.browser.min.js"))
                 .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
