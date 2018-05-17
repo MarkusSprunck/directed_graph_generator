@@ -2,9 +2,9 @@
 function drawGraph() {
 
 	// Set size of graph
-	var display = $('#graph').css('display');
-	graph.width = $('#graph').width() - graph.margin.left - graph.margin.right;
-	graph.height = $('#graph').height() - graph.margin.top - graph.margin.bottom;
+	var display  = $('#graph').css('display');
+	graph.width  = $('#graph').width();
+ 	graph.height = $('#graph').height();
 	$('#graph').css('display', display);
 
 	// Create all nodes
@@ -63,8 +63,8 @@ function drawGraph() {
 		.on('tick', tick);
 
 	graph.svg = d3.select('#graph').append('svg')
-		.attr('width', graph.width + graph.margin.left + graph.margin.right)
-		.attr('height', graph.height + graph.margin.top + graph.margin.bottom)
+		.attr('width', graph.width + graph.margin.left)
+		.attr('height', graph.height + graph.margin.top)
 		.append('g')
 		.attr('transform', 'translate(' + graph.margin.left + ',' + graph.margin.top + ')');
 
@@ -273,7 +273,6 @@ function drawGraph() {
 			}).attr('text-anchor', 'middle');
 
 			var padding = graph.labelPadding,
-				margin = graph.labelMargin,
 				oldWidth = bounds.x2 - bounds.x1;
 
 			bounds.x1 -= oldWidth / 2;
@@ -291,10 +290,10 @@ function drawGraph() {
 				.attr('height', bounds.y2 - bounds.y1);
 
 			d.extent = {
-				left: bounds.x1 - margin.left,
-				right: bounds.x2 + margin.left + margin.right,
-				top: bounds.y1 - margin.top,
-				bottom: bounds.y2 + margin.top + margin.bottom
+				left: bounds.x1 ,
+				right: bounds.x2,
+				top: bounds.y1  ,
+				bottom: bounds.y2
 			};
 
 			d.edge = {
@@ -601,24 +600,32 @@ function highlightObject(obj) {
 
 function resize(showDocs) {
 	var $docs = $('#docs-container'),
+	    $split_container = $('split-container'),
 		$graph = $('#graph'),
 		$close = $('#docs-close');
     	$splitter = $('.vsplitter')
 
-	$close[showDocs ? 'show' : 'hide']();
-    $splitter[showDocs ? 'show' : 'hide']();
+    if (typeof showDocs == 'boolean') {
+		$docs[showDocs ? 'show' : 'hide']();
+	    $close[showDocs ? 'show' : 'hide']();
+        $splitter[showDocs ? 'show' : 'hide']();
+    }
 
-    graph.height = window.innerHeight;
+    graph.height = getHeight();
+    $split_container.css('height', graph.height  + 'px');
     $docs.css('height', graph.height  + 'px');
     $splitter.css('height', graph.height  + 'px');
     $graph.css('height', graph.height  + 'px');
-
     graph.force.size([graph.width, graph.height]).resume();
+}
 
-	if (typeof showDocs == 'boolean') {
-		graph.showingDocs = showDocs;
-		$docs[showDocs ? 'show' : 'hide']();
-	}
+function getHeight() {
+ var body = document.body,
+     html = document.documentElement;
+
+ return  Math.max(  body.offsetHeight,
+                    html.clientHeight,
+                    html.offsetHeight );
 }
 
 

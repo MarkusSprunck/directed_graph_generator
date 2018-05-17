@@ -8,7 +8,7 @@ class FileUtilTest {
     @Test
     fun readTemplateHtml() {
         // given
-        val expected = 2672
+        val expected = 2746
 
         // when
         val result = FileUtil.load("templates/main.html")
@@ -20,7 +20,7 @@ class FileUtilTest {
     @Test
     fun readTemplateCss() {
         // given
-        val expected = 1365
+        val expected = 3237
 
         // when
         val result = FileUtil.load("static/main.css")
@@ -32,7 +32,7 @@ class FileUtilTest {
     @Test
     fun readTemplateJs() {
         // given
-        val expected = 15485
+        val expected = 15459
 
         // when
         val result = FileUtil.load("templates/main.js")

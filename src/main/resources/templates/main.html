@@ -45,7 +45,7 @@
 <script>
     var splitter = $('#split-container').height(window.innerHeight).split({
             orientation: 'vertical',
-            limit: 10,
+            limit: 150,
             position: '75%', // if there is no percentage it interpret it as pixels
             onDrag: function(event) {
                  console.log(splitter.position());
@@ -72,23 +72,14 @@
                 "top"    : 2,
                 "bottom" : 2
             };
-            graph.labelMargin = {
-                "left"     : 6,
-                "right"    : 6,
-                "top"      : 6,
-                "bottom"   : 6
-            };
             graph.margin = {
                 "left"     : 20,
-                "right"    : 20,
-                "top"      : 20,
-                "bottom"   : 20
+                "top"      : 20
             };
             graph.ticksWithoutCollisions =      10;
             graph.maxLineChars           =      20;
             graph.wrapChars    = ' /_-.'.split('');
             graph.docsClosePadding       =       5;
-            graph.showingDocs            =   true;
             graph.highlighted            =    null;
             graph.selected               =      {};
             graph.colors = [

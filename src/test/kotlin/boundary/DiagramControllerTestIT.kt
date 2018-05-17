@@ -27,9 +27,9 @@ class DiagramControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(274253, result.body.length)
+        Assert.assertEquals(291871, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("tructor.prototype,\"isProto", result.body.subSequence(5913, 5939))
+        Assert.assertEquals(",n=+e+(0>e?t:0);return thi", result.body.subSequence(5913, 5939))
     }
 
 
@@ -43,9 +43,9 @@ class DiagramControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(271419, result.body.length)
+        Assert.assertEquals(289037, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("tructor.prototype,\"isProto", result.body.subSequence(5913, 5939))
+        Assert.assertEquals(",n=+e+(0>e?t:0);return thi", result.body.subSequence(5913, 5939))
     }
 
 
