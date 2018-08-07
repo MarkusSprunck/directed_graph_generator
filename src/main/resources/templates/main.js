@@ -669,7 +669,7 @@ function dragged(d) {
 
 // Start
 $(function() {
- 	drawGraph();
+    drawGraph();
     registerEventHandlers();
     var object = graph.data[Object.keys(graph.data)[0]];
     selectObject(object);
