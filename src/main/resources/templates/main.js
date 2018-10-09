@@ -19,8 +19,10 @@ function drawGraph() {
 				source: graph.data[obj.depends[depIndex]],
 				target: obj
 			};
-			link.strength = (link.source.type === link.target.type) ? 5.0 : 1.0;
-			graph.links.push(link);
+			link.strength = 1.0; // (link.source.type === link.target.type) ? 5.0 : 1.0;
+			if (typeof link.source !== "undefined") {
+			    graph.links.push(link);
+		    }
 		}
 	}
 
@@ -68,6 +70,7 @@ function drawGraph() {
 		.append('g')
 		.attr('transform', 'translate(' + graph.margin.left + ',' + graph.margin.top + ')');
 
+
 	graph.svg.append('defs').selectAll('marker')
 		.data(['end'])
 		.enter().append('marker')
@@ -80,6 +83,7 @@ function drawGraph() {
 		.attr('orient', 'auto')
 		.append('path')
 		.attr('d', 'M0,-5L10,0L0,5');
+
 
 	var glow = graph.svg.append('filter')
 		.attr('x', '-50%')
@@ -344,10 +348,10 @@ function preventCollisions() {
 
 	for (var name in graph.data) {
 		var obj = graph.data[name],
-			ox1 = obj.x + obj.extent.left,
-			ox2 = obj.x + obj.extent.right,
-			oy1 = obj.y + obj.extent.top,
-			oy2 = obj.y + obj.extent.bottom;
+			ox1 = obj.x + obj.extent.left-15,
+			ox2 = obj.x + obj.extent.right+15,
+			oy1 = obj.y + obj.extent.top-15,
+			oy2 = obj.y + obj.extent.bottom+15;
 
 		quadtree.visit(function(quad, x1, y1, x2, y2) {
 			if (quad.point && quad.point !== obj) {
@@ -671,7 +675,14 @@ function dragged(d) {
 $(function() {
  	drawGraph();
     registerEventHandlers();
+
     var object = graph.data[Object.keys(graph.data)[0]];
     selectObject(object);
-    resize(true);
+
+
+    var explode = function(){
+       resize(true);
+    };
+    setTimeout(explode, 2000);
+
 });

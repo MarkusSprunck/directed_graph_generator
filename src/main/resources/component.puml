@@ -1,0 +1,50 @@
+@startuml
+
+top to bottom direction
+
+skinparam componentStyle uml2
+skinparam handwritten false
+skinparam monochrome false
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam packageFontSize  14
+skinparam packageFontName Arial
+
+skinparam component {
+    StereotypeFontSize 14
+    StereotypeFontColor black
+    StereotypeName Arial
+    StereotypeFontStyle normal
+    FontSize 14
+    FontColor black
+    FontName Arial
+    BackgroundColor white
+    BorderColor<<web content management>> #9F5098
+    BorderColor<<bildung>> #003366
+    BorderColor<<zentrale aufgaben>> #58585A
+    BorderColor<<enterprise content management>> #009ED4
+    BorderColor<<collaboration>> #76B82A
+    BorderColor<<informations- und wissensmanagement>> #92D050
+    BorderColor<<kerndaten>> #E40D2E
+    BorderColor<<human resources>> #B1B3B4
+    BorderColor<<informationstechnik>> #FFCE00
+    BorderColor<<technische infrastruktur>> #F0821A
+}
+
+
+!pragma ratio 0.66
+
+
+left to right direction
+
+package "Anwendungssysteme - %date%" {
+    together "1" {
+
+         '##PACKAGES##
+
+    }
+}
+
+@enduml
+
+

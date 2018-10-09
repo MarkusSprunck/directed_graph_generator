@@ -8,7 +8,7 @@ class ExcelColumnNumberTest {
     @Test
     fun getValueOfFirstAppId() {
         // given
-        val sut = ExcelColumnNumber.FIRST_APP_ID
+        val sut = ExcelColumnNumberLinks.FIRST_APP_ID
 
         // when
         val actual = sut.value
@@ -21,22 +21,22 @@ class ExcelColumnNumberTest {
     @Test
     fun getValueOfSecondAppId() {
         // given
-        val sut = ExcelColumnNumber.SECOND_APP_ID
+        val sut = ExcelColumnNumberLinks.SECOND_APP_ID
 
         // when
         val actual = sut.value
 
         // then
-        assertEquals(Integer.valueOf(4), actual)
+        assertEquals(Integer.valueOf(2), actual)
     }
 
     @Test
     fun countNumberOfValues() {
         // given
-        val expected = 8
+        val expected = 4
 
         // when
-        val actual = ExcelColumnNumber.values()
+        val actual = ExcelColumnNumberLinks.values()
 
         // then
         assertEquals(expected, actual.size)

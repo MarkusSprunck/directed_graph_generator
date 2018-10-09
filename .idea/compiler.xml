@@ -9,8 +9,5 @@
         <module name="DirectedGraphGenerator" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="DirectedGraphGenerator" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

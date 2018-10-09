@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test
 
 class ModelTest {
 
+    /*
     @Test
     fun addNullNode() {
         // given
@@ -25,6 +26,7 @@ class ModelTest {
         // then
         assertEquals(expected, actual)
     }
+    */
 
 
 

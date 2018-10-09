@@ -66,19 +66,20 @@ a:hover {
 .link {
 	stroke: #555;
 	stroke-width: 1.0px;
-	opacity: .7;
+	opacity: .9;
 	marker-end: url(#end);
 }
 
 .link.inactive,
 .node.inactive rect,
 .node.inactive text marker#end {
-	opacity: .2;
+    stroke: #blue;
+	opacity: .4;
 }
 
 .node.inactive.selected rect,
 .node.inactive.selected text marker#end {
-	opacity: .7;
+	opacity: .6;
 }
 
 .legend .category text {
