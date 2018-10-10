@@ -63,7 +63,7 @@ object ExcelReader {
 
     private fun parseNodes(sheet: XSSFSheet, sourceApplicationPattern: String, result: Model) {
         log.info("PROCESS NODES")
-        for (currentRow in 2..sheet.lastRowNum) {
+        for (currentRow in 1..sheet.lastRowNum) {
 
             val row = sheet.getRow(currentRow)
             val sourceID = row.getCell(ExcelColumnNumberApplications.ID.value).stringCellValue.trim()
@@ -101,8 +101,7 @@ object ExcelReader {
             wb = XSSFWorkbook(fis)
             result =    wb.getSheet(sheetName )
             log.info("SHEET OPENED")
-            log.info("> firstRowNum = " + result?.firstRowNum)
-            log.info("> lastRowNum  = " + result?.lastRowNum)
+            log.info("> number of rows " + result?.lastRowNum)
         } catch (e: Exception) {
             log.info("*** OPEN SHEET FAILED : $e")
         } finally {

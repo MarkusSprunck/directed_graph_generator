@@ -9,5 +9,5 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 @EnableAutoConfiguration(exclude = [DataSourceAutoConfiguration::class, ThymeleafAutoConfiguration::class])
 @ComponentScan(basePackages = ["control", "boundary"], lazyInit = true)
-class MainApplication
+open class MainApplication
 

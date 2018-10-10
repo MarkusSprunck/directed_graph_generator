@@ -58,6 +58,12 @@ class ExcelReaderTest {
                         |    "depends":["ID05", "ID02"],
                         |    "dependedOnBy":["ID06"],
                         |    "docs": "<h3>ID04 - Test04</h3><b>Cluster</b>:<br/>C-AAA<p/><b>Location:</b><br/><em>Cloud-A<em><p/><b>Status:</b><br/><em>aktiv<em><p/><b>Description:</b><br/><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 04<em><p/><b>Interface from:</b><p/><a href=\"#obj-ID02\" class=\"select-object\" data-name=\"ID02\">ID02</a> <a href=\"#obj-ID05\" class=\"select-object\" data-name=\"ID05\">ID05</a> <p/><b>Interface to:</b><p/><a href=\"#obj-ID06\" class=\"select-object\" data-name=\"ID06\">ID06</a> <p/>"
+                        |},"ID01": {
+                        |    "name": "ID01",
+                        |    "type": "C-AAA",
+                        |    "depends":["ID06", "ID02", "ID03"],
+                        |    "dependedOnBy":["ID06", "ID03"],
+                        |    "docs": "<h3>ID01 - Test01</h3><b>Cluster</b>:<br/>C-AAA<p/><b>Location:</b><br/><em>Cloud-A<em><p/><b>Status:</b><br/><em>aktiv<em><p/><b>Description:</b><br/><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 01<em><p/><b>Interface from:</b><p/><a href=\"#obj-ID02\" class=\"select-object\" data-name=\"ID02\">ID02</a> <a href=\"#obj-ID03\" class=\"select-object\" data-name=\"ID03\">ID03</a> <a href=\"#obj-ID06\" class=\"select-object\" data-name=\"ID06\">ID06</a> <p/><b>Interface to:</b><p/><a href=\"#obj-ID03\" class=\"select-object\" data-name=\"ID03\">ID03</a> <a href=\"#obj-ID06\" class=\"select-object\" data-name=\"ID06\">ID06</a> <p/>"
                         |},"ID02": {
                         |    "name": "ID02",
                         |    "type": "C-AAA",

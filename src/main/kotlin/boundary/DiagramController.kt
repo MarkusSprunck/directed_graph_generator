@@ -17,7 +17,12 @@ class DiagramController {
                 @RequestParam(value = "package", defaultValue = "") componentName: String ,
                 @RequestParam(value = "type", defaultValue = "graph") type: String): String {
 
-        return DiagramGenerator.run(FilenameUtils.getName(file), filter, type, componentName)
+
+        return DiagramGenerator.run(
+                FilenameUtils.getName(file),
+                filter.replace("-", "|"),
+                type,
+                componentName)
     }
 
 }
