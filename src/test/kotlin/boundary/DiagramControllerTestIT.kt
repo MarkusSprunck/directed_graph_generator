@@ -27,7 +27,7 @@ class DiagramControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(287364, result.body.length)
+        Assert.assertEquals(291506, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
         Assert.assertEquals("unction(e){var t=this.leng", result.body.subSequence(5913, 5939))
     }

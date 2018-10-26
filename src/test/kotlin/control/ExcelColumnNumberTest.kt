@@ -33,7 +33,7 @@ class ExcelColumnNumberTest {
     @Test
     fun countNumberOfValues() {
         // given
-        val expected = 4
+        val expected = 8
 
         // when
         val actual = ExcelColumnNumberLinks.values()

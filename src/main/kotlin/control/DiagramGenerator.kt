@@ -4,6 +4,7 @@ import net.sourceforge.plantuml.FileFormat
 import net.sourceforge.plantuml.FileFormatOption
 import net.sourceforge.plantuml.SourceStringReader
 import java.io.ByteArrayOutputStream
+import java.io.File
 import java.io.IOException
 import java.nio.charset.Charset
 import java.util.logging.Logger
@@ -13,9 +14,9 @@ object DiagramGenerator {
     private val log = Logger.getLogger(DiagramGenerator::class.java.name)
 
     @Throws(IOException::class)
-    fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String): String {
-        log.info("### START ###")
-        val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern)
+    fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String, showLinks: Boolean, strict: Boolean, colorMode : String): String {
+
+        val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode)
 
         if (diagramType == "graph") {
             val resultHtml = FileUtil.load("templates/main.html")
@@ -27,16 +28,15 @@ object DiagramGenerator {
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
                     .replace("##GENERATED_DATA##", model.toString())
-            log.info("###  END OK ###")
             return resultHtml
         }
 
         if (diagramType == "component") {
 
             val resultPuml = FileUtil.load("component.puml")
-                    .replace("'##PACKAGES##", model.toUml(componentName))
+                    .replace("'##PACKAGES##", model.toUml(componentName, showLinks))
 
-            log.info(resultPuml)
+            File("output/components.puml").writeText(resultPuml)
 
             val reader = SourceStringReader(resultPuml)
             val os = ByteArrayOutputStream()
@@ -56,8 +56,6 @@ object DiagramGenerator {
             svg.append("    </body>")
             svg.append("</html>")
 
-
-            log.info("###  END OK ###")
             return svg.toString()
         }
 

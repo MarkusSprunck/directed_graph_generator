@@ -1,15 +1,17 @@
 package entity
 
-import control.DiagramGenerator
+import java.util.*
 import java.util.concurrent.ConcurrentHashMap
+import java.util.logging.Logger
 
 class Model {
+
+    private val log = Logger.getLogger(Model::class.java.name)
 
     private val nodes = ConcurrentHashMap<String, Node>()
     private val clusters = ConcurrentHashMap<String, Cluster>()
 
     fun containsNode(name: String) = nodes.containsKey(name)
-
     fun containsCluster(name: String) = clusters.containsKey(name)
 
     fun setNode(name: String, node: Node) {
@@ -52,61 +54,84 @@ class Model {
     }
 
 
-    fun toUml(clusterName: String = ""): String {
+    fun toUml(clusterName: String = "", showLinks: Boolean = false): String {
 
-        val colors = arrayOf(
-                "#ff4000",
-                "#ff8000",
-                "#ffff00",
-                "#40ff00",
-                "#00ffbf",
-                "#00bfff",
-                "#0040ff",
-                "#8000ff",
-                "#bf00ff",
-                "#ff00bf",
-                "#ff0040"
-        )
+
 
         val graphData = StringBuilder()
         graphData.append("\n")
-        var index = 0
 
-        var isPackages = false
+        val linkComments = HashMap<String, String>()
+
+        var index = 0
+        for (cluster in clusters.values) {
+            var color = ColorUtil.colors[  index %  ColorUtil.colors.size ]
+            log.info("COLOR > ${cluster.name}  $color")
+            graphData.append(" skinparam componentBorderColor<<${cluster.name.toLowerCase()}>> $color \n")
+            index++
+        }
+        graphData.append("\n")
+
+        index = 0
         for (cluster in clusters.values) {
 
-            if ((clusterName == cluster.name && clusterName.length > 0) || clusterName.length == 0 ) {
+            if ((clusterName == cluster.name && clusterName.length > 0) || clusterName.length == 0) {
 
-                if (isPackages) {
-                    graphData.append("package \"")
-                    graphData.append(cluster.name)
-                    graphData.append("\" ").append(colors[index % colors.size]).append(" {").append("\n")
-                }
                 for (node in cluster.nodes.values) {
                     if (cluster.name != node.name) {
 
-                        var stereotype =   " <<" + cluster.name.toLowerCase() + ">> "
+                        for (linkComment in node.linkComments) {
+                            linkComments.set(linkComment.key, linkComment.value)
+                        }
 
-                        var newName =  " <<" + node.location.toLowerCase() + ">> \\n "
-                        newName = newName + " <<" + node.stereotyp + ">> \\n \\n"
+                        var stereotype = " <<" + cluster.name.toLowerCase() + ">> "
+
+                        var newName = " <<" + node.location.toLowerCase() + ">> \\n "
+                        newName = newName + " <<" + node.stereotyp1 + ">> \\n \\n"
                         newName = newName + node.nameLong + "\\n "
                         newName = newName + "(" + node.name + ")"
 
-                        graphData.append(" [").append(newName).append("]").append(stereotype)
+                        graphData.append(" [").append(newName).append("]").append(" as ").append(node.name).append(" ").append(stereotype)
                         graphData.append(" [[{")
                                 .append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
                 }
 
-                if (isPackages) {
-                    graphData.append("}")
-                    graphData.append("\n")
-                }
                 graphData.append("\n")
             }
             index++
 
         }
+
+        val linkStrings = HashSet<String>()
+
+        if (showLinks) {
+            for (node in nodes.values) {
+                for (link in node.dependedOnBy) {
+                    var linkString = StringBuilder()
+                    linkString.append("[").append(node.name).append("]")
+                    linkString.append(" ..> ")
+                    linkString.append("[").append(link.replace("\"", "")).append("]")
+                    linkStrings.add(linkString.toString())
+                }
+            }
+        }
+
+        if (showLinks) {
+            for (node in nodes.values) {
+                for (link in node.depends) {
+                    var linkString = StringBuilder()
+                    linkString.append("[").append(link.replace("\"", "")).append("]")
+                    linkString.append(" ..> ")
+                    linkString.append("[").append(node.name).append("]")
+                    linkStrings.add(linkString.toString())
+                }
+            }
+        }
+        for (link in linkStrings) {
+            graphData.append(link).append(" : " + linkComments.get(link)).append("\n")
+        }
+
         return graphData.toString()
     }
 

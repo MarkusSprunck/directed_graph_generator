@@ -2,24 +2,24 @@ package entity
 
 import control.HtmlUtil
 import java.util.*
-import javax.xml.stream.Location
 
 class Node constructor(name: String = "",
                        nameLong: String = "",
-                       cluster: String = "",
                        description: String = "",
-                       stereotyp: String = "",
-                       location: String = "") {
+                       stereotyp0: String = "",
+                       stereotyp1: String = "",
+                       stereotyp2: String = "") {
 
-    var stereotyp = ""
+    var stereotyp1 = ""
     var name = ""
     var cluster = ""
     var nameLong = ""
     var location = ""
     var description = ""
     var descriptionHtml = ""
-    private val depends = HashSet<String>()
-    private val dependedOnBy = HashSet<String>()
+    val depends = HashSet<String>()
+    val dependedOnBy = HashSet<String>()
+    val linkComments = HashMap<String, String>()
 
     private val document: String
         get() {
@@ -27,7 +27,7 @@ class Node constructor(name: String = "",
             sbDocs.append("<h3>").append(name).append(" - ").append(nameLong).append("</h3>")
             sbDocs.append("<b>Cluster</b>:<br/>").append(cluster).append("<p/>")
             sbDocs.append("<b>Location:</b><br/><em>").append(location).append("<em><p/>")
-            sbDocs.append("<b>Status:</b><br/><em>").append(stereotyp).append("<em><p/>")
+            sbDocs.append("<b>Status:</b><br/><em>").append(stereotyp1).append("<em><p/>")
             sbDocs.append("<b>Description:</b><br/><em>").append(descriptionHtml).append("<em><p/>")
 
             if (!depends.isEmpty()) {
@@ -59,21 +59,27 @@ class Node constructor(name: String = "",
         }
 
     init {
-        this.stereotyp = stereotyp
+        this.stereotyp1 = stereotyp1
         this.name = name
-        this.cluster = cluster
+        this.cluster = stereotyp0
         this.nameLong = nameLong
         this.description = description
         this.descriptionHtml = HtmlUtil.escape(description)
-        this.location = location
+        this.location = stereotyp2
     }
 
-    fun addDepends(name: String) {
-        depends.add("\"" + name + "\"")
+    fun addDepends(name: String, comment: String = "") {
+        if (!depends.contains(name)) {
+            depends.add("\"" + name + "\"")
+            linkComments.set("[" + name + "] ..> [" + this.name + "]", comment)
+        }
     }
 
-    fun addDependedOnBy(name: String) {
-        dependedOnBy.add("\"" + name + "\"")
+    fun addDependedOnBy(name: String, comment: String = "") {
+        if (!dependedOnBy.contains(name)) {
+            dependedOnBy.add("\"" + name + "\"")
+            linkComments.set("[" + this.name + "] ..> [" + name + "]", comment)
+        }
     }
 
     override fun toString(): String {

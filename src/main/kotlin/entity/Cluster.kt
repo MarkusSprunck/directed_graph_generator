@@ -1,7 +1,5 @@
 package entity
 
-import control.HtmlUtil
-import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 
 class Cluster constructor(name: String = "") {
@@ -21,7 +19,7 @@ class Cluster constructor(name: String = "") {
         return name
     }
 
-    fun addNode(name: String, node: Node ) {
+    fun addNode(name: String, node: Node) {
         nodes[name] = node
     }
 

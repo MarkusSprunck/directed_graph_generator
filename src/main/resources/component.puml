@@ -19,29 +19,24 @@ skinparam component {
     FontColor black
     FontName Arial
     BackgroundColor white
-    BorderColor<<web content management>> #9F5098
-    BorderColor<<bildung>> #003366
-    BorderColor<<zentrale aufgaben>> #58585A
-    BorderColor<<enterprise content management>> #009ED4
-    BorderColor<<collaboration>> #76B82A
-    BorderColor<<informations- und wissensmanagement>> #92D050
-    BorderColor<<kerndaten>> #E40D2E
-    BorderColor<<human resources>> #B1B3B4
-    BorderColor<<informationstechnik>> #FFCE00
-    BorderColor<<technische infrastruktur>> #F0821A
 }
 
+skinparam package<<Transparent>> {
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
 
 !pragma ratio 0.66
 
-
 left to right direction
 
-package "Anwendungssysteme - %date%" {
-    together "1" {
+package "UML Components - %date%" {
 
-         '##PACKAGES##
+package "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789" <<Transparent>> {
 
+     '##PACKAGES##
     }
 }
 

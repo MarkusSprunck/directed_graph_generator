@@ -1,0 +1,64 @@
+@startuml
+
+top to bottom direction
+
+skinparam componentStyle uml2
+skinparam handwritten false
+skinparam monochrome false
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam packageFontSize  14
+skinparam packageFontName Arial
+
+skinparam component {
+    StereotypeFontSize 14
+    StereotypeFontColor black
+    StereotypeName Arial
+    StereotypeFontStyle normal
+    FontSize 14
+    FontColor black
+    FontName Arial
+    BackgroundColor white
+}
+
+skinparam package<<Transparent>> {
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
+
+!pragma ratio 0.66
+
+left to right direction
+
+package "UML Components - %date%" {
+
+package "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789" <<Transparent>> {
+
+     
+ skinparam componentBorderColor<<deprecated>> #d50000 
+ skinparam componentBorderColor<<aktiv>> #ffd600 
+
+ [ <<cloud-a>> \n  <<AAA-1>> \n \nApplication 02\n (ID02)] as ID02  <<deprecated>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 02}]]
+
+ [ <<host-b>> \n  <<BBB-1>> \n \nApplication 05\n (ID05)] as ID05  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 05}]]
+ [ <<host-a>> \n  <<AAA-2>> \n \nApplication 06\n (ID06)] as ID06  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 06}]]
+ [ <<cloud-a>> \n  <<BBB-1>> \n \nApplication 03\n (ID03)] as ID03  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 03}]]
+ [ <<cloud-a>> \n  <<AAA-2>> \n \nApplication 04\n (ID04)] as ID04  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 04}]]
+ [ <<cloud-a>> \n  <<AAA-1>> \n \nApplication 01\n (ID01)] as ID01  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 01}]]
+
+[ID04] ..> [ID06] : Anwendungsdaten\n(JDBC)
+[ID02] ..> [ID06] : Events & Logging\n(JDBC)
+[ID01] ..> [ID02] : Service E\n(HTTPS)
+[ID01] ..> [ID03] : E-Mail Versand\n(IMAP)
+[ID01] ..> [ID04] : Service C\n(HTTPS)
+[ID02] ..> [ID04] : Service A\n(HTTPS)
+[ID03] ..> [ID05] : Service B\n(LDAPS)
+
+    }
+}
+
+@enduml
+
+

@@ -27,7 +27,7 @@ class IndexControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(877, result.body.length)
+        Assert.assertEquals(852, result.body.length)
         Assert.assertEquals(182, result.headers.toString().length)
         Assert.assertEquals("<title>Graph Generator</title>", result.body.subSequence(71, 101))
     }
