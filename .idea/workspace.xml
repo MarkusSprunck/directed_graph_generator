@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/table-apps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table-links.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/input/data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/data_empty.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/input/data_empty.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/data_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/input/data_test.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-page-components.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-page-graph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-page-index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberApplications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberApplications.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberLinks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberLinks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/component.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery.splitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/libs/jquery.splitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +34,8 @@
           <entry key="LICENSE" value="1" />
           <entry key="html" value="4" />
           <entry key="iml" value="2" />
-          <entry key="kt" value="32" />
-          <entry key="md" value="2" />
+          <entry key="kt" value="48" />
+          <entry key="md" value="3" />
           <entry key="name" value="1" />
           <entry key="png" value="1" />
           <entry key="properties" value="3" />
@@ -73,8 +48,8 @@
           <entry key="HTML" value="4" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="Kotlin" value="32" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Kotlin" value="48" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="PlantUML file" value="2" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="10" />
@@ -83,19 +58,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="19" />
-          <entry key="kt" value="807" />
-          <entry key="md" value="226" />
+          <entry key="kt" value="1085" />
+          <entry key="md" value="873" />
           <entry key="properties" value="12" />
           <entry key="puml" value="622" />
-          <entry key="txt" value="74" />
+          <entry key="txt" value="185" />
           <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
-          <entry key="Kotlin" value="807" />
-          <entry key="PLAIN_TEXT" value="300" />
+          <entry key="Kotlin" value="1085" />
+          <entry key="PLAIN_TEXT" value="1058" />
           <entry key="PlantUML file" value="622" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="17" />
@@ -106,52 +81,104 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Model.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#16#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
+            <state relative-caret-position="-821">
               <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DirectedGraphGenerator.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="62" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\n</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -168,23 +195,26 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/component.puml" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/component.puml" />
         <option value="$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Start.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -285,11 +315,6 @@
               <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -297,15 +322,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540582425131" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540620571454" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
@@ -321,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.StartKt">
+  <component name="RunManager" selected="JUnit.All in DirectedGraphGenerator">
     <configuration name="All in DirectedGraphGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraphGenerator" />
       <option name="PACKAGE_NAME" value="" />
@@ -330,23 +357,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexControllerTestIT.defaultIndexController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DirectedGraphGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boundary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="boundary" />
-      <option name="MAIN_CLASS_NAME" value="boundary.IndexControllerTestIT" />
-      <option name="METHOD_NAME" value="defaultIndexController" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NodeTest.constructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraphGenerator" />
       <extension name="coverage">
         <pattern>
@@ -355,36 +366,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.NodeTest" />
-      <option name="METHOD_NAME" value="constructor" />
+      <option name="MAIN_CLASS_NAME" value="entity.ModelTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelTest.toUmlEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraphGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.ModelTest" />
+      <option name="METHOD_NAME" value="toUmlEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="boundary in DirectedGraphGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelTest.toUmlOneLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraphGenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boundary.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="boundary" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.ModelTest" />
+      <option name="METHOD_NAME" value="toUmlOneLink" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelTest.toUmlTwoNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraphGenerator" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="StartKt" />
-      <option name="WORKING_DIRECTORY" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.ModelTest" />
+      <option name="METHOD_NAME" value="toUmlTwoNodes" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -442,19 +472,19 @@
     <list>
       <item itemvalue="Maven.DirectedGraphGenerator [package]" />
       <item itemvalue="Maven.DirectedGraphGenerator [clean]" />
-      <item itemvalue="JUnit.boundary in DirectedGraphGenerator" />
-      <item itemvalue="Kotlin.StartKt" />
+      <item itemvalue="JUnit.ModelTest.toUmlTwoNodes" />
+      <item itemvalue="JUnit.ModelTest.toUmlOneLink" />
+      <item itemvalue="JUnit.ModelTest" />
+      <item itemvalue="JUnit.ModelTest.toUmlEmpty" />
       <item itemvalue="JUnit.All in DirectedGraphGenerator" />
-      <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
-      <item itemvalue="JUnit.NodeTest.constructor" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.StartKt" />
         <item itemvalue="JUnit.All in DirectedGraphGenerator" />
-        <item itemvalue="JUnit.NodeTest.constructor" />
-        <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
-        <item itemvalue="JUnit.boundary in DirectedGraphGenerator" />
+        <item itemvalue="JUnit.ModelTest.toUmlEmpty" />
+        <item itemvalue="JUnit.ModelTest" />
+        <item itemvalue="JUnit.ModelTest.toUmlOneLink" />
+        <item itemvalue="JUnit.ModelTest.toUmlTwoNodes" />
       </list>
     </recent_temporary>
   </component>
@@ -483,38 +513,52 @@
       <option name="project" value="LOCAL" />
       <updated>1539191264379</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improve UML graph, automatic colors and new Excel format">
+      <created>1540582562468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540582562468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add test cases for model and code cleanup">
+      <created>1540619589369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540619589369</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NodeTest_constructor - 2018.10.26 at 21h 05m 19s.xml">
-      <configuration name="NodeTest.constructor" configurationId="JUnit" />
+    <history-entry file="ModelTest_toUmlOneLink - 2018.10.27 at 07h 43m 53s.xml">
+      <configuration name="ModelTest.toUmlOneLink" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 05m 51s.xml">
+    <history-entry file="ModelTest_toUmlOneLink - 2018.10.27 at 07h 44m 34s.xml">
+      <configuration name="ModelTest.toUmlOneLink" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ModelTest - 2018.10.27 at 07h 45m 46s.xml">
+      <configuration name="ModelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ModelTest - 2018.10.27 at 07h 46m 03s.xml">
+      <configuration name="ModelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ModelTest - 2018.10.27 at 07h 46m 46s.xml">
+      <configuration name="ModelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ModelTest_toUmlEmpty - 2018.10.27 at 07h 47m 07s.xml">
+      <configuration name="ModelTest.toUmlEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ModelTest_toUmlEmpty - 2018.10.27 at 07h 47m 24s.xml">
+      <configuration name="ModelTest.toUmlEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.27 at 07h 48m 02s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 07m 49s.xml">
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.27 at 07h 48m 38s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 08m 31s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 11m 11s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 12m 41s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 13m 25s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 14m 03s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 14m 48s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.26 at 21h 15m 21s.xml">
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.27 at 07h 52m 52s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -522,22 +566,23 @@
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8671498" visible="true" weight="0.2714055" />
-      <window_info id="Structure" order="1" sideWeight="0.13285024" side_tool="true" visible="true" weight="0.2714055" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8685969" visible="true" weight="0.2714055" />
+      <window_info id="Structure" order="1" sideWeight="0.13140312" side_tool="true" visible="true" weight="0.2714055" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" sideWeight="0.49919224" weight="0.49270666" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.32847896" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7156704" visible="true" weight="0.32901135" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7148627" visible="true" weight="0.27228525" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4983845" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28432956" side_tool="true" visible="true" weight="0.32901135" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28513733" side_tool="true" weight="0.4311183" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4806139" weight="0.3273906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -557,7 +602,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update readme" />
     <MESSAGE value="Improve filter pattern and fix bug (missing first node)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve filter pattern and fix bug (missing first node)" />
+    <MESSAGE value="Improve UML graph, automatic colors and new Excel format" />
+    <MESSAGE value="Add test cases for model and code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test cases for model and code cleanup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
@@ -574,40 +621,12 @@
         <state relative-caret-position="-7" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/directed_graph_generator.xml" />
     <entry file="file://$PROJECT_DIR$/module_directedgraphgenerator.xml" />
     <entry file="file://$PROJECT_DIR$/directed_graph_generator.properties" />
     <entry file="file://$PROJECT_DIR$/.idea/.name" />
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/component.puml">
       <provider selected="true" editor-type-id="text-editor">
@@ -617,48 +636,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main-page.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Model.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
-          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="e#16#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="101" column="47" lean-forward="true" selection-start-line="101" selection-start-column="47" selection-end-line="101" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -676,31 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -717,10 +677,118 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-821">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="62" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#16#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/entity/Model.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
