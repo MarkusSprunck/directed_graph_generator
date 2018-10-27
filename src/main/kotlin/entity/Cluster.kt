@@ -2,25 +2,31 @@ package entity
 
 import java.util.concurrent.ConcurrentHashMap
 
+/**
+ *
+ * This class stores a named cluster and all containing nodes.
+ *
+ */
 class Cluster constructor(name: String = "") {
 
-    val nodes = ConcurrentHashMap<String, Node>()
+    private var nodes = ConcurrentHashMap<String, Node>()
 
-   // fun containsNode(name: String) = nodes.containsKey(name)
-
-    var name = ""
+    private var name = ""
 
     init {
         this.name = name
     }
 
-
-    override fun toString(): String {
-        return name
-    }
-
     fun addNode(name: String, node: Node) {
         nodes[name] = node
+    }
+
+    fun getAllNodes(): ConcurrentHashMap<String, Node> {
+        return ConcurrentHashMap(nodes)
+    }
+
+    fun getName(): String {
+        return name
     }
 
 }

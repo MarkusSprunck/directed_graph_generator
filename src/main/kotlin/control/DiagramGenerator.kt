@@ -14,12 +14,14 @@ object DiagramGenerator {
     private val log = Logger.getLogger(DiagramGenerator::class.java.name)
 
     @Throws(IOException::class)
-    fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String, showLinks: Boolean, strict: Boolean, colorMode : String): String {
+    fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String, showLinks: Boolean, strict: Boolean, colorMode: String): String {
 
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode)
 
+        var result = "<h3>Enter valid URL parameter for type {'graph', 'component'}</h3>"
+
         if (diagramType == "graph") {
-            return FileUtil.load("templates/main.html")
+            result = FileUtil.load("templates/main.html")
                     .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
                     .replace("##GEOMETRY_LIB##", FileUtil.load("libs/geometry.js"))
                     .replace("##JQUERRY_SPLITTER_LIB##", FileUtil.load("libs/jquery.splitter.js"))
@@ -27,13 +29,13 @@ object DiagramGenerator {
                     .replace("##JQUERRY_B_LIB##", FileUtil.load("libs/jquery.browser.min.js"))
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
-                    .replace("##GENERATED_DATA##", model.toString())
+                    .replace("##GENERATED_DATA##", model.toJSONStringModel())
         }
 
         if (diagramType == "component") {
 
             val resultPuml = FileUtil.load("component.puml")
-                    .replace("'##PACKAGES##", model.toUml(componentName, showLinks))
+                    .replace("'##PACKAGES##", model.toPlantUmlModel(componentName, showLinks))
 
             File("output/components.puml").writeText(resultPuml)
 
@@ -55,11 +57,10 @@ object DiagramGenerator {
             svg.append("    </body>")
             svg.append("</html>")
 
-            return svg.toString()
+            result = svg.toString()
         }
 
-        log.info("###  END NOK ###")
-        return "<h3>No valid URL parameter for type, values would be 'graph' or 'component'</h3>"
+        return result
     }
 
 

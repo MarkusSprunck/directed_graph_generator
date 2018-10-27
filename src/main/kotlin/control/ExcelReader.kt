@@ -15,7 +15,7 @@ object ExcelReader {
 
     private val log = Logger.getLogger(ExcelReader::class.java.name)
 
-    fun parseExcelSheet(excelFileName: String, filterPattern: String, strict: Boolean, colorMode : String): Model {
+    fun parseExcelSheet(excelFileName: String, filterPattern: String, strict: Boolean, colorMode: String): Model {
         log.info("FILE_NAME      = '$excelFileName'")
         log.info("FILTER_PATTERN = '$filterPattern'")
         val result = Model()
@@ -39,61 +39,6 @@ object ExcelReader {
         return result
     }
 
-    private fun parseLinks(sheet: XSSFSheet, filter: String, result: Model, strict: Boolean) {
-        for (currentRow in 2..sheet.lastRowNum) {
-            val row = sheet.getRow(currentRow)
-
-            val sourceID = row.getCell(ExcelColumnNumberLinks.FIRST_APP_ID.value).stringCellValue.trim()
-            val targetID = row.getCell(ExcelColumnNumberLinks.SECOND_APP_ID.value).stringCellValue.trim()
-            val protocol = row.getCell(ExcelColumnNumberLinks.PROTOCOL.value).stringCellValue.trim()
-            val interfaceName = row.getCell(ExcelColumnNumberLinks.INTERFACE_NAME.value).stringCellValue.trim()
-
-            if (sourceID.isEmpty() || targetID.isEmpty()) {
-                continue
-            }
-
-            val appPattern = Pattern.compile(filter)
-            val sourceMatcher = appPattern.matcher(sourceID)
-            val targetMatcher = appPattern.matcher(targetID)
-
-            if (strict && (sourceMatcher.find(0) && targetMatcher.find(0)) ||
-                    !strict && (sourceMatcher.find(0) || targetMatcher.find(0))) {
-                result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
-                result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
-                log.info("> add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")
-            }
-        }
-    }
-
-    private fun parseNodes(sheet: XSSFSheet, sourceApplicationPattern: String, result: Model, colorMode : String) {
-        for (currentRow in 1..sheet.lastRowNum) {
-
-            val row = sheet.getRow(currentRow)
-            val id = row.getCell(ExcelColumnNumberApplications.ID.value).stringCellValue.trim()
-            val name = row.getCell(ExcelColumnNumberApplications.NAME.value).stringCellValue.trim()
-            val description = row.getCell(ExcelColumnNumberApplications.DESCRIPTION.value).stringCellValue.trim()
-            val cluster = row.getCell(ExcelColumnNumberApplications.SUB_CLUSTER.value).stringCellValue.trim()
-            val status = row.getCell(ExcelColumnNumberApplications.STATUS.value).stringCellValue.trim()
-            val location = row.getCell(ExcelColumnNumberApplications.LOCATION.value).stringCellValue.trim()
-
-
-            if (!id.isEmpty()) {
-                val appIdPattern = Pattern.compile(sourceApplicationPattern)
-                val sourceMatcher = appIdPattern.matcher(id)
-                if ((sourceMatcher.find(0)) && !result.containsNode(id)) {
-
-                    log.info("> add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
-                    when(colorMode) {
-                        "cluster" ->  result.setNode(id, Node(id, name, description, cluster, location,  status))
-                        "status" ->   result.setNode(id, Node(id, name, description, status, cluster, location))
-                        "location" -> result.setNode(id, Node(id, name, description, location,  status, cluster))
-                        else -> result.setNode(id, Node(id, name, description, cluster, location,  status))
-                    }
-                }
-            }
-        }
-    }
-
     private fun openSheet(excelFileName: String, sheetName: String): XSSFSheet? {
         var result: XSSFSheet? = null
         var fis: FileInputStream? = null
@@ -110,6 +55,59 @@ object ExcelReader {
             fis?.close()
         }
         return result
+    }
+
+    private fun parseLinks(sheet: XSSFSheet, filter: String, result: Model, strict: Boolean) {
+        for (currentRow in 2..sheet.lastRowNum) {
+            val row = sheet.getRow(currentRow)
+
+            val sourceID = row.getCell(ExcelColumnNumberLinks.FIRST_APP_ID.value).stringCellValue.trim()
+            val targetID = row.getCell(ExcelColumnNumberLinks.SECOND_APP_ID.value).stringCellValue.trim()
+            val protocol = row.getCell(ExcelColumnNumberLinks.PROTOCOL.value).stringCellValue.trim()
+            val interfaceName = row.getCell(ExcelColumnNumberLinks.INTERFACE_NAME.value).stringCellValue.trim()
+
+            if (!sourceID.isEmpty() && !targetID.isEmpty()) {
+
+                val appPattern = Pattern.compile(filter)
+                val sourceMatcher = appPattern.matcher(sourceID)
+                val targetMatcher = appPattern.matcher(targetID)
+
+                if (strict && (sourceMatcher.find(0) && targetMatcher.find(0)) ||
+                        !strict && (sourceMatcher.find(0) || targetMatcher.find(0))) {
+                    result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
+                    result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                    log.info("> add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")
+                }
+            }
+        }
+    }
+
+    private fun parseNodes(sheet: XSSFSheet, sourceApplicationPattern: String, result: Model, colorMode: String) {
+        for (currentRow in 1..sheet.lastRowNum) {
+
+            val row = sheet.getRow(currentRow)
+            val id = row.getCell(ExcelColumnNumberApplications.ID.value).stringCellValue.trim()
+            val name = row.getCell(ExcelColumnNumberApplications.NAME.value).stringCellValue.trim()
+            val description = row.getCell(ExcelColumnNumberApplications.DESCRIPTION.value).stringCellValue.trim()
+            val cluster = row.getCell(ExcelColumnNumberApplications.SUB_CLUSTER.value).stringCellValue.trim()
+            val status = row.getCell(ExcelColumnNumberApplications.STATUS.value).stringCellValue.trim()
+            val location = row.getCell(ExcelColumnNumberApplications.LOCATION.value).stringCellValue.trim()
+
+
+            if (!id.isEmpty()) {
+                val appIdPattern = Pattern.compile(sourceApplicationPattern)
+                val sourceMatcher = appIdPattern.matcher(id)
+                if (sourceMatcher.find(0)) {
+                    log.info("> add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
+                    when (colorMode) {
+                        "cluster" -> result.setNode(id, Node(id, name, description, cluster, location, status))
+                        "status" -> result.setNode(id, Node(id, name, description, status, cluster, location))
+                        "location" -> result.setNode(id, Node(id, name, description, location, status, cluster))
+                        else -> result.setNode(id, Node(id, name, description, cluster, location, status))
+                    }
+                }
+            }
+        }
     }
 
 

@@ -3,31 +3,80 @@ package entity
 import control.HtmlUtil
 import java.util.*
 
+/**
+ *
+ * This class stores all information of a single node.
+ *
+ */
 class Node constructor(name: String = "",
                        nameLong: String = "",
                        description: String = "",
-                       stereotyp0: String = "",
-                       stereotyp1: String = "",
-                       stereotyp2: String = "") {
+                       stereotypeFirst: String = "",
+                       stereotypeSecond: String = "",
+                       stereotypeThird: String = "") {
 
-    var stereotyp1 = ""
     var name = ""
     var cluster = ""
     var nameLong = ""
     var location = ""
+    var stereotype = ""
     var description = ""
     var descriptionHtml = ""
+
+    // ingoing links
     val depends = HashSet<String>()
+
+    // outgoing links
     val dependedOnBy = HashSet<String>()
+
+    // Link comment for depend and/or depending nodes
     val linkComments = HashMap<String, String>()
 
+    init {
+        this.name = name
+        this.nameLong = nameLong
+        this.description = description
+        this.descriptionHtml = HtmlUtil.escape(description)
+        this.cluster = stereotypeFirst
+        this.stereotype = stereotypeSecond
+        this.location = stereotypeThird
+    }
+
+    fun addDepends(name: String, comment: String = "") {
+        if (!depends.contains(name)) {
+            depends.add("\"" + name + "\"")
+            linkComments.set("[" + name + "] ..> [" + this.name + "]", comment)
+        }
+    }
+
+    fun addDependedOnBy(name: String, comment: String = "") {
+        if (!dependedOnBy.contains(name)) {
+            dependedOnBy.add("\"" + name + "\"")
+            linkComments.set("[" + this.name + "] ..> [" + name + "]", comment)
+        }
+    }
+
+    // this is just needed for the animated directed graph
+    override fun toString(): String {
+        val sb = StringBuilder()
+        sb.append("\"$name\": {\n")
+        sb.append("    \"name\": \"$name\",\n")
+        sb.append("    \"type\": \"$cluster\",\n")
+        sb.append("    \"depends\":" + depends.toString() + ",\n")
+        sb.append("    \"dependedOnBy\":" + dependedOnBy.toString() + ",\n")
+        sb.append("    \"docs\": \"$document\"\n")
+        sb.append("}")
+        return sb.toString()
+    }
+
+    // this is just needed for the animated directed graph
     private val document: String
         get() {
             val sbDocs = StringBuilder()
             sbDocs.append("<h3>").append(name).append(" - ").append(nameLong).append("</h3>")
             sbDocs.append("<b>Cluster</b>:<br/>").append(cluster).append("<p/>")
             sbDocs.append("<b>Location:</b><br/><em>").append(location).append("<em><p/>")
-            sbDocs.append("<b>Status:</b><br/><em>").append(stereotyp1).append("<em><p/>")
+            sbDocs.append("<b>Status:</b><br/><em>").append(stereotype).append("<em><p/>")
             sbDocs.append("<b>Description:</b><br/><em>").append(descriptionHtml).append("<em><p/>")
 
             if (!depends.isEmpty()) {
@@ -57,42 +106,5 @@ class Node constructor(name: String = "",
             }
             return sbDocs.toString()
         }
-
-    init {
-        this.stereotyp1 = stereotyp1
-        this.name = name
-        this.cluster = stereotyp0
-        this.nameLong = nameLong
-        this.description = description
-        this.descriptionHtml = HtmlUtil.escape(description)
-        this.location = stereotyp2
-    }
-
-    fun addDepends(name: String, comment: String = "") {
-        if (!depends.contains(name)) {
-            depends.add("\"" + name + "\"")
-            linkComments.set("[" + name + "] ..> [" + this.name + "]", comment)
-        }
-    }
-
-    fun addDependedOnBy(name: String, comment: String = "") {
-        if (!dependedOnBy.contains(name)) {
-            dependedOnBy.add("\"" + name + "\"")
-            linkComments.set("[" + this.name + "] ..> [" + name + "]", comment)
-        }
-    }
-
-    override fun toString(): String {
-        val sb = StringBuilder()
-        sb.append("\"$name\": {\n")
-        sb.append("    \"name\": \"$name\",\n")
-        sb.append("    \"type\": \"$cluster\",\n")
-        sb.append("    \"depends\":" + depends.toString() + ",\n")
-        sb.append("    \"dependedOnBy\":" + dependedOnBy.toString() + ",\n")
-        sb.append("    \"docs\": \"$document\"\n")
-        sb.append("}")
-        return sb.toString()
-    }
-
 
 }

@@ -4,15 +4,18 @@ import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 import java.util.logging.Logger
 
+/**
+ *
+ * This class stores the main model with all nodes, cluster and links.
+ *
+ */
 class Model {
 
     private val log = Logger.getLogger(Model::class.java.name)
 
     private val nodes = ConcurrentHashMap<String, Node>()
-    private val clusters = ConcurrentHashMap<String, Cluster>()
 
-    fun containsNode(name: String) = nodes.containsKey(name)
-    fun containsCluster(name: String) = clusters.containsKey(name)
+    private val clusters = ConcurrentHashMap<String, Cluster>()
 
     fun setNode(name: String, node: Node) {
 
@@ -21,26 +24,15 @@ class Model {
 
         // add Cluster if missing
         val clusterName = node.cluster
-        if (!containsCluster(name = clusterName)) {
+        if (!clusters.containsKey(key = clusterName)) {
             clusters[clusterName] = Cluster(nodes[name]!!.cluster)
         }
         clusters[clusterName]?.addNode(name, node)
-
-
     }
 
-    /*
-    fun setCluster(name: String, cluster: Cluster? = null) {
-        if (cluster != null) {
-            clusters[name] = cluster
-        } else {
-            clusters[name] = Cluster(name)
-        }
-    }
-*/
     fun getNode(name: String): Node? = nodes[name]
 
-    override fun toString(): String {
+    fun toJSONStringModel(): String {
         val graphData = StringBuilder()
         var isFirstElement = true
         graphData.append("{\n")
@@ -55,8 +47,7 @@ class Model {
     }
 
 
-    fun toUml(clusterName: String = "", showLinks: Boolean = false): String {
-
+    fun toPlantUmlModel(clusterName: String = "", showLinks: Boolean = false): String {
 
 
         val graphData = StringBuilder()
@@ -66,9 +57,9 @@ class Model {
 
         var index = 0
         for (cluster in clusters.values) {
-            val color = ColorUtil.colors[  index %  ColorUtil.colors.size ]
-            log.info("COLOR > ${cluster.name}  $color")
-            graphData.append("skinparam componentBorderColor<<${cluster.name.toLowerCase()}>> $color\n")
+            val color = Colors.values[index % Colors.values.size]
+            log.info("COLOR > ${cluster.getAllNodes()}  $color")
+            graphData.append("skinparam componentBorderColor<<${cluster.getName().toLowerCase()}>> $color\n")
             index++
         }
         graphData.append("\n")
@@ -76,19 +67,19 @@ class Model {
         index = 0
         for (cluster in clusters.values) {
 
-            if ((clusterName == cluster.name && clusterName.length > 0) || clusterName.length == 0) {
+            if ((clusterName == cluster.getName() && clusterName.length > 0) || clusterName.length == 0) {
 
-                for (node in cluster.nodes.values) {
-                    if (cluster.name != node.name) {
+                for (node in cluster.getAllNodes().values) {
+                    if (cluster.getName() != node.name) {
 
                         for (linkComment in node.linkComments) {
                             linkComments.set(linkComment.key, linkComment.value)
                         }
 
-                        val stereotype = " <<" + cluster.name.toLowerCase() + ">> "
+                        val stereotype = " <<" + cluster.getName().toLowerCase() + ">> "
 
                         var newName = " <<" + node.location.toLowerCase() + ">> \\n "
-                        newName = newName + " <<" + node.stereotyp1 + ">> \\n \\n"
+                        newName = newName + " <<" + node.stereotype + ">> \\n \\n"
                         newName = newName + node.nameLong + "\\n "
                         newName = newName + "(" + node.name + ")"
 
@@ -98,7 +89,7 @@ class Model {
                     }
                 }
 
-               // graphData.append("\n")
+                // graphData.append("\n")
             }
             index++
 
