@@ -5,13 +5,12 @@ This Springboot application generates UML component diagrams from Excel Sheets. 
 Minimal Input Data
 ------------------
 
-All applications (nodes) and dependencies (links) have to be stored in a table with a
-fixed column format.
+All applications (nodes) and dependencies (links) have to be stored in a table with a fixed column format. All cells have to be text format.
 
-**Example table for applications**
+**Example sheet for applications**
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/table-apps.png)
 
-**Example table for links**
+**Example sheet for links**
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/table-links.png)
 
 
@@ -29,10 +28,10 @@ Based on URL parameters you can define what you will see in the diagram. This is
 - *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
 
 
-Needed Installation
--------------------
+Needed Development Environment
+------------------------------
 
-The solution is based on *plantUML* and this needs *GraphVis* to run. You find the installation packages here https://graphviz.gitlab.io/download/
+The application is developed with IntellJ IDEA CE (version 2018.2). UML generation is based on _plantUML_ and this needs _GraphVis_ to run. You find the installation packages here https://graphviz.gitlab.io/download/
 
 Expected Result
 ---------------
@@ -57,4 +56,15 @@ The generated html files need no additional libraries, so you may open them in t
 5) Directed graph
 (http://localhost:8080/diagram?type=graph):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/directed-graph.png)
+
+Known Issues
+------------
+
+- missing junit tests (line coverage is about 96%)
+- refactoring and code cleanup is needed
+- logging has to be improved
+
+
+
+
 
