@@ -37,24 +37,15 @@ package "UML Components - %date%" {
 package "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789" <<Transparent>> {
 
      
- skinparam componentBorderColor<<deprecated>> #d50000 
- skinparam componentBorderColor<<aktiv>> #ffd600 
+skinparam componentBorderColor<<hoch>> #d50000
+skinparam componentBorderColor<<niedrig>> #ffd600
 
- [ <<cloud-a>> \n  <<AAA-1>> \n \nApplication 02\n (ID02)] as ID02  <<deprecated>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 02}]]
-
- [ <<host-b>> \n  <<BBB-1>> \n \nApplication 05\n (ID05)] as ID05  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 05}]]
- [ <<host-a>> \n  <<AAA-2>> \n \nApplication 06\n (ID06)] as ID06  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 06}]]
- [ <<cloud-a>> \n  <<BBB-1>> \n \nApplication 03\n (ID03)] as ID03  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 03}]]
- [ <<cloud-a>> \n  <<AAA-2>> \n \nApplication 04\n (ID04)] as ID04  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 04}]]
- [ <<cloud-a>> \n  <<AAA-1>> \n \nApplication 01\n (ID01)] as ID01  <<aktiv>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 01}]]
-
-[ID04] ..> [ID06] : Anwendungsdaten\n(JDBC)
-[ID02] ..> [ID06] : Events & Logging\n(JDBC)
-[ID01] ..> [ID02] : Service E\n(HTTPS)
-[ID01] ..> [ID03] : E-Mail Versand\n(IMAP)
-[ID01] ..> [ID04] : Service C\n(HTTPS)
-[ID02] ..> [ID04] : Service A\n(HTTPS)
-[ID03] ..> [ID05] : Service B\n(LDAPS)
+[ <<aktiv>> \n  <<C-BBB>> \n \nTest05\n (ID05)] as ID05  <<hoch>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 05}]]
+[ <<aktiv>> \n  <<C-BBB>> \n \nTest03\n (ID03)] as ID03  <<hoch>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 03}]]
+[ <<aktiv>> \n  <<C-AAA>> \n \nTest04\n (ID04)] as ID04  <<hoch>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 04}]]
+[ <<aktiv>> \n  <<C-AAA>> \n \nTest01\n (ID01)] as ID01  <<hoch>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 01}]]
+[ <<deprecated>> \n  <<C-AAA>> \n \nTest02\n (ID02)] as ID02  <<hoch>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 02}]]
+[ <<aktiv>> \n  <<C-AAA>> \n \nTest06\n (ID06)] as ID06  <<niedrig>>  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 06}]]
 
     }
 }

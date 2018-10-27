@@ -19,7 +19,7 @@ object DiagramGenerator {
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode)
 
         if (diagramType == "graph") {
-            val resultHtml = FileUtil.load("templates/main.html")
+            return FileUtil.load("templates/main.html")
                     .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
                     .replace("##GEOMETRY_LIB##", FileUtil.load("libs/geometry.js"))
                     .replace("##JQUERRY_SPLITTER_LIB##", FileUtil.load("libs/jquery.splitter.js"))
@@ -28,7 +28,6 @@ object DiagramGenerator {
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
                     .replace("##GENERATED_DATA##", model.toString())
-            return resultHtml
         }
 
         if (diagramType == "component") {
@@ -44,7 +43,7 @@ object DiagramGenerator {
             os.close()
 
             // The XML is stored into svg
-            var svg = StringBuilder()
+            val svg = StringBuilder()
             svg.append("<html>")
             svg.append("    <head>")
             svg.append("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">")

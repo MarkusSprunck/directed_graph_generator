@@ -6,7 +6,7 @@ class Cluster constructor(name: String = "") {
 
     val nodes = ConcurrentHashMap<String, Node>()
 
-    fun containsNode(name: String) = nodes.containsKey(name)
+   // fun containsNode(name: String) = nodes.containsKey(name)
 
     var name = ""
 

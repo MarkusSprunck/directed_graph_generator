@@ -20,7 +20,7 @@ class Model {
         nodes[name] = node
 
         // add Cluster if missing
-        var clusterName = node.cluster
+        val clusterName = node.cluster
         if (!containsCluster(name = clusterName)) {
             clusters[clusterName] = Cluster(nodes[name]!!.cluster)
         }
@@ -29,6 +29,7 @@ class Model {
 
     }
 
+    /*
     fun setCluster(name: String, cluster: Cluster? = null) {
         if (cluster != null) {
             clusters[name] = cluster
@@ -36,7 +37,7 @@ class Model {
             clusters[name] = Cluster(name)
         }
     }
-
+*/
     fun getNode(name: String): Node? = nodes[name]
 
     override fun toString(): String {
@@ -65,9 +66,9 @@ class Model {
 
         var index = 0
         for (cluster in clusters.values) {
-            var color = ColorUtil.colors[  index %  ColorUtil.colors.size ]
+            val color = ColorUtil.colors[  index %  ColorUtil.colors.size ]
             log.info("COLOR > ${cluster.name}  $color")
-            graphData.append(" skinparam componentBorderColor<<${cluster.name.toLowerCase()}>> $color \n")
+            graphData.append("skinparam componentBorderColor<<${cluster.name.toLowerCase()}>> $color\n")
             index++
         }
         graphData.append("\n")
@@ -84,20 +85,20 @@ class Model {
                             linkComments.set(linkComment.key, linkComment.value)
                         }
 
-                        var stereotype = " <<" + cluster.name.toLowerCase() + ">> "
+                        val stereotype = " <<" + cluster.name.toLowerCase() + ">> "
 
                         var newName = " <<" + node.location.toLowerCase() + ">> \\n "
                         newName = newName + " <<" + node.stereotyp1 + ">> \\n \\n"
                         newName = newName + node.nameLong + "\\n "
                         newName = newName + "(" + node.name + ")"
 
-                        graphData.append(" [").append(newName).append("]").append(" as ").append(node.name).append(" ").append(stereotype)
+                        graphData.append("[").append(newName).append("]").append(" as ").append(node.name).append(" ").append(stereotype)
                         graphData.append(" [[{")
                                 .append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
                 }
 
-                graphData.append("\n")
+               // graphData.append("\n")
             }
             index++
 
@@ -106,9 +107,11 @@ class Model {
         val linkStrings = HashSet<String>()
 
         if (showLinks) {
+            graphData.append("\n")
+
             for (node in nodes.values) {
                 for (link in node.dependedOnBy) {
-                    var linkString = StringBuilder()
+                    val linkString = StringBuilder()
                     linkString.append("[").append(node.name).append("]")
                     linkString.append(" ..> ")
                     linkString.append("[").append(link.replace("\"", "")).append("]")
@@ -120,7 +123,7 @@ class Model {
         if (showLinks) {
             for (node in nodes.values) {
                 for (link in node.depends) {
-                    var linkString = StringBuilder()
+                    val linkString = StringBuilder()
                     linkString.append("[").append(link.replace("\"", "")).append("]")
                     linkString.append(" ..> ")
                     linkString.append("[").append(node.name).append("]")
