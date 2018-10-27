@@ -57,7 +57,7 @@
         <counts>
           <entry key="html" value="19" />
           <entry key="kt" value="1085" />
-          <entry key="md" value="1546" />
+          <entry key="md" value="1605" />
           <entry key="properties" value="12" />
           <entry key="puml" value="622" />
           <entry key="txt" value="204" />
@@ -68,7 +68,7 @@
         <counts>
           <entry key="HTML" value="19" />
           <entry key="Kotlin" value="1085" />
-          <entry key="PLAIN_TEXT" value="1750" />
+          <entry key="PLAIN_TEXT" value="1809" />
           <entry key="PlantUML file" value="622" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="17" />
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="53" column="81" lean-forward="true" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
+            <state relative-caret-position="255">
+              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="22" column="91" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="91" />
+            <state relative-caret-position="312">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -285,7 +285,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540621907416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540622168354" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -497,13 +497,17 @@
       <option name="project" value="LOCAL" />
       <updated>1540620620995</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Improve description">
+      <created>1540621916961</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540621916961</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ModelTest_toUmlOneLink - 2018.10.27 at 07h 43m 53s.xml">
-      <configuration name="ModelTest.toUmlOneLink" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ModelTest_toUmlOneLink - 2018.10.27 at 07h 44m 34s.xml">
       <configuration name="ModelTest.toUmlOneLink" configurationId="JUnit" />
     </history-entry>
@@ -529,6 +533,9 @@
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_DirectedGraphGenerator - 2018.10.27 at 07h 52m 52s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.10.27 at 08h 34m 50s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -742,6 +749,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -749,17 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="53" column="81" lean-forward="true" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
+        <state relative-caret-position="255">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
