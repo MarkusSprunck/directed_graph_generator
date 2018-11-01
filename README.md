@@ -8,10 +8,10 @@ Minimal Input Data
 All applications (nodes) and dependencies (links) have to be stored in a table with a fixed column format. All cells have to be text format.
 
 **Example sheet for applications**
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/table-apps.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-apps.png)
 
 **Example sheet for links**
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/table-links.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-links.png)
 
 
 URL Parameters
@@ -39,30 +39,30 @@ Expected Result
 The generated html files need no additional libraries, so you may open them in the browser and save them as file.
 
 1) Home screen (http://localhost:8080) :
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/home.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/home.png)
 
 2) Applications in components view with first stereotype is the status
 (http://localhost:8080/diagram?type=component&showLinks=true&colorMode=status):
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/status.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/status.png)
 
 3) Applications in components view with first stereotype is the cluster
 (http://localhost:8080/diagram?type=component&showLinks=true&colorMode=cluster):
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/cluster.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/cluster.png)
 
 4) Applications in components view with first stereotype is the location
 (http://localhost:8080/diagram?type=component&showLinks=true&colorMode=location):
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/location.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/location.png)
 
 5) Directed graph
 (http://localhost:8080/diagram?type=graph):
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/directed-graph.png)
+![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/directed-graph.png)
 
 Known Issues
 ------------
 
-- missing junit tests (line coverage is about 96%)
+- some missing junit tests (line coverage is about 96%)
 - refactoring and code cleanup is needed
-- logging has to be improved
+
 
 
 

@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="Improve logging and refatoring">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Log4j2.xml" afterDir="false" />
+    <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/app_log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/springboot_log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/components.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectedGraphGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DirectedGraphGenerator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/cluster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directed-graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/directed-graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/location.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Start.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/Start.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/boundary/IndexController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberApplications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/ExcelColumnNumberApplications.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelColumnNumberLinks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/ExcelColumnNumberLinks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/FileUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/HtmlUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/HtmlUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/MainApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/entity/Cluster.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Colors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/entity/Colors.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/entity/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/status.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/status.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-apps.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/table-apps.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table-links.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/table-links.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,18 +55,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="LICENSE" value="1" />
+          <entry key="LICENSE" value="2" />
           <entry key="Log4JConfiguraton" value="2" />
           <entry key="html" value="5" />
           <entry key="iml" value="2" />
           <entry key="kt" value="75" />
           <entry key="log4JConfig" value="1" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="name" value="1" />
           <entry key="png" value="1" />
           <entry key="properties" value="5" />
           <entry key="puml" value="3" />
-          <entry key="xml" value="15" />
+          <entry key="xml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -94,31 +77,34 @@
           <entry key="Image" value="1" />
           <entry key="JAVA" value="1" />
           <entry key="Kotlin" value="75" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="PlantUML file" value="3" />
           <entry key="Properties" value="5" />
-          <entry key="XML" value="15" />
+          <entry key="XML" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="LICENSE" value="9" />
           <entry key="html" value="19" />
           <entry key="kt" value="2123" />
-          <entry key="md" value="1605" />
+          <entry key="md" value="1625" />
           <entry key="properties" value="48" />
           <entry key="puml" value="622" />
           <entry key="txt" value="246" />
-          <entry key="xml" value="82" />
+          <entry key="xml" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
           <entry key="Kotlin" value="2123" />
-          <entry key="PLAIN_TEXT" value="1851" />
+          <entry key="Markdown" value="20" />
+          <entry key="PLAIN_TEXT" value="1860" />
           <entry key="PlantUML file" value="622" />
           <entry key="Properties" value="48" />
-          <entry key="XML" value="82" />
+          <entry key="XML" value="84" />
         </counts>
       </usages-collector>
     </session>
@@ -126,19 +112,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="192">
+                <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -184,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/kotlin/entity/Cluster.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/entity/Node.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/entity/ColorUtil.kt" />
@@ -202,13 +199,15 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/entity/Model.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/control/ExcelReader.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/control/DiagramGenerator.kt" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/Log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/boundary/DiagramController.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/control/MainApplication.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary/entity/Model.kt" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -310,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541070232648" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541085632901" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -320,6 +319,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
@@ -431,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540657913933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Improve logging and refatoring">
+      <created>1541070320181</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1541070320181</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -466,11 +473,21 @@
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73741007" visible="true" weight="0.2835218" />
-      <window_info id="Structure" order="1" sideWeight="0.26258993" side_tool="true" visible="true" weight="0.2835218" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80215055" visible="true" weight="0.2835218" />
+      <window_info id="Structure" order="1" sideWeight="0.19784947" side_tool="true" visible="true" weight="0.2835218" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -478,15 +495,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.56239873" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7148627" weight="0.24635333" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7148627" visible="true" weight="0.24635333" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4983845" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901135" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28513733" side_tool="true" weight="0.4311183" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.4806139" visible="true" weight="0.54943275" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4806139" weight="0.28525123" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49919224" weight="0.49270666" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -496,7 +513,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="PlantUML" order="6" weight="0.404685" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.18659128" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.18659128" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3206785" />
     </layout>
   </component>
@@ -545,9 +562,6 @@
     <entry file="file://$PROJECT_DIR$/DirectedGraphGenerator.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -580,21 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="53" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -766,15 +765,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
+        <state relative-caret-position="214">
           <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="192">
+            <caret line="13" column="88" selection-start-line="13" selection-start-column="88" selection-end-line="13" selection-end-column="88" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -3,8 +3,8 @@
   <component name="AutoImportedSourceRoots">
     <option name="directories">
       <list>
-        <option value="C:\Projects\directed_graph_generator-master/src/main/kotlin" />
-        <option value="C:\Projects\directed_graph_generator-master/src/test/kotlin" />
+        <option value="$MODULE_DIR$/src/main/kotlin" />
+        <option value="$MODULE_DIR$/src/test/kotlin" />
       </list>
     </option>
   </component>

@@ -23,5 +23,5 @@ SOFTWARE.
 ===============================================================================
 
 Credits:
-Parts of D3 visualization are based on https://github.com/nylen/d3-process-map
+Parts of animated D3 visualization are based on https://github.com/nylen/d3-process-map
 with Copyright (c) 2013-2014+ James Nylen <jnylen@gmail.com>
