@@ -32,7 +32,7 @@
             <AppenderRef ref="SpringBoot-Appender" />
             <AppenderRef ref="Console-Appender" />
         </Logger>
-        <Logger name="com.sw_engineering_candies" level="info"
+        <Logger name="com.sw.engineering.candies" level="info"
                 additivity="false">
             <AppenderRef ref="App-Appender" />
             <AppenderRef ref="Console-Appender" />

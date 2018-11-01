@@ -1,6 +1,6 @@
-package com.sw_engineering_candies.boundary
+package com.sw.engineering.candies.boundary
 
-import com.sw_engineering_candies.boundary.control.MainApplication
+import com.sw.engineering.candies.boundary.control.MainApplication
 import org.springframework.boot.runApplication
 
 fun main(args: Array<String>) {

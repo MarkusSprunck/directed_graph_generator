@@ -1,4 +1,4 @@
-package com.sw_engineering_candies.boundary.entity
+package com.sw.engineering.candies.boundary.entity
 
 import java.util.concurrent.ConcurrentHashMap
 

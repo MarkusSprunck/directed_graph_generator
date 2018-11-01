@@ -1,6 +1,6 @@
 package control
 
-import com.sw_engineering_candies.boundary.control.HtmlUtil
+import com.sw.engineering.candies.boundary.control.HtmlUtil
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

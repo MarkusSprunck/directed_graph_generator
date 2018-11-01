@@ -1,14 +1,11 @@
-package com.sw_engineering_candies.boundary.control
+package com.sw.engineering.candies.boundary.control
 
 import net.sourceforge.plantuml.FileFormat
 import net.sourceforge.plantuml.FileFormatOption
 import net.sourceforge.plantuml.SourceStringReader
-import org.slf4j.LoggerFactory
 import java.io.ByteArrayOutputStream
-import java.io.File
 import java.io.IOException
 import java.nio.charset.Charset
-import java.util.logging.Logger
 
 object DiagramGenerator {
 

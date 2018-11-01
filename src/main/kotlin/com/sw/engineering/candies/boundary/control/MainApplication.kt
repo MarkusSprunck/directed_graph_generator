@@ -1,4 +1,4 @@
-package com.sw_engineering_candies.boundary.control
+package com.sw.engineering.candies.boundary.control
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 @EnableAutoConfiguration(exclude = [DataSourceAutoConfiguration::class, ThymeleafAutoConfiguration::class])
-@ComponentScan(basePackages = ["com.sw_engineering_candies"], lazyInit = true)
+@ComponentScan(basePackages = ["com.sw.engineering.candies"], lazyInit = true)
 class MainApplication
 

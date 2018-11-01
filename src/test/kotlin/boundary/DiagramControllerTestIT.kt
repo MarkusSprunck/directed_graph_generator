@@ -1,6 +1,6 @@
 package boundary
 
-import com.sw_engineering_candies.boundary.control.MainApplication
+import com.sw.engineering.candies.boundary.control.MainApplication
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -27,9 +27,9 @@ class DiagramControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(291506, result.body.length)
+        Assert.assertEquals(291578, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("unction(e){var t=this.leng", result.body.subSequence(5913, 5939))
+        Assert.assertEquals(":function(){return this.eq", result.body.subSequence(5913, 5939))
     }
 
 
@@ -43,9 +43,9 @@ class DiagramControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(287364, result.body.length)
+        Assert.assertEquals(287436, result.body.length)
         Assert.assertEquals(104, result.headers.toString().length)
-        Assert.assertEquals("unction(e){var t=this.leng", result.body.subSequence(5913, 5939))
+        Assert.assertEquals(":function(){return this.eq", result.body.subSequence(5913, 5939))
     }
 
 

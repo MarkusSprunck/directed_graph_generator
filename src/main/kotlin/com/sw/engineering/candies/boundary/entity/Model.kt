@@ -1,14 +1,12 @@
-package com.sw_engineering_candies.boundary.entity
+package com.sw.engineering.candies.boundary.entity
 
-import com.sw_engineering_candies.boundary.control.ExcelReader
 import org.slf4j.LoggerFactory
 import java.util.*
 import java.util.concurrent.ConcurrentHashMap
-import java.util.logging.Logger
 
 /**
  *
- * This class stores the com.sw_engineering_candies.boundary.main model with all nodes, cluster and links.
+ * This class stores the com.sw.engineering.candies.boundary.main model with all nodes, cluster and links.
  *
  */
 class Model {
@@ -69,13 +67,13 @@ class Model {
         index = 0
         for (cluster in clusters.values) {
 
-            if ((clusterName == cluster.getName() && clusterName.length > 0) || clusterName.length == 0) {
+            if ((clusterName == cluster.getName() && clusterName.isNotEmpty()) || clusterName.isEmpty()) {
 
                 for (node in cluster.getAllNodes().values) {
                     if (cluster.getName() != node.name) {
 
                         for (linkComment in node.linkComments) {
-                            linkComments.set(linkComment.key, linkComment.value)
+                            linkComments[linkComment.key] = linkComment.value
                         }
 
                         val stereotype = " <<" + cluster.getName().toLowerCase() + ">> "
@@ -123,7 +121,7 @@ class Model {
             }
         }
         for (link in linkStrings) {
-            graphData.append(link).append(" : " + linkComments.get(link)).append("\n")
+            graphData.append(link).append(" : " + linkComments[link]).append("\n")
         }
 
         return graphData.toString()

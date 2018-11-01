@@ -1,6 +1,6 @@
 package boundary
 
-import com.sw_engineering_candies.boundary.control.MainApplication
+import com.sw.engineering.candies.boundary.control.MainApplication
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -17,6 +17,8 @@ class IndexControllerTestIT {
     @Autowired
     lateinit var testRestTemplate: TestRestTemplate
 
+
+
     @Test
     fun defaultIndexController() {
         // given
@@ -27,7 +29,7 @@ class IndexControllerTestIT {
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(852, result.body.length)
+        Assert.assertEquals(888, result.body.length)
         Assert.assertEquals(182, result.headers.toString().length)
         Assert.assertEquals("<title>Graph Generator</title>", result.body.subSequence(71, 101))
     }

@@ -1,6 +1,6 @@
-package com.sw_engineering_candies.boundary.entity
+package com.sw.engineering.candies.boundary.entity
 
-import com.sw_engineering_candies.boundary.control.HtmlUtil
+import com.sw.engineering.candies.boundary.control.HtmlUtil
 import java.util.*
 
 /**
@@ -21,7 +21,7 @@ class Node constructor(name: String = "",
     var location = ""
     var stereotype = ""
     var description = ""
-    var descriptionHtml = ""
+    private var descriptionHtml = ""
 
     // ingoing links
     val depends = HashSet<String>()
@@ -45,14 +45,14 @@ class Node constructor(name: String = "",
     fun addDepends(name: String, comment: String = "") {
         if (!depends.contains(name)) {
             depends.add("\"" + name + "\"")
-            linkComments.set("[" + name + "] ..> [" + this.name + "]", comment)
+            linkComments["[" + name + "] ..> [" + this.name + "]"] = comment
         }
     }
 
     fun addDependedOnBy(name: String, comment: String = "") {
         if (!dependedOnBy.contains(name)) {
             dependedOnBy.add("\"" + name + "\"")
-            linkComments.set("[" + this.name + "] ..> [" + name + "]", comment)
+            linkComments["[" + this.name + "] ..> [" + name + "]"] = comment
         }
     }
 

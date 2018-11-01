@@ -1,6 +1,6 @@
-package com.sw_engineering_candies.boundary.boundary
+package com.sw.engineering.candies.boundary.boundary
 
-import com.sw_engineering_candies.boundary.control.DiagramGenerator
+import com.sw.engineering.candies.boundary.control.DiagramGenerator
 import org.apache.commons.io.FilenameUtils
 import org.slf4j.LoggerFactory
 import org.springframework.context.annotation.Lazy
