@@ -1,4 +1,4 @@
-package boundary
+package com.sw_engineering_candies.boundary.boundary
 
 import org.springframework.context.annotation.Lazy
 import org.springframework.stereotype.Controller

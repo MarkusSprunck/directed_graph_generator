@@ -1,17 +1,19 @@
-package entity
+package com.sw_engineering_candies.boundary.entity
 
+import com.sw_engineering_candies.boundary.control.ExcelReader
+import org.slf4j.LoggerFactory
 import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 import java.util.logging.Logger
 
 /**
  *
- * This class stores the main model with all nodes, cluster and links.
+ * This class stores the com.sw_engineering_candies.boundary.main model with all nodes, cluster and links.
  *
  */
 class Model {
 
-    private val log = Logger.getLogger(Model::class.java.name)
+    private val log = LoggerFactory.getLogger(Model::class.java)
 
     private val nodes = ConcurrentHashMap<String, Node>()
 
@@ -58,7 +60,7 @@ class Model {
         var index = 0
         for (cluster in clusters.values) {
             val color = Colors.values[index % Colors.values.size]
-            log.info("COLOR > ${cluster.getAllNodes()}  $color")
+            log.debug(" > ${cluster.getAllNodes()}  $color")
             graphData.append("skinparam componentBorderColor<<${cluster.getName().toLowerCase()}>> $color\n")
             index++
         }
@@ -88,8 +90,6 @@ class Model {
                                 .append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
                 }
-
-                // graphData.append("\n")
             }
             index++
 

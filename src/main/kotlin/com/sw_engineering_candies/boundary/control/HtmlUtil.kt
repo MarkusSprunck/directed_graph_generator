@@ -1,4 +1,4 @@
-package control
+package com.sw_engineering_candies.boundary.control
 
 object HtmlUtil {
 

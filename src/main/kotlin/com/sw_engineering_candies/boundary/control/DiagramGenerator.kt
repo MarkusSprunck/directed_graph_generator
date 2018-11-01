@@ -1,8 +1,9 @@
-package control
+package com.sw_engineering_candies.boundary.control
 
 import net.sourceforge.plantuml.FileFormat
 import net.sourceforge.plantuml.FileFormatOption
 import net.sourceforge.plantuml.SourceStringReader
+import org.slf4j.LoggerFactory
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.IOException
@@ -10,8 +11,6 @@ import java.nio.charset.Charset
 import java.util.logging.Logger
 
 object DiagramGenerator {
-
-    private val log = Logger.getLogger(DiagramGenerator::class.java.name)
 
     @Throws(IOException::class)
     fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String, showLinks: Boolean, strict: Boolean, colorMode: String): String {
@@ -37,8 +36,10 @@ object DiagramGenerator {
             val resultPuml = FileUtil.load("component.puml")
                     .replace("'##PACKAGES##", model.toPlantUmlModel(componentName, showLinks))
 
-            File("output/components.puml").writeText(resultPuml)
+            // Uncomment just for debugging
+            // File("output/components.puml").writeText(resultPuml)
 
+            // Render SVG diagram
             val reader = SourceStringReader(resultPuml)
             val os = ByteArrayOutputStream()
             reader.outputImage(os, FileFormatOption(FileFormat.SVG))

@@ -1,18 +1,18 @@
-package boundary
+package com.sw_engineering_candies.boundary.boundary
 
-import control.DiagramGenerator
+import com.sw_engineering_candies.boundary.control.DiagramGenerator
 import org.apache.commons.io.FilenameUtils
+import org.slf4j.LoggerFactory
 import org.springframework.context.annotation.Lazy
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import java.util.logging.Logger
 
 @Lazy
 @RestController
 class DiagramController {
 
-    private val log = Logger.getLogger(DiagramController::class.java.name)
+    private val log = LoggerFactory.getLogger(DiagramController::class.java)
 
     @GetMapping("/diagram")
     fun diagram(@RequestParam(value = "filter", defaultValue = "") filter: String,

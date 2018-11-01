@@ -1,4 +1,4 @@
-package control
+package com.sw_engineering_candies.boundary.control
 
 enum class ExcelColumnNumberLinks(val value: Int) {
 

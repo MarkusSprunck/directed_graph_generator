@@ -1,9 +1,10 @@
-package control
+package com.sw_engineering_candies.boundary.control
 
-import entity.Model
-import entity.Node
+import com.sw_engineering_candies.boundary.entity.Model
+import com.sw_engineering_candies.boundary.entity.Node
 import org.apache.poi.xssf.usermodel.XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.slf4j.LoggerFactory
 import java.io.File
 import java.io.FileInputStream
 import java.util.logging.Level
@@ -13,7 +14,7 @@ import java.util.regex.Pattern
 
 object ExcelReader {
 
-    private val log = Logger.getLogger(ExcelReader::class.java.name)
+    private val log = LoggerFactory.getLogger(ExcelReader::class.java)
 
     fun parseExcelSheet(excelFileName: String, filterPattern: String, strict: Boolean, colorMode: String): Model {
         log.info("FILE_NAME      = '$excelFileName'")
@@ -49,7 +50,7 @@ object ExcelReader {
             wb = XSSFWorkbook(fis)
             result = wb.getSheet(sheetName)
         } catch (e: Exception) {
-            log.log(Level.SEVERE, "*** OPEN SHEET FAILED : $e")
+            log.error("*** OPEN SHEET FAILED : $e")
         } finally {
             wb?.close()
             fis?.close()

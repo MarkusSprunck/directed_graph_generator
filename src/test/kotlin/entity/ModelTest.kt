@@ -1,5 +1,7 @@
 package entity
 
+import com.sw_engineering_candies.boundary.entity.Model
+import com.sw_engineering_candies.boundary.entity.Node
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

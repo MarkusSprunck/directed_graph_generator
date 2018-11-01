@@ -1,5 +1,6 @@
 package control
 
+import com.sw_engineering_candies.boundary.control.DiagramGenerator
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.io.IOException
@@ -10,7 +11,7 @@ class DiagramGeneratorTest {
     @Throws(IOException::class)
     fun executeRun() {
         // given
-        val expected = 14727
+        val expected = 14724
 
         // when
         val result = DiagramGenerator.run("data_test.xlsx",

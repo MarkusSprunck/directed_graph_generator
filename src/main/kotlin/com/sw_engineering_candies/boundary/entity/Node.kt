@@ -1,6 +1,6 @@
-package entity
+package com.sw_engineering_candies.boundary.entity
 
-import control.HtmlUtil
+import com.sw_engineering_candies.boundary.control.HtmlUtil
 import java.util.*
 
 /**

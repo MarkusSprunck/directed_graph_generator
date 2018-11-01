@@ -1,4 +1,4 @@
-package entity
+package com.sw_engineering_candies.boundary.entity
 
 object Colors {
 

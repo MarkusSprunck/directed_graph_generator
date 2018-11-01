@@ -1,5 +1,6 @@
 package control
 
+import com.sw_engineering_candies.boundary.control.FileUtil
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -8,7 +9,7 @@ class FileUtilTest {
     @Test
     fun readTemplateHtml() {
         // given
-        val expected = 2643
+        val expected = 2715
 
         // when
         val result = FileUtil.load("templates/main.html")
