@@ -1,6 +1,6 @@
 package entity
 
-import com.sw.engineering.candies.boundary.entity.Node
+import com.sw.engineering.candies.entity.Node
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

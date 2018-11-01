@@ -1,6 +1,6 @@
 package control
 
-import com.sw.engineering.candies.boundary.control.ExcelColumnNumberLinks
+import com.sw.engineering.candies.control.ExcelColumnNumberLinks
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

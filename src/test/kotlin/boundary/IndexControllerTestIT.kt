@@ -1,6 +1,6 @@
 package boundary
 
-import com.sw.engineering.candies.boundary.control.MainApplication
+import com.sw.engineering.candies.control.MainApplication
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith

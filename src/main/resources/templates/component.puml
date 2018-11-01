@@ -1,0 +1,45 @@
+@startuml
+
+top to bottom direction
+
+skinparam componentStyle uml2
+skinparam handwritten false
+skinparam monochrome false
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam packageFontSize  14
+skinparam packageFontName Arial
+
+skinparam component {
+    StereotypeFontSize 14
+    StereotypeFontColor black
+    StereotypeName Arial
+    StereotypeFontStyle normal
+    FontSize 14
+    FontColor black
+    FontName Arial
+    BackgroundColor white
+}
+
+skinparam package<<Transparent>> {
+  borderColor Transparent
+  backgroundColor Transparent
+  fontColor Transparent
+  stereotypeFontColor Transparent
+}
+
+!pragma ratio 0.66
+
+left to right direction
+
+package "UML Components - %date%" {
+
+package "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789" <<Transparent>> {
+
+     '##PACKAGES##
+    }
+}
+
+@enduml
+
+

@@ -1,6 +1,6 @@
 package boundary
 
-import com.sw.engineering.candies.boundary.boundary.IndexController
+import com.sw.engineering.candies.boundary.IndexController
 import org.junit.Assert
 import org.junit.Test
 

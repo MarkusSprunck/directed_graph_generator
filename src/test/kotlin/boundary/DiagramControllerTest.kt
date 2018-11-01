@@ -1,6 +1,6 @@
 package boundary
 
-import com.sw.engineering.candies.boundary.boundary.DiagramController
+import com.sw.engineering.candies.boundary.DiagramController
 import org.junit.Assert
 import org.junit.Test
 
