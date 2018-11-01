@@ -107,3 +107,20 @@
 [INFO ] 2018-11-01 17:06:54.244 [http-nio-8080-exec-7] ExcelReader - > add link from ID02 to ID06 description: 'Events & Logging' (JDBC)
 [INFO ] 2018-11-01 17:06:54.244 [http-nio-8080-exec-7] ExcelReader - > add link from ID01 to ID02 description: 'Service E' (HTTPS)
 [INFO ] 2018-11-01 17:06:54.581 [http-nio-8080-exec-7] DiagramController - Request Diagram | END   - filter= file=data.xlsx package= showLinks=true  type=component
+[INFO ] 2018-11-01 17:09:38.832 [http-nio-8080-exec-9] DiagramController - Request Diagram | START - filter= file=data.xlsx package= showLinks=true  type=component
+[INFO ] 2018-11-01 17:09:38.832 [http-nio-8080-exec-9] ExcelReader - FILE_NAME      = 'data.xlsx'
+[INFO ] 2018-11-01 17:09:38.832 [http-nio-8080-exec-9] ExcelReader - FILTER_PATTERN = ''
+[INFO ] 2018-11-01 17:09:38.866 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID01 cluster='AAA-1' status='aktiv' name='Application 01' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.867 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID02 cluster='AAA-1' status='deprecated' name='Application 02' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.868 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID03 cluster='BBB-1' status='aktiv' name='Application 03' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.868 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID04 cluster='AAA-2' status='aktiv' name='Application 04' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.869 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID05 cluster='BBB-1' status='aktiv' name='Application 05' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.869 [http-nio-8080-exec-9] ExcelReader - > add node with id=ID06 cluster='AAA-2' status='aktiv' name='Application 06' colorMode='cluster'
+[INFO ] 2018-11-01 17:09:38.896 [http-nio-8080-exec-9] ExcelReader - > add link from ID01 to ID03 description: 'E-Mail Versand' (IMAP)
+[INFO ] 2018-11-01 17:09:38.896 [http-nio-8080-exec-9] ExcelReader - > add link from ID02 to ID04 description: 'Service A' (HTTPS)
+[INFO ] 2018-11-01 17:09:38.896 [http-nio-8080-exec-9] ExcelReader - > add link from ID03 to ID05 description: 'Service B' (LDAPS)
+[INFO ] 2018-11-01 17:09:38.897 [http-nio-8080-exec-9] ExcelReader - > add link from ID04 to ID06 description: 'Anwendungsdaten' (JDBC)
+[INFO ] 2018-11-01 17:09:38.897 [http-nio-8080-exec-9] ExcelReader - > add link from ID01 to ID04 description: 'Service C' (HTTPS)
+[INFO ] 2018-11-01 17:09:38.897 [http-nio-8080-exec-9] ExcelReader - > add link from ID02 to ID06 description: 'Events & Logging' (JDBC)
+[INFO ] 2018-11-01 17:09:38.897 [http-nio-8080-exec-9] ExcelReader - > add link from ID01 to ID02 description: 'Service E' (HTTPS)
+[INFO ] 2018-11-01 17:09:39.270 [http-nio-8080-exec-9] DiagramController - Request Diagram | END   - filter= file=data.xlsx package= showLinks=true  type=component
