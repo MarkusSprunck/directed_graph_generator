@@ -11,7 +11,7 @@ class DiagramGeneratorTest {
     @Throws(IOException::class)
     fun executeRun() {
         // given
-        val expected = 14725
+        val expected = 10678
 
         // when
         val result = DiagramGenerator.run("data_test.xlsx",
@@ -20,7 +20,8 @@ class DiagramGeneratorTest {
                 "",
                 false,
                 false,
-                "cluster")
+                false,
+                "stereotypeFirst")
 
         // then
         assertEquals(expected, result.length)

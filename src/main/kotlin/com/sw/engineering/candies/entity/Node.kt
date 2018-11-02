@@ -16,10 +16,10 @@ class Node constructor(name: String = "",
                        stereotypeThird: String = "") {
 
     var name = ""
-    var cluster = ""
+    var stereotypeFirst = ""
     var nameLong = ""
-    var location = ""
-    var stereotype = ""
+    var stereotypeThird = ""
+    var stereotypeSecond = ""
     var description = ""
     private var descriptionHtml = ""
 
@@ -37,9 +37,9 @@ class Node constructor(name: String = "",
         this.nameLong = nameLong
         this.description = description
         this.descriptionHtml = HtmlUtil.escape(description)
-        this.cluster = stereotypeFirst
-        this.stereotype = stereotypeSecond
-        this.location = stereotypeThird
+        this.stereotypeFirst = stereotypeFirst
+        this.stereotypeSecond = stereotypeSecond
+        this.stereotypeThird = stereotypeThird
     }
 
     fun addDepends(name: String, comment: String = "") {
@@ -61,7 +61,7 @@ class Node constructor(name: String = "",
         val sb = StringBuilder()
         sb.append("\"$name\": {\n")
         sb.append("    \"name\": \"$name\",\n")
-        sb.append("    \"type\": \"$cluster\",\n")
+        sb.append("    \"type\": \"$stereotypeFirst\",\n")
         sb.append("    \"depends\":" + depends.toString() + ",\n")
         sb.append("    \"dependedOnBy\":" + dependedOnBy.toString() + ",\n")
         sb.append("    \"docs\": \"$document\"\n")
@@ -74,9 +74,9 @@ class Node constructor(name: String = "",
         get() {
             val sbDocs = StringBuilder()
             sbDocs.append("<h3>").append(name).append(" - ").append(nameLong).append("</h3>")
-            sbDocs.append("<b>Cluster</b>:<br/>").append(cluster).append("<p/>")
-            sbDocs.append("<b>Location:</b><br/><em>").append(location).append("<em><p/>")
-            sbDocs.append("<b>Status:</b><br/><em>").append(stereotype).append("<em><p/>")
+            sbDocs.append("<b>Cluster</b>:<br/>").append(stereotypeFirst).append("<p/>")
+            sbDocs.append("<b>Location:</b><br/><em>").append(stereotypeSecond).append("<em><p/>")
+            sbDocs.append("<b>Status:</b><br/><em>").append(stereotypeThird).append("<em><p/>")
             sbDocs.append("<b>Description:</b><br/><em>").append(descriptionHtml).append("<em><p/>")
 
             if (!depends.isEmpty()) {

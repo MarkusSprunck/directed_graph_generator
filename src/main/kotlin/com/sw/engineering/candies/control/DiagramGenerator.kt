@@ -10,9 +10,16 @@ import java.nio.charset.Charset
 object DiagramGenerator {
 
     @Throws(IOException::class)
-    fun run(excelFileName: String, sourceApplicationPattern: String, diagramType: String, componentName: String, showLinks: Boolean, strict: Boolean, colorMode: String): String {
+    fun run(excelFileName: String,
+            sourceApplicationPattern: String,
+            diagramType: String,
+            componentName: String,
+            showLinks: Boolean,
+            showComplex: Boolean,
+            strict: Boolean,
+            colorMode: String): String {
 
-        val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode)
+        val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode, showComplex)
 
         var result = "<h3>Enter valid URL parameter for type {'graph', 'component'}</h3>"
 
@@ -31,7 +38,7 @@ object DiagramGenerator {
         if (diagramType == "component") {
 
             val resultPuml = FileUtil.load("templates/component.puml")
-                    .replace("'##PACKAGES##", model.toPlantUmlModel(componentName, showLinks))
+                    .replace("'##PACKAGES##", model.toPlantUmlModel(componentName, showLinks, showComplex))
 
             // Uncomment just for debugging
             // File("output/components.puml").writeText(resultPuml)

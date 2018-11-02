@@ -17,6 +17,7 @@ class DiagramControllerTest {
                 "",
                 false,
                 false,
+                false,
                 "",
                 "")
 

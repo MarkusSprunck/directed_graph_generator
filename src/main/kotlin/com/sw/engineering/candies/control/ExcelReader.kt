@@ -14,7 +14,7 @@ object ExcelReader {
 
     private val log = LoggerFactory.getLogger(ExcelReader::class.java)
 
-    fun parseExcelSheet(excelFileName: String, filterPattern: String, strict: Boolean, colorMode: String): Model {
+    fun parseExcelSheet(excelFileName: String, filterPattern: String, strict: Boolean, colorMode: String, showComplex : Boolean): Model {
         log.info("FILE_NAME      = '$excelFileName'")
         log.info("FILTER_PATTERN = '$filterPattern'")
         val result = Model()
@@ -33,7 +33,7 @@ object ExcelReader {
             log.info("*** SKIP PROCESSING LINKS - UNABLE TO OPEN SHEET $excelFileName")
             return result
         }
-        parseLinks(sh2, filterPattern, result, strict)
+        parseLinks(sh2, filterPattern, result, strict, showComplex)
 
         return result
     }
@@ -56,7 +56,7 @@ object ExcelReader {
         return result
     }
 
-    private fun parseLinks(sheet: XSSFSheet, filter: String, result: Model, strict: Boolean) {
+    private fun parseLinks(sheet: XSSFSheet, filter: String, result: Model, strict: Boolean, showComplex :Boolean) {
         for (currentRow in 2..sheet.lastRowNum) {
             val row = sheet.getRow(currentRow)
 
@@ -73,8 +73,14 @@ object ExcelReader {
 
                 if (strict && (sourceMatcher.find(0) && targetMatcher.find(0)) ||
                         !strict && (sourceMatcher.find(0) || targetMatcher.find(0))) {
-                    result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
-                    result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                    if (showComplex) {
+                        result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
+                        result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                    } else   {
+                        result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n")
+                        result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n")
+                    }
+
                     log.info("> add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")
                 }
             }
@@ -97,11 +103,11 @@ object ExcelReader {
                 val appIdPattern = Pattern.compile(sourceApplicationPattern)
                 val sourceMatcher = appIdPattern.matcher(id)
                 if (sourceMatcher.find(0)) {
-                    log.info("> add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
+                    log.info("> add node with id=$id stereotypeFirst='$cluster' status='$status' name='$name' colorMode='$colorMode'")
                     when (colorMode) {
-                        "cluster" -> result.setNode(id, Node(id, name, description, cluster, location, status))
+                        "stereotypeFirst" -> result.setNode(id, Node(id, name, description, cluster, location, status))
                         "status" -> result.setNode(id, Node(id, name, description, status, cluster, location))
-                        "location" -> result.setNode(id, Node(id, name, description, location, status, cluster))
+                        "stereotypeThird" -> result.setNode(id, Node(id, name, description, location, status, cluster))
                         else -> result.setNode(id, Node(id, name, description, cluster, location, status))
                     }
                 }

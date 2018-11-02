@@ -19,6 +19,8 @@ skinparam component {
     FontColor black
     FontName Arial
     BackgroundColor white
+    BorderColor black
+
 }
 
 skinparam package<<Transparent>> {
@@ -34,10 +36,12 @@ left to right direction
 
 package "UML Components - %date%" {
 
-package "0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789" <<Transparent>> {
+    package "1234567890" <<Transparent>> {
 
-     '##PACKAGES##
+        '##PACKAGES##
+
     }
+
 }
 
 @enduml

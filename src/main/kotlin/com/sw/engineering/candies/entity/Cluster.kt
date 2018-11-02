@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  *
- * This class stores a named cluster and all containing nodes.
+ * This class stores a named stereotypeFirst and all containing nodes.
  *
  */
 class Cluster constructor(name: String = "") {

@@ -19,11 +19,12 @@ class DiagramController {
                 @RequestParam(value = "file", defaultValue = "data.xlsx") file: String,
                 @RequestParam(value = "package", defaultValue = "") componentName: String,
                 @RequestParam(value = "showLinks", defaultValue = "false") showLinks: Boolean,
+                @RequestParam(value = "showComplex", defaultValue = "true") showComplex: Boolean,
                 @RequestParam(value = "strict", defaultValue = "false") strict: Boolean,
-                @RequestParam(value = "colorMode", defaultValue = "cluster") colorMode: String,
+                @RequestParam(value = "colorMode", defaultValue = "stereotypeFirst") colorMode: String,
                 @RequestParam(value = "type", defaultValue = "graph") type: String): String {
 
-        log.info("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks  type=$type")
+        log.info("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
         val result = DiagramGenerator.run(
                 FilenameUtils.getName(file),
@@ -31,10 +32,11 @@ class DiagramController {
                 type,
                 componentName,
                 showLinks,
+                showComplex,
                 strict,
                 colorMode)
 
-        log.info("Request Diagram | END   - filter=$filter file=$file package=$componentName showLinks=$showLinks  type=$type")
+        log.info("Request Diagram | END   - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
         return result
     }

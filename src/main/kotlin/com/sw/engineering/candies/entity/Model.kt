@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  *
- * This class stores the com.sw.engineering.candies.boundary.main model with all nodes, cluster and links.
+ * This class stores the com.sw.engineering.candies.boundary.main model with all nodes, stereotypeFirst and links.
  *
  */
 class Model {
@@ -23,9 +23,9 @@ class Model {
         nodes[name] = node
 
         // add Cluster if missing
-        val clusterName = node.cluster
+        val clusterName = node.stereotypeFirst
         if (!clusters.containsKey(key = clusterName)) {
-            clusters[clusterName] = Cluster(nodes[name]!!.cluster)
+            clusters[clusterName] = Cluster(nodes[name]!!.stereotypeFirst)
         }
         clusters[clusterName]?.addNode(name, node)
     }
@@ -47,7 +47,7 @@ class Model {
     }
 
 
-    fun toPlantUmlModel(clusterName: String = "", showLinks: Boolean = false): String {
+    fun toPlantUmlModel(clusterName: String = "", showLinks: Boolean = false, showComplex : Boolean = true): String {
 
 
         val graphData = StringBuilder()
@@ -76,14 +76,19 @@ class Model {
                             linkComments[linkComment.key] = linkComment.value
                         }
 
-                        val stereotype = " <<" + cluster.getName().toLowerCase() + ">> "
-
-                        var newName = " <<" + node.location.toLowerCase() + ">> \\n "
-                        newName = newName + " <<" + node.stereotype + ">> \\n \\n"
+                        var newName = ""
+                        if (showComplex) {
+                            newName = newName + " << " + node.stereotypeThird.toLowerCase() + ">> \\n "
+                            newName = newName + " <<" + node.stereotypeSecond + ">> \\n \\n"
+                        }
                         newName = newName + node.nameLong + "\\n "
                         newName = newName + "(" + node.name + ")"
 
-                        graphData.append("[").append(newName).append("]").append(" as ").append(node.name).append(" ").append(stereotype)
+                        val stereotype = " <<" + cluster.getName().toLowerCase() + ">> "
+                        graphData.append("[").append(newName).append("]").append(" as ").append(node.name).append(" ")
+                        if (showComplex) {
+                            graphData.append(stereotype)
+                        }
                         graphData.append(" [[{")
                                 .append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
