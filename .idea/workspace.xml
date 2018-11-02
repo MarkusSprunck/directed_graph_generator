@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/logs/*.log" />
@@ -74,7 +61,7 @@
           <entry key="md" value="6" />
           <entry key="name" value="1" />
           <entry key="png" value="1" />
-          <entry key="properties" value="14" />
+          <entry key="properties" value="15" />
           <entry key="puml" value="4" />
           <entry key="sh" value="6" />
           <entry key="xml" value="43" />
@@ -93,7 +80,7 @@
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="PlantUML file" value="4" />
-          <entry key="Properties" value="14" />
+          <entry key="Properties" value="15" />
           <entry key="XML" value="43" />
         </counts>
       </usages-collector>
@@ -108,7 +95,7 @@
           <entry key="properties" value="86" />
           <entry key="puml" value="662" />
           <entry key="sh" value="167" />
-          <entry key="txt" value="425" />
+          <entry key="txt" value="513" />
           <entry key="xml" value="309" />
         </counts>
       </usages-collector>
@@ -119,7 +106,7 @@
           <entry key="JAVA" value="2" />
           <entry key="Kotlin" value="2468" />
           <entry key="Markdown" value="20" />
-          <entry key="PLAIN_TEXT" value="2064" />
+          <entry key="PLAIN_TEXT" value="2152" />
           <entry key="PlantUML file" value="662" />
           <entry key="Properties" value="86" />
           <entry key="XML" value="309" />
@@ -129,15 +116,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/IndexController.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -156,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="44">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -168,13 +146,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="146">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -310,9 +297,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
       </list>
     </option>
   </component>
@@ -512,7 +499,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541192776549" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541193061563" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -765,16 +752,17 @@
       <option name="project" value="LOCAL" />
       <updated>1541181772465</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
+      <created>1541192929282</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1541192929282</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.11.01 at 16h 50m 53s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2018.11.01 at 16h 51m 47s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_DirectedGraphGenerator - 2018.11.01 at 16h 52m 54s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
@@ -797,6 +785,12 @@
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_DirectedGraphGenerator - 2018.11.02 at 22h 02m 57s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.11.02 at 22h 05m 25s.xml">
+      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DirectedGraphGenerator - 2018.11.02 at 22h 05m 57s.xml">
       <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -841,7 +835,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="PlantUML" order="6" weight="0.4256866" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.5903614" weight="0.21647818" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.5903614" visible="true" weight="0.21647818" />
       <window_info anchor="right" id="Coverage" order="9" sideWeight="0.40963855" side_tool="true" weight="0.4273021" />
     </layout>
   </component>
@@ -862,7 +856,8 @@
     <MESSAGE value="Update local state" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Improve Logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve Logging" />
+    <MESSAGE value="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/MainApplication.kt">
@@ -955,13 +950,6 @@
     <entry file="file://$PROJECT_DIR$/logs/application.log" />
     <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.2.jar!/BOOT-INF/classes/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/logs/DirectedGraphGenerator.log" />
     <entry file="file://$PROJECT_DIR$/dist/Start.sh" />
@@ -1093,24 +1081,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="115">
+          <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="146">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="39" column="87" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
