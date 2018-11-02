@@ -11,7 +11,7 @@ class DiagramGeneratorTest {
     @Throws(IOException::class)
     fun executeRun() {
         // given
-        val expected = 10678
+        val expected = 10679
 
         // when
         val result = DiagramGenerator.run("data_test.xlsx",
