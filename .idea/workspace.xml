@@ -65,7 +65,7 @@
           <entry key="properties" value="15" />
           <entry key="puml" value="4" />
           <entry key="sh" value="6" />
-          <entry key="xml" value="43" />
+          <entry key="xml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -82,7 +82,7 @@
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="PlantUML file" value="4" />
           <entry key="Properties" value="15" />
-          <entry key="XML" value="43" />
+          <entry key="XML" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -92,7 +92,7 @@
           <entry key="html" value="52" />
           <entry key="java" value="2" />
           <entry key="kt" value="2468" />
-          <entry key="md" value="1854" />
+          <entry key="md" value="1884" />
           <entry key="properties" value="86" />
           <entry key="puml" value="662" />
           <entry key="sh" value="167" />
@@ -106,7 +106,7 @@
           <entry key="HTML" value="52" />
           <entry key="JAVA" value="2" />
           <entry key="Kotlin" value="2468" />
-          <entry key="Markdown" value="249" />
+          <entry key="Markdown" value="279" />
           <entry key="PLAIN_TEXT" value="2173" />
           <entry key="PlantUML file" value="662" />
           <entry key="Properties" value="86" />
@@ -117,12 +117,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="369">
-                <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <first_editor relative-caret-position="123">
+                <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -388,7 +397,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541200906387" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541201251465" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -690,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541200610095</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Update documentation">
+      <created>1541200950902</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1541200950902</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -834,13 +850,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/logs/DirectedGraphGenerator.log" />
     <entry file="file://$PROJECT_DIR$/dist/Start.sh" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/Readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1008,6 +1017,13 @@
     <entry file="file://$PROJECT_DIR$/images/status.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1016,8 +1032,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="369">
-            <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <first_editor relative-caret-position="123">
+            <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>

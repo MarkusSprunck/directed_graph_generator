@@ -1,17 +1,17 @@
 # Directed Graph Generator
 
-This Springboot application generates UML component diagrams from Excel Sheets. The purpose is to get a proper architectural 
+This Spring Boot 2.1 application generates UML component diagrams from Excel Sheets. The purpose is to get proper architectural 
 description of an application landscape with minimal effort.
 
 Minimal Input Data
 ------------------
 
-All applications (nodes) and dependencies (links) have to be stored in a table with a fixed column format. All cells have to be text format.
+All applications and dependencies have to be stored in a table with a fixed column format. All cells have to be text format.
 
-**Example sheet for applications**
+- **Example sheet for applications**
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-apps.png)
 
-**Example sheet for links**
+- **Example sheet for links**
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-links.png)
 
 
@@ -31,16 +31,16 @@ hundreds of application.
 - *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
 
 
-Development Environment
------------------------
+Development
+-----------
 
-- The application is developed with IntellJ IDEA CE (version 2018.2.4). 
+- The application has been developed with IntellJ IDEA CE (version 2018.2.4) in Kotlin 
 - UML generation is based on _plantUML_ and this needs _GraphVis_ to run. You find the installation packages 
 here https://graphviz.gitlab.io/download/
-- Additionally a Java 1.8 JRE will be needed to start the Spring Boot application.
+- Java 1.8 JRE will be needed to start the Spring Boot 2.1 application
 
-Expected Result
----------------
+Expected Results
+----------------
 
 The generated html files need no additional libraries, so you may open them in the browser and save them as file.
 
