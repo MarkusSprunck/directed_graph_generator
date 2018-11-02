@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/Start.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/boundary/IndexController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/IndexController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/ExcelColumnNumberApplications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/ExcelColumnNumberLinks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberLinks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/FileUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/FileUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/HtmlUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/HtmlUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/control/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/MainApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/entity/Colors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Colors.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Model.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/DiagramControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/boundary/IndexControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="logs/" />
@@ -56,179 +31,94 @@
     <session id="654764874">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="2" />
           <entry key="Log4JConfiguraton" value="2" />
+          <entry key="MF" value="8" />
+          <entry key="Readme" value="1" />
           <entry key="html" value="6" />
           <entry key="iml" value="2" />
           <entry key="kt" value="102" />
-          <entry key="log" value="14" />
+          <entry key="log" value="25" />
           <entry key="log4JConfig" value="1" />
           <entry key="md" value="6" />
           <entry key="name" value="1" />
           <entry key="png" value="1" />
-          <entry key="properties" value="8" />
+          <entry key="properties" value="14" />
           <entry key="puml" value="3" />
-          <entry key="sh" value="2" />
-          <entry key="xml" value="23" />
+          <entry key="sh" value="4" />
+          <entry key="xml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="2" />
+          <entry key="Bash" value="4" />
           <entry key="CLASS" value="2" />
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="1" />
           <entry key="Kotlin" value="102" />
+          <entry key="Manifest" value="8" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="32" />
           <entry key="PlantUML file" value="3" />
-          <entry key="Properties" value="8" />
-          <entry key="XML" value="23" />
+          <entry key="Properties" value="14" />
+          <entry key="XML" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="9" />
+          <entry key="Readme" value="25" />
           <entry key="html" value="19" />
           <entry key="java" value="2" />
           <entry key="kt" value="2250" />
           <entry key="md" value="1625" />
-          <entry key="properties" value="52" />
+          <entry key="properties" value="86" />
           <entry key="puml" value="622" />
-          <entry key="sh" value="118" />
-          <entry key="txt" value="369" />
-          <entry key="xml" value="242" />
+          <entry key="sh" value="164" />
+          <entry key="txt" value="380" />
+          <entry key="xml" value="298" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="118" />
+          <entry key="Bash" value="164" />
           <entry key="HTML" value="19" />
           <entry key="JAVA" value="2" />
           <entry key="Kotlin" value="2250" />
           <entry key="Markdown" value="20" />
-          <entry key="PLAIN_TEXT" value="1983" />
+          <entry key="PLAIN_TEXT" value="2019" />
           <entry key="PlantUML file" value="622" />
-          <entry key="Properties" value="52" />
-          <entry key="XML" value="242" />
+          <entry key="Properties" value="86" />
+          <entry key="XML" value="298" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/start.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/app_log.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/springboot_log.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Model.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-478">
-              <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -246,6 +136,10 @@
       <find>spring-boot-maven-plugin</find>
       <find>com.sw.engineering.candies.Application</find>
       <find>repackage</find>
+      <find>start.class</find>
+      <find>start-class</find>
+      <find>log4j-jcl</find>
+      <find>starter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -267,10 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/component.puml" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/Start.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/control/MainApplication.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/control/FileUtil.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/boundary/IndexController.kt" />
@@ -311,13 +201,17 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Start.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Application.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/ExcelReaderTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt" />
         <option value="$PROJECT_DIR$/logs/app_log.log" />
         <option value="$PROJECT_DIR$/logs/springboot_log.log" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/start.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/logs/Readme" />
       </list>
     </option>
   </component>
@@ -420,6 +314,36 @@
               <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -429,7 +353,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541109850866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541174245178" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -438,22 +362,22 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/images" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/com/sw_engineering_candies/boundary" />
-    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.sw.engineering.candies" />
       <recent name="com.sw_engineering_candies.boundary.boundary" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/input" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="boundary" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/input" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,7 +392,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.sw.engineering.candies.ApplicationKt">
+  <component name="RunManager" selected="Bash.start.sh">
     <configuration name="start.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -492,7 +416,7 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.ApplicationKt" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -533,8 +457,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.com.sw.engineering.candies.ApplicationKt" />
         <item itemvalue="Bash.start.sh" />
+        <item itemvalue="Kotlin.com.sw.engineering.candies.ApplicationKt" />
         <item itemvalue="JUnit.All in DirectedGraphGenerator" />
         <item itemvalue="Maven.DirectedGraphGenerator [package]" />
       </list>
@@ -649,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541088759128</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactoring">
+      <created>1541109953287</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541109953287</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -694,29 +625,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="24" width="1280" height="732" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="23" width="1280" height="732" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8" visible="true" weight="0.29886913" />
-      <window_info id="Structure" order="1" sideWeight="0.2" side_tool="true" visible="true" weight="0.29886913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7907692" visible="true" weight="0.24232633" />
+      <window_info id="Structure" order="1" sideWeight="0.20923077" side_tool="true" visible="true" weight="0.24232633" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Dependency Viewer" weight="0.45867097" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.56239873" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7148627" visible="true" weight="0.30307943" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71405494" visible="true" weight="0.4732577" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4983845" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901135" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28513733" side_tool="true" weight="0.4311183" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28594506" side_tool="true" weight="0.3419773" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4806139" weight="0.41166937" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49919224" weight="0.49270666" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.45867097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -725,7 +655,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="PlantUML" order="6" weight="0.404685" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.5903614" visible="true" weight="0.13893376" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.5903614" visible="true" weight="0.21647818" />
       <window_info anchor="right" id="Coverage" order="9" sideWeight="0.40963855" side_tool="true" weight="0.4273021" />
     </layout>
   </component>
@@ -738,77 +668,16 @@
     <MESSAGE value="Improve UML graph, automatic colors and new Excel format" />
     <MESSAGE value="Add test cases for model and code cleanup" />
     <MESSAGE value="Improve description" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Improve logging and refatoring" />
     <MESSAGE value="Move images to subfolder" />
     <MESSAGE value="Cleanup code and add test case" />
     <MESSAGE value="Suppress warning" />
     <MESSAGE value="Ignore log files" />
     <MESSAGE value="Update local state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update local state" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml" />
-    <entry file="file://$PROJECT_DIR$/directed_graph_generator.xml" />
-    <entry file="file://$PROJECT_DIR$/module_directedgraphgenerator.xml" />
-    <entry file="file://$PROJECT_DIR$/directed_graph_generator.properties" />
-    <entry file="file://$PROJECT_DIR$/.idea/.name" />
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/component.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main-page.png" />
-    <entry file="file://$PROJECT_DIR$/DirectedGraphGenerator.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/ExcelColumnNumberTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/HtmlUtilTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/NodeTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/entity/ModelTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/FileUtil.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -823,30 +692,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Output/components.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="23" column="58" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/Log4JConfiguraton">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Log4jXmlConfiguration.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Output/components.puml" />
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Log4JConfiguraton" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/Log4jXmlConfiguration.kt" />
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/FileUtilTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -924,13 +772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4230" />
@@ -950,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -965,17 +800,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="103" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="103" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1002,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/control/DiagramGeneratorTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="53">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
@@ -1021,38 +856,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/app_log.log">
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.1.jar!/BOOT-INF/classes/Log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/DirectedGraphGenerator-1.0.1≈original.jar!/META-INF/MANIFEST.MF" />
+    <entry file="jar://$PROJECT_DIR$/target/DirectedGraphGenerator-1.0.1≈original.jar!/application.properties" />
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.1.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.1.jar!/META-INF/maven/DirectedGraphGenerator/DirectedGraphGenerator/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.1.jar!/META-INF/maven/DirectedGraphGenerator/DirectedGraphGenerator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="243" column="40" selection-start-line="243" selection-start-column="40" selection-end-line="243" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/DirectedGraphGenerator-1.0.1.jar!/BOOT-INF/classes/Log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/DirectedGraphGenerator-1.0.1.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.2.jar!/BOOT-INF/classes/Log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5319" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/springboot_log.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/app_log.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+        <state relative-caret-position="152">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/logs/application.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
+        <state relative-caret-position="-159">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.2.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.2.jar!/BOOT-INF/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.2.jar!/BOOT-INF/classes/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/DirectedGraphGenerator.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
