@@ -4,11 +4,6 @@
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cluster.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/cluster.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/directed-graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/directed-graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/status.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/status.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/logs/*.log" />
@@ -66,7 +61,7 @@
           <entry key="log4JConfig" value="1" />
           <entry key="md" value="7" />
           <entry key="name" value="1" />
-          <entry key="png" value="7" />
+          <entry key="png" value="8" />
           <entry key="properties" value="15" />
           <entry key="puml" value="4" />
           <entry key="sh" value="6" />
@@ -79,7 +74,7 @@
           <entry key="CLASS" value="2" />
           <entry key="HTML" value="9" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="Image" value="7" />
+          <entry key="Image" value="8" />
           <entry key="JAVA" value="2" />
           <entry key="Kotlin" value="113" />
           <entry key="Manifest" value="9" />
@@ -97,11 +92,11 @@
           <entry key="html" value="52" />
           <entry key="java" value="2" />
           <entry key="kt" value="2468" />
-          <entry key="md" value="1848" />
+          <entry key="md" value="1854" />
           <entry key="properties" value="86" />
           <entry key="puml" value="662" />
           <entry key="sh" value="167" />
-          <entry key="txt" value="513" />
+          <entry key="txt" value="534" />
           <entry key="xml" value="309" />
         </counts>
       </usages-collector>
@@ -111,8 +106,8 @@
           <entry key="HTML" value="52" />
           <entry key="JAVA" value="2" />
           <entry key="Kotlin" value="2468" />
-          <entry key="Markdown" value="243" />
-          <entry key="PLAIN_TEXT" value="2152" />
+          <entry key="Markdown" value="249" />
+          <entry key="PLAIN_TEXT" value="2173" />
           <entry key="PlantUML file" value="662" />
           <entry key="Properties" value="86" />
           <entry key="XML" value="309" />
@@ -126,8 +121,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="163">
-                <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <first_editor relative-caret-position="369">
+                <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,6 +140,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/cluster.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/simple.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -354,45 +354,6 @@
               <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -427,7 +388,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541200536145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541200906387" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
@@ -715,7 +676,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541193283232</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update documentation">
+      <created>1541200501450</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1541200501450</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update documentation">
+      <created>1541200610095</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1541200610095</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -813,7 +788,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Improve Logging" />
     <MESSAGE value="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;" />
+    <MESSAGE value="Update documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/kotlin-examples-master/maven/hello-world/src/main/kotlin/Hello.kt">
@@ -1007,22 +983,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/simple.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/cluster.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/directed-graph.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/home.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/location.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/status.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
@@ -1032,6 +996,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/home.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/cluster.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/simple.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/status.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1040,8 +1016,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="163">
-            <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <first_editor relative-caret-position="369">
+            <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
           </first_editor>
           <second_editor />
         </state>

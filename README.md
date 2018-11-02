@@ -31,15 +31,13 @@ hundreds of application.
 - *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
 
 
-Needed Development Environment
-------------------------------
+Development Environment
+-----------------------
 
-The application is developed with IntellJ IDEA CE (version 2018.2.4). 
-
-UML generation is based on _plantUML_ and this needs _GraphVis_ to run. You find the installation packages 
+- The application is developed with IntellJ IDEA CE (version 2018.2.4). 
+- UML generation is based on _plantUML_ and this needs _GraphVis_ to run. You find the installation packages 
 here https://graphviz.gitlab.io/download/
-
-Additionally a Java 1.8 JRE will be needed to start the Spring Boot application.
+- Additionally a Java 1.8 JRE will be needed to start the Spring Boot application.
 
 Expected Result
 ---------------
@@ -68,13 +66,6 @@ The generated html files need no additional libraries, so you may open them in t
 6) Directed graph
 (http://localhost:8080/diagram?type=graph):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/directed-graph.png)
-
-Known Issues
-------------
-
-- missing junit tests
-- refactoring and code cleanup is needed
-
 
 
 
