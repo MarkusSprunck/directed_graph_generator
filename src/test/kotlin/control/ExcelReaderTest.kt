@@ -18,6 +18,20 @@ class ExcelReaderTest {
         assertEquals(expected, model.toJSONStringModel())
     }
 
+
+    @Test
+    fun readNoLinksExcel() {
+        // given
+        val expected = "{\n}"
+
+        // when
+        val model = ExcelReader.parseExcelSheet("data_no_links.xlsx", "", false, "stereotypeFirst", true)
+
+        // then
+        assertEquals(expected, model.toJSONStringModel())
+    }
+
+
     @Test
     fun readNonExistingExcel() {
         // given
@@ -75,7 +89,7 @@ class ExcelReaderTest {
 }}""".trimMargin()
 
         // when
-        val model = ExcelReader.parseExcelSheet("data_test.xlsx", "", false, "stereotypeFirst",  true)
+        val model = ExcelReader.parseExcelSheet("data_test.xlsx", "", false, "cluster",  true)
 
         // then
         assertEquals(expected, model.toJSONStringModel())
