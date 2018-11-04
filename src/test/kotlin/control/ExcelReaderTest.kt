@@ -1,6 +1,7 @@
 package control
 
 import com.sw.engineering.candies.control.ExcelReader
+import com.sw.engineering.candies.control.Model2JSON
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -15,7 +16,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_empty.xlsx", "", false, "stereotypeFirst", true)
 
         // then
-        assertEquals(expected, model.toJSONStringModel())
+        assertEquals(expected, Model2JSON.toJSONStringModel(model))
     }
 
 
@@ -28,7 +29,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_no_links.xlsx", "", false, "stereotypeFirst", true)
 
         // then
-        assertEquals(expected, model.toJSONStringModel())
+        assertEquals(expected, Model2JSON.toJSONStringModel(model))
     }
 
 
@@ -41,7 +42,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("xxx.xlsx", "", false, "stereotypeFirst",  true)
 
         // then
-        assertEquals(expected, model.toJSONStringModel())
+        assertEquals(expected, Model2JSON.toJSONStringModel(model))
     }
 
 
@@ -92,7 +93,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_test.xlsx", "", false, "cluster",  true)
 
         // then
-        assertEquals(expected, model.toJSONStringModel())
+        assertEquals(expected, Model2JSON.toJSONStringModel(model))
     }
 
 

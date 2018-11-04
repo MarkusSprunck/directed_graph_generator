@@ -56,7 +56,7 @@ object ExcelReader {
         return result
     }
 
-    private fun parseLinks(sheet: XSSFSheet, filter: String, result: Model, strict: Boolean, showComplex :Boolean) {
+    private fun parseLinks(sheet: XSSFSheet, filter: String, model: Model, strict: Boolean, showComplex :Boolean) {
         for (currentRow in 2..sheet.lastRowNum) {
             val row = sheet.getRow(currentRow)
 
@@ -74,11 +74,11 @@ object ExcelReader {
                 if (strict && (sourceMatcher.find(0) && targetMatcher.find(0)) ||
                         !strict && (sourceMatcher.find(0) || targetMatcher.find(0))) {
                     if (showComplex) {
-                        result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
-                        result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
+                        model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
                     } else   {
-                        result.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n")
-                        result.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n")
+                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n")
+                        model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n")
                     }
 
                     log.info("> add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")

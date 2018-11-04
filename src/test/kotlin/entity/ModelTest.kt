@@ -1,5 +1,6 @@
 package entity
 
+import com.sw.engineering.candies.control.Model2PlantUml
 import com.sw.engineering.candies.entity.Model
 import com.sw.engineering.candies.entity.Node
 import org.junit.Assert.assertEquals
@@ -19,7 +20,7 @@ class ModelTest {
                 """.trimMargin()
 
         // when
-        val actual = sut.toPlantUmlModel()
+        val actual =  Model2PlantUml.toPlantUmlModel(sut)
 
         // then
         assertEquals(expected, actual)
@@ -44,7 +45,7 @@ class ModelTest {
         // when
         sut.setNode("A", Node("IDA", "NodeA", "DesA", "S0A", "S1A", "S2A"))
         sut.setNode("B", Node("IDB", "NodeB", "DesB", "S0B", "S1B", "S2B"))
-        val actual = sut.toPlantUmlModel()
+        val actual =  Model2PlantUml.toPlantUmlModel(sut)
 
         // then
         assertEquals(expected, actual)
@@ -73,7 +74,7 @@ class ModelTest {
         sut.setNode("B", Node("IDB", "NodeB", "DesB", "S0B", "S1B", "S2B"))
         sut.getNode("A")?.addDependedOnBy("B", "Link comment")
         sut.getNode("B")?.addDepends("A", "Link comment")
-        val actual = sut.toPlantUmlModel("", true)
+        val actual =  Model2PlantUml.toPlantUmlModel(sut, "", true)
 
         // then
         assertEquals(expected, actual)
@@ -99,7 +100,7 @@ class ModelTest {
         sut.setNode("B", Node("IDB", "NodeB", "DesB", "S0B", "S1B", "S2B"))
         sut.getNode("A")?.addDependedOnBy("B", "Link comment")
         sut.getNode("B")?.addDepends("A", "Link comment")
-        val actual = sut.toPlantUmlModel("", false)
+        val actual =  Model2PlantUml.toPlantUmlModel(sut, "", false)
 
         // then
         assertEquals(expected, actual)

@@ -32,13 +32,13 @@ object DiagramGenerator {
                     .replace("##JQUERRY_B_LIB##", FileUtil.load("libs/jquery.browser.min.js"))
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
-                    .replace("##GENERATED_DATA##", model.toJSONStringModel())
+                    .replace("##GENERATED_DATA##", Model2JSON.toJSONStringModel(model))
         }
 
         if (diagramType == "component") {
 
             val resultPuml = FileUtil.load("templates/component.puml")
-                    .replace("'##PACKAGES##", model.toPlantUmlModel(componentName, showLinks, showComplex))
+                    .replace("'##PACKAGES##", Model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex))
 
             // Uncomment just for debugging
             // File("output/components.puml").writeText(resultPuml)
