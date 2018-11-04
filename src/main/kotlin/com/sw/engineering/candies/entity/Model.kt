@@ -6,7 +6,8 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  *
- * This class stores the com.sw.engineering.candies.boundary.main model with all nodes, stereotypeFirst and links.
+ * This class stores the main model with all nodes and clusters. The link information is stored in the nodes.
+ * It generates the data structures for visualizations.
  *
  */
 class Model {
@@ -48,8 +49,6 @@ class Model {
 
 
     fun toPlantUmlModel(clusterName: String = "", showLinks: Boolean = false, showComplex : Boolean = true): String {
-
-
         val graphData = StringBuilder()
         graphData.append("\n")
 

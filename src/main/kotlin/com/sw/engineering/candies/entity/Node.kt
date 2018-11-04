@@ -8,19 +8,22 @@ import java.util.*
  * This class stores all information of a single node.
  *
  */
-class Node constructor(name: String = "",
-                       nameLong: String = "",
-                       description: String = "",
-                       stereotypeFirst: String = "",
-                       stereotypeSecond: String = "",
-                       stereotypeThird: String = "") {
+class Node constructor(name: String,
+                       nameLong: String,
+                       description: String,
+                       stereotypeFirst: String,
+                       stereotypeSecond: String,
+                       stereotypeThird: String ) {
 
-    var name = ""
-    var stereotypeFirst = ""
-    var nameLong = ""
-    var stereotypeThird = ""
-    var stereotypeSecond = ""
-    var description = ""
+    // properties of the node
+    internal var name = ""
+    internal var nameLong = ""
+    internal var stereotypeFirst = ""
+    internal var stereotypeThird = ""
+    internal var stereotypeSecond = ""
+    internal var description = ""
+
+    // generated HTML for animated graph
     private var descriptionHtml = ""
 
     // ingoing links

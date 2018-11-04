@@ -4,10 +4,10 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  *
- * This class stores a named stereotypeFirst and all containing nodes.
+ * This class stores a named Cluster with all containing nodes.
  *
  */
-class Cluster constructor(name: String = "") {
+class Cluster constructor(name: String) {
 
     private var nodes = ConcurrentHashMap<String, Node>()
 

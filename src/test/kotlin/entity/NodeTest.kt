@@ -9,7 +9,7 @@ class NodeTest {
     @Test
     fun addDependsUnique() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "XYZ")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "XYZ", "","")
         sut.addDepends("Name B")
         sut.addDepends("Name C")
         sut.addDependedOnBy("Name D")
@@ -32,7 +32,7 @@ class NodeTest {
     @Test
     fun addDependsDuplicated() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "", "","")
         sut.addDepends("Name B")
         sut.addDepends("Name B")
         sut.addDepends("Name C")
@@ -57,7 +57,7 @@ class NodeTest {
     @Test
     fun constructor() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "XXX")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "XXX","","")
         val expected = """
 "Name A": {
     "name": "Name A",
@@ -77,7 +77,7 @@ class NodeTest {
     @Test
     fun constructorDefault() {
         // given
-        val sut = Node()
+        val sut = Node("","","","","","")
         val expected = """"": {
     "name": "",
     "type": "",
