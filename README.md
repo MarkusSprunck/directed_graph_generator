@@ -25,7 +25,7 @@ hundreds of application.
 - *file* - load an alternative file, the default value is data.xlsx
 - *package* - filter by component name
 - *showLinks* - the default value is false
-- *showComplex* - the default value is false
+- *showComplex* - the default value is true
 - *strict*  - show just the applications in the filter, the default value is false
 - *colorMode* - decide what is the first stereotype. Allowed values are {"status", "location", "cluster"}
 - *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
