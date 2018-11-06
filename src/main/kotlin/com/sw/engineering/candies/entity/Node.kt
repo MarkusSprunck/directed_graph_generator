@@ -24,7 +24,7 @@ class Node constructor(name: String,
     internal var description = ""
 
     // generated HTML for animated graph
-    private var descriptionHtml = ""
+    internal var descriptionHtml = ""
 
     // ingoing links
     val depends = HashSet<String>()
@@ -60,20 +60,7 @@ class Node constructor(name: String,
     }
 
     // this is just needed for the animated directed graph
-    override fun toString(): String {
-        val sb = StringBuilder()
-        sb.append("\"$name\": {\n")
-        sb.append("    \"name\": \"$name\",\n")
-        sb.append("    \"type\": \"$stereotypeFirst\",\n")
-        sb.append("    \"depends\":" + depends.toString() + ",\n")
-        sb.append("    \"dependedOnBy\":" + dependedOnBy.toString() + ",\n")
-        sb.append("    \"docs\": \"$document\"\n")
-        sb.append("}")
-        return sb.toString()
-    }
-
-    // this is just needed for the animated directed graph
-    private val document: String
+    internal val document: String
         get() {
             val sbDocs = StringBuilder()
             sbDocs.append("<h3>").append(name).append(" - ").append(nameLong).append("</h3>")

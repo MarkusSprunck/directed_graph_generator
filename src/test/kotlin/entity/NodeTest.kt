@@ -1,5 +1,6 @@
 package entity
 
+import com.sw.engineering.candies.control.Model2JSON.Companion.nodeToString
 import com.sw.engineering.candies.entity.Node
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -23,7 +24,7 @@ class NodeTest {
 }""".trimMargin()
 
         // when
-        val actual = sut.toString()
+        val actual = nodeToString(sut)
 
         // then
         assertEquals(expected, actual)
@@ -48,7 +49,7 @@ class NodeTest {
 }""".trimMargin()
 
         // when
-        val actual = sut.toString()
+        val actual = nodeToString(sut)
 
         // then
         assertEquals(expected, actual)
@@ -68,7 +69,7 @@ class NodeTest {
 }""".trimMargin()
 
         // when
-        val actual = sut.toString()
+        val actual = nodeToString(sut)
 
         // then
         assertEquals(expected, actual)
@@ -87,7 +88,7 @@ class NodeTest {
 }""".trimMargin()
 
         // when
-        val actual = sut.toString()
+        val actual = nodeToString(sut)
 
         // then
         assertEquals(expected, actual)
