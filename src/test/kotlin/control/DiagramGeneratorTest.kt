@@ -2,6 +2,7 @@ package control
 
 import com.sw.engineering.candies.control.DiagramGenerator
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import java.io.IOException
 
@@ -67,5 +68,28 @@ class DiagramGeneratorTest {
         // then
         assertEquals(expected, result.substring(13082, 13159))
     }
+
+    @Test
+    @Throws(IOException::class)
+    fun executeRunColorModeLocationNotComplex() {
+        // given
+        val expected = """
+            [Application 05\n (ID05)] as ID05  [[{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. 05}]]
+             """.trimIndent()
+
+        // when
+        val result = DiagramGenerator.run("data_test.xlsx",
+                "",
+                "component",
+                "",
+                false,
+                false,
+                false,
+                "location")
+
+        // then
+        assertTrue(result.contains( expected) )
+    }
+
 
 }

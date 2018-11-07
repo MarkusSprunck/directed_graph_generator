@@ -17,8 +17,6 @@ class IndexControllerTestIT {
     @Autowired
     lateinit var testRestTemplate: TestRestTemplate
 
-
-
     @Test
     fun defaultIndexController() {
         // given
@@ -33,6 +31,5 @@ class IndexControllerTestIT {
         Assert.assertEquals(183, result.headers.toString().length)
         Assert.assertEquals("<title>Graph Generator</title>", result.body.subSequence(71, 101))
     }
-
 
 }
