@@ -27,13 +27,13 @@ class Node constructor(name: String,
     internal var descriptionHtml = ""
 
     // ingoing links
-    val depends = HashSet<String>()
+    internal val depends = HashSet<String>()
 
     // outgoing links
-    val dependedOnBy = HashSet<String>()
+    internal val dependedOnBy = HashSet<String>()
 
     // Link comment for depend and/or depending nodes
-    val linkComments = HashMap<String, String>()
+    internal val linkComments = HashMap<String, String>()
 
     init {
         this.name = name

@@ -13,8 +13,8 @@ class Model {
 
     private val clusters = ConcurrentHashMap<String, Cluster>()
 
-    private fun insertIntoListOfNodes(name: String, node: Node) {
-        nodes[name] = node
+    private fun insertIntoListOfNodes(nodeName: String, node: Node) {
+        nodes[nodeName] = node
     }
 
     private fun insertIntoListOfClusters(node: Node, name: String) {

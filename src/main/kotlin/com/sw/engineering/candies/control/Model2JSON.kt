@@ -2,15 +2,12 @@ package com.sw.engineering.candies.control
 
 import com.sw.engineering.candies.entity.Model
 import com.sw.engineering.candies.entity.Node
-import org.slf4j.LoggerFactory
 import java.util.*
 
 class Model2JSON {
 
 
     companion object {
-
-        private val log = LoggerFactory.getLogger(Model2JSON::class.java)
 
         @JvmStatic
         fun toJSONStringModel(model: Model): String {
