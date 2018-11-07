@@ -44,7 +44,7 @@ class DiagramGeneratorTest {
                 "status")
 
         // then
-        assertEquals(expected, result.substring(13040, 13116))
+        assertEquals(expected, result.substring(12978, 13054))
     }
 
 

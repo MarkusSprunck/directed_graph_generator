@@ -59,42 +59,5 @@ class Node constructor(name: String,
         }
     }
 
-    // this is just needed for the animated directed graph
-    internal val document: String
-        get() {
-            val sbDocs = StringBuilder()
-            sbDocs.append("<h3>").append(name).append(" - ").append(nameLong).append("</h3>")
-            sbDocs.append("<b>Cluster</b>:<br/>").append(stereotypeFirst).append("<p/>")
-            sbDocs.append("<b>Location:</b><br/><em>").append(stereotypeSecond).append("<em><p/>")
-            sbDocs.append("<b>Status:</b><br/><em>").append(stereotypeThird).append("<em><p/>")
-            sbDocs.append("<b>Description:</b><br/><em>").append(descriptionHtml).append("<em><p/>")
-
-            if (!depends.isEmpty()) {
-                sbDocs.append("<b>Interface from:</b><p/>")
-
-                val dependsSorted = TreeSet<String>()
-                dependsSorted.addAll(depends)
-
-                for (temp in dependsSorted) {
-                    val id = temp.replace("\"", "")
-                    sbDocs.append("<a href=\\\"#obj-$id\\\" class=\\\"select-object\\\" data-name=\\\"$id\\\">$id</a> ")
-                }
-                sbDocs.append("<p/>")
-            }
-
-            if (!dependedOnBy.isEmpty()) {
-                sbDocs.append("<b>Interface to:</b><p/>")
-
-                val dependedOnBySorted = TreeSet<String>()
-                dependedOnBySorted.addAll(dependedOnBy)
-
-                for (temp in dependedOnBySorted) {
-                    val id = temp.replace("\"", "")
-                    sbDocs.append("<a href=\\\"#obj-$id\\\" class=\\\"select-object\\\" data-name=\\\"$id\\\">$id</a> ")
-                }
-                sbDocs.append("<p/>")
-            }
-            return sbDocs.toString()
-        }
 
 }
