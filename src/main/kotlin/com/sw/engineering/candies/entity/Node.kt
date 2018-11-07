@@ -1,6 +1,5 @@
 package com.sw.engineering.candies.entity
 
-import com.sw.engineering.candies.control.HtmlUtil
 import java.util.*
 
 /**
@@ -15,31 +14,27 @@ class Node constructor(name: String,
                        stereotypeSecond: String,
                        stereotypeThird: String ) {
 
-    // properties of the node
+    // properties of this Node
     internal var name = ""
     internal var nameLong = ""
+    internal var description = ""
     internal var stereotypeFirst = ""
     internal var stereotypeThird = ""
     internal var stereotypeSecond = ""
-    internal var description = ""
 
-    // generated HTML for animated graph
-    internal var descriptionHtml = ""
-
-    // ingoing links
+    // store names of ingoing links
     internal val depends = HashSet<String>()
 
-    // outgoing links
+    // store names of outgoing links
     internal val dependedOnBy = HashSet<String>()
 
-    // Link comment for depend and/or depending nodes
+    // store link comment for depend and/or depending nodes
     internal val linkComments = HashMap<String, String>()
 
     init {
         this.name = name
         this.nameLong = nameLong
         this.description = description
-        this.descriptionHtml = HtmlUtil.escape(description)
         this.stereotypeFirst = stereotypeFirst
         this.stereotypeSecond = stereotypeSecond
         this.stereotypeThird = stereotypeThird

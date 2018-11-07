@@ -1,6 +1,5 @@
 package com.sw.engineering.candies.control
 
-import com.sw.engineering.candies.entity.Colors
 import com.sw.engineering.candies.entity.Model
 import org.slf4j.LoggerFactory
 import java.util.*
@@ -24,7 +23,7 @@ class Model2PlantUml {
             var index = 0
             for (cluster in model.getClusters()) {
                 val color = Colors.values[index % Colors.values.size]
-                log.debug(" > ${cluster.getAllNodes()}  $color")
+                log.debug(" > ${cluster.getNodes()}  $color")
                 graphData.append("skinparam componentBorderColor<<${cluster.getName().toLowerCase()}>> $color\n")
                 index++
             }
@@ -35,7 +34,7 @@ class Model2PlantUml {
 
                 if ((clusterName == cluster.getName() && clusterName.isNotEmpty()) || clusterName.isEmpty()) {
 
-                    for (node in cluster.getAllNodes().values) {
+                    for (node in cluster.getNodes()) {
                         if (cluster.getName() != node.name) {
 
                             for (linkComment in node.linkComments) {

@@ -4,14 +4,20 @@ import java.util.concurrent.ConcurrentHashMap
 
 /**
  * This class stores the main model with all nodes and clusters.
- * The link information is stored in the nodes. It generates the
- * data structures for visualizations.
+ * The link information is stored in the nodes.
  */
 class Model {
 
+    // store all nodes of the model
     private val nodes = ConcurrentHashMap<String, Node>()
 
+    // store named cluster in the model
     private val clusters = ConcurrentHashMap<String, Cluster>()
+
+    fun setNode(name: String, node: Node) {
+        insertIntoListOfNodes(name, node)
+        insertIntoListOfClusters(node, name)
+    }
 
     private fun insertIntoListOfNodes(nodeName: String, node: Node) {
         nodes[nodeName] = node
@@ -23,11 +29,6 @@ class Model {
             clusters[clusterName] = Cluster(nodes[name]!!.stereotypeFirst)
         }
         clusters[clusterName]?.addNode(name, node)
-    }
-
-    fun setNode(name: String, node: Node) {
-        insertIntoListOfNodes(name, node)
-        insertIntoListOfClusters(node, name)
     }
 
     fun getNode(name: String): Node? = nodes[name]

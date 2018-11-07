@@ -3,14 +3,15 @@ package com.sw.engineering.candies.entity
 import java.util.concurrent.ConcurrentHashMap
 
 /**
- *
- * This class stores a named Cluster with all containing nodes.
- *
+ * This class stores a named Cluster with all containing
+ * nodes of this specific Cluster.
  */
 class Cluster constructor(name: String) {
 
+    // store all nodes of the cluster
     private var nodes = ConcurrentHashMap<String, Node>()
 
+    // name of cluster
     private var name = ""
 
     init {
@@ -21,8 +22,8 @@ class Cluster constructor(name: String) {
         nodes[name] = node
     }
 
-    fun getAllNodes(): ConcurrentHashMap<String, Node> {
-        return ConcurrentHashMap(nodes)
+    fun getNodes(): MutableList<Node> {
+        return nodes.values.toMutableList()
     }
 
     fun getName(): String {

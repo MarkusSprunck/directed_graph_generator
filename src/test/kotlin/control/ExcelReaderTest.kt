@@ -16,7 +16,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_empty.xlsx", "", false, "stereotypeFirst", true)
 
         // then
-        assertEquals(expected, Model2JSON.toJSONStringModel(model))
+        assertEquals(expected, Model2JSON.getModel(model))
     }
 
 
@@ -29,7 +29,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_no_links.xlsx", "", false, "stereotypeFirst", true)
 
         // then
-        assertEquals(expected, Model2JSON.toJSONStringModel(model))
+        assertEquals(expected, Model2JSON.getModel(model))
     }
 
 
@@ -42,7 +42,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("xxx.xlsx", "", false, "stereotypeFirst",  true)
 
         // then
-        assertEquals(expected, Model2JSON.toJSONStringModel(model))
+        assertEquals(expected, Model2JSON.getModel(model))
     }
 
 
@@ -93,7 +93,7 @@ class ExcelReaderTest {
         val model = ExcelReader.parseExcelSheet("data_test.xlsx", "", false, "cluster",  true)
 
         // then
-        assertEquals(expected, Model2JSON.toJSONStringModel(model))
+        assertEquals(expected, Model2JSON.getModel(model))
     }
 
 

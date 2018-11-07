@@ -32,7 +32,7 @@ object DiagramGenerator {
                     .replace("##JQUERRY_B_LIB##", FileUtil.load("libs/jquery.browser.min.js"))
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
-                    .replace("##GENERATED_DATA##", Model2JSON.toJSONStringModel(model))
+                    .replace("##GENERATED_DATA##", Model2JSON.getModel(model))
         }
 
         if (diagramType == "component") {
