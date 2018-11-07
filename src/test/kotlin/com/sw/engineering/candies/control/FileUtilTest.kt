@@ -1,6 +1,5 @@
-package control
+package com.sw.engineering.candies.control
 
-import com.sw.engineering.candies.control.FileUtil
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

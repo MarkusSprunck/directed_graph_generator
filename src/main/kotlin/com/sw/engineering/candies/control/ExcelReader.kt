@@ -105,9 +105,9 @@ object ExcelReader {
                 if (sourceMatcher.find(0)) {
                     log.info("> add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
                     when (colorMode) {
-                        "cluster"  -> result.setNode(id, Node(id, name, description,  cluster, location, status))
-                        "status"   -> result.setNode(id, Node(id, name, description,   status,  cluster, location))
-                        "location" -> result.setNode(id, Node(id, name, description, location,   status, cluster))
+                        "cluster"  -> result.setNode(id, Node(id, name, description, cluster, location, status))
+                        "status"   -> result.setNode(id, Node(id, name, description, status, cluster, location))
+                        "location" -> result.setNode(id, Node(id, name, description, location, status, cluster))
                     }
                 }
             }

@@ -1,6 +1,5 @@
-package control
+package com.sw.engineering.candies.control
 
-import com.sw.engineering.candies.control.DiagramGenerator
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test

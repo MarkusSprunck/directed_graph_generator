@@ -1,6 +1,5 @@
-package control
+package com.sw.engineering.candies.control
 
-import com.sw.engineering.candies.control.Model2PlantUml
 import com.sw.engineering.candies.entity.Model
 import com.sw.engineering.candies.entity.Node
 import org.junit.Assert.assertEquals

@@ -1,6 +1,5 @@
-package control
+package com.sw.engineering.candies.control
 
-import com.sw.engineering.candies.control.Model2JSON
 import com.sw.engineering.candies.entity.Node
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -10,7 +9,7 @@ class Model2JSONTest {
     @Test
     fun addDependsUnique() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "XYZ", "","")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "XYZ", "", "")
         sut.addDepends("Name B")
         sut.addDepends("Name C")
         sut.addDependedOnBy("Name D")
@@ -35,7 +34,7 @@ class Model2JSONTest {
     @Test
     fun addDependsDuplicated() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "", "","")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "", "", "")
         sut.addDepends("Name B")
         sut.addDepends("Name B")
         sut.addDepends("Name C")
@@ -61,7 +60,7 @@ class Model2JSONTest {
     @Test
     fun constructor() {
         // given
-        val sut = Node("Name A", "Name Long A", "Group XYZ", "XXX","","")
+        val sut = Node("Name A", "Name Long A", "Group XYZ", "XXX", "", "")
         val expected = """
             |"Name A": {
             |    "name": "Name A",
@@ -81,7 +80,7 @@ class Model2JSONTest {
     @Test
     fun constructorDefault() {
         // given
-        val sut = Node("","","","","","")
+        val sut = Node("", "", "", "", "", "")
         val expected = """
             |"": {
             |    "name": "",
