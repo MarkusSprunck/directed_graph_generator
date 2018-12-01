@@ -34,11 +34,11 @@ skinparam package<<Transparent>> {
 
 left to right direction
 
-package "UML Components - %date%" {
+package "%DIAGRAM_TITLE% - %date%" {
 
     package "1234567890" <<Transparent>> {
 
-        '##PACKAGES##
+        '%PACKAGES%
 
     }
 

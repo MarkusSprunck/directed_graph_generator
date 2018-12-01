@@ -21,7 +21,7 @@ class DiagramGeneratorTest {
                 false,
                 true,
                 false,
-                "cluster")
+                "cluster","UML Components")
 
         // then
         assertEquals(expected, result.substring(13079, 13156))
@@ -41,10 +41,10 @@ class DiagramGeneratorTest {
                 false,
                 true,
                 false,
-                "status")
+                "status", "UML Components")
 
         // then
-        assertEquals(expected, result.substring(12978, 13054))
+        assertEquals(expected, result.substring(12978+62, 13054+62))
     }
 
 
@@ -62,7 +62,7 @@ class DiagramGeneratorTest {
                 false,
                 true,
                 false,
-                "location")
+                "location", "UML Components")
 
         // then
         assertEquals(expected, result.substring(13082, 13159))
@@ -84,7 +84,7 @@ class DiagramGeneratorTest {
                 false,
                 false,
                 false,
-                "location")
+                "location", "")
 
         // then
         assertTrue(result.contains( expected) )

@@ -29,6 +29,7 @@ hundreds of application.
 - *strict*  - show just the applications in the filter, the default value is false
 - *colorMode* - decide what is the first stereotype. Allowed values are {"status", "location", "cluster"}
 - *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
+- *title* - changes the title of the diagram, the default value is "UML Component".
 
 
 Development

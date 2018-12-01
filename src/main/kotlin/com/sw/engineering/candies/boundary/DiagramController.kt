@@ -22,7 +22,9 @@ class DiagramController {
                 @RequestParam(value = "showComplex", defaultValue = "true") showComplex: Boolean,
                 @RequestParam(value = "strict", defaultValue = "false") strict: Boolean,
                 @RequestParam(value = "colorMode", defaultValue = "cluster") colorMode: String,
-                @RequestParam(value = "type", defaultValue = "graph") type: String): String {
+                @RequestParam(value = "type", defaultValue = "graph") type: String,
+                @RequestParam(value = "title", defaultValue = "UML Components") title: String
+                ): String {
 
         log.info("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
@@ -34,7 +36,8 @@ class DiagramController {
                 showLinks,
                 showComplex,
                 strict,
-                colorMode)
+                colorMode,
+                title)
 
         log.info("Request Diagram | END   - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 

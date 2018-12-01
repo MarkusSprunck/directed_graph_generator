@@ -17,7 +17,8 @@ object DiagramGenerator {
             showLinks: Boolean,
             showComplex: Boolean,
             strict: Boolean,
-            colorMode: String): String {
+            colorMode: String,
+            diagramTitle:String): String {
 
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode, showComplex)
 
@@ -38,7 +39,8 @@ object DiagramGenerator {
         if (diagramType == "component") {
 
             val resultPuml = FileUtil.load("templates/component.puml")
-                    .replace("'##PACKAGES##", Model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex))
+                    .replace("'%PACKAGES%", Model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex))
+                    .replace("%DIAGRAM_TITLE%", diagramTitle)
 
             // Uncomment just for debugging
             // File("output/components.puml").writeText(resultPuml)
