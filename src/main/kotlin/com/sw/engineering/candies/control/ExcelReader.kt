@@ -43,7 +43,7 @@ object ExcelReader {
         var fis: FileInputStream? = null
         var wb: XSSFWorkbook? = null
         try {
-            val file = File("./Input/$excelFileName")
+            val file = File("./input/$excelFileName")
             fis = FileInputStream(file)
             wb = XSSFWorkbook(fis)
             result = wb.getSheet(sheetName)
