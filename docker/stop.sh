@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker container stop dgg_app
+docker container stop directed-graph-generator

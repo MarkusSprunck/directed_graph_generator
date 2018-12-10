@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="Add new parameter to change title of diagram">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/list.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/remove.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/shell.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8/US_export_policy.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8/local_policy.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectedGraphGenerator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DirectedGraphGenerator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/DirectedGraphGenerator-1.0.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/shell.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/shell.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/logs/*.log" />
@@ -33,8 +24,8 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_DirectedGraphGenerator.ic" NAME="All in DirectedGraphGenerator Coverage Results" MODIFIED="1541611191967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/directed_graph_generator$ApplicationTest_mainTest.ic" NAME="ApplicationTest.mainTest Coverage Results" MODIFIED="1541284507905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_DirectedGraphGenerator.ic" NAME="All in DirectedGraphGenerator Coverage Results" MODIFIED="1541611191967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/directed_graph_generator$ApplicationTest.ic" NAME="ApplicationTest Coverage Results" MODIFIED="1541283865714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
@@ -45,187 +36,8 @@
     <option name="myAutoScrollFromSource" value="true" />
     <option name="myElementSize" value="91" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="654764874">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="30" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="4" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="31" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Dockerfile" value="2" />
-          <entry key="LICENSE" value="3" />
-          <entry key="Log4JConfiguraton" value="2" />
-          <entry key="MF" value="10" />
-          <entry key="Readme" value="3" />
-          <entry key="class" value="1" />
-          <entry key="html" value="12" />
-          <entry key="iml" value="3" />
-          <entry key="java" value="1" />
-          <entry key="kt" value="203" />
-          <entry key="log" value="28" />
-          <entry key="log4JConfig" value="1" />
-          <entry key="md" value="10" />
-          <entry key="name" value="1" />
-          <entry key="png" value="8" />
-          <entry key="properties" value="16" />
-          <entry key="puml" value="5" />
-          <entry key="sh" value="22" />
-          <entry key="test" value="2" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="47" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Bash" value="22" />
-          <entry key="CLASS" value="3" />
-          <entry key="Dockerfile" value="1" />
-          <entry key="HTML" value="12" />
-          <entry key="IDEA_MODULE" value="3" />
-          <entry key="Image" value="8" />
-          <entry key="JAVA" value="2" />
-          <entry key="Kotlin" value="203" />
-          <entry key="Manifest" value="10" />
-          <entry key="Markdown" value="7" />
-          <entry key="PLAIN_TEXT" value="43" />
-          <entry key="PlantUML file" value="5" />
-          <entry key="Properties" value="16" />
-          <entry key="XML" value="47" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Dockerfile" value="149" />
-          <entry key="LICENSE" value="9" />
-          <entry key="Readme" value="25" />
-          <entry key="html" value="69" />
-          <entry key="java" value="2" />
-          <entry key="kt" value="4726" />
-          <entry key="md" value="1918" />
-          <entry key="properties" value="86" />
-          <entry key="puml" value="691" />
-          <entry key="sh" value="298" />
-          <entry key="txt" value="815" />
-          <entry key="xml" value="311" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Bash" value="298" />
-          <entry key="Dockerfile" value="129" />
-          <entry key="HTML" value="69" />
-          <entry key="JAVA" value="2" />
-          <entry key="Kotlin" value="4726" />
-          <entry key="Markdown" value="313" />
-          <entry key="PLAIN_TEXT" value="2474" />
-          <entry key="PlantUML file" value="691" />
-          <entry key="Properties" value="86" />
-          <entry key="XML" value="311" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/remove.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/Readme.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/shell.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/start.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/build.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/run.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="38" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/stop.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/list.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,9 +139,9 @@
         <option value="$PROJECT_DIR$/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/docker/build.sh" />
         <option value="$PROJECT_DIR$/docker/remove.sh" />
-        <option value="$PROJECT_DIR$/docker/shell.sh" />
         <option value="$PROJECT_DIR$/docker/logs.sh" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/shell.sh" />
       </list>
     </option>
   </component>
@@ -347,11 +159,6 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="DirectedGraphGenerator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="DirectedGraphGenerator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -362,7 +169,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="728" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -420,6 +227,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -446,33 +265,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="directed_graph_generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="directed_graph_generator" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541661661496" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544477706430" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -516,11 +320,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.run.sh">
+  <component name="RunManager" selected="Bash.shell.sh">
     <configuration name="build.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/build.sh" />
@@ -531,29 +336,10 @@
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker_build.sh" />
-      <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="logs.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="DirectedGraphGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/logs.sh" />
-      <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="remove.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="DirectedGraphGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/remove.sh" />
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
@@ -561,20 +347,47 @@
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/run.sh" />
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="shell.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="DirectedGraphGenerator" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/shell.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="stop.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/stop.sh" />
       <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="command" value="" />
+          <option name="containerName" value="directed-graph-generator" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="directed-graph-generator:latest" />
+          <option name="commandLineOptions" value="" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="directed_graph_generator/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
@@ -583,36 +396,41 @@
           <option name="JSONFilePath" value="" />
           <option name="buildOnly" value="true" />
           <option name="command" value="" />
-          <option name="commandLineOptions" value="" />
           <option name="containerName" value="" />
           <option name="entrypoint" value="" />
           <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
           <option name="sourceFilePath" value="Dockerfile" />
-          <option name="startBrowserSettings">
-            <browser url="http://127.0.0.1" />
-          </option>
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.directed_graph_generator/Dockerfile" />
       <item itemvalue="Bash.docker_build.sh" />
-      <item itemvalue="Bash.remove.sh" />
       <item itemvalue="Bash.stop.sh" />
-      <item itemvalue="Bash.logs.sh" />
       <item itemvalue="Bash.build.sh" />
       <item itemvalue="Bash.run.sh" />
+      <item itemvalue="Bash.shell.sh" />
+      <item itemvalue="Docker.directed_graph_generator/Dockerfile" />
+      <item itemvalue="Docker.Docker Image" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Bash.run.sh" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Bash.shell.sh" />
         <item itemvalue="Bash.build.sh" />
-        <item itemvalue="Bash.remove.sh" />
-        <item itemvalue="Bash.stop.sh" />
-        <item itemvalue="Bash.logs.sh" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Bash.run.sh" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
+    <option name="showImplicitBeans" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+    <option name="showDoc" value="false" />
+    <option name="showGraph" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -624,6 +442,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539029292530</updated>
+      <workItem from="1544473166789" duration="968000" />
+      <workItem from="1544474189082" duration="2566000" />
+      <workItem from="1544477030611" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="Update readme">
       <created>1539115784045</created>
@@ -919,6 +740,9 @@
       <configuration name="DiagramControllerTestIT.defaultMainRestController" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4149000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -929,11 +753,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="714" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7630923" visible="true" weight="0.18674211" />
-      <window_info id="Structure" order="1" sideWeight="0.23690774" side_tool="true" visible="true" weight="0.18674211" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75641024" visible="true" weight="0.19547658" />
+      <window_info id="Structure" order="1" sideWeight="0.24358974" side_tool="true" weight="0.19224556" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -941,19 +764,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.37683523" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7364592" weight="0.5106036" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7358643" weight="0.34404537" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7843296" weight="0.3980424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32901135" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.78173" visible="true" weight="0.34584013" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.21827" side_tool="true" weight="0.5791191" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5957963" weight="0.39477977" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.78173" weight="0.342155" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30613893" side_tool="true" weight="0.49905482" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5957963" weight="0.3946541" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47092083" weight="0.4045677" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49919224" weight="0.29526916" />
       <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.45867097" />
       <window_info anchor="bottom" id="Application Servers" order="13" sideWeight="0.4987874" weight="0.32952693" />
-      <window_info anchor="bottom" id="Docker" order="14" sideWeight="0.4995958" weight="0.32952693" />
+      <window_info active="true" anchor="bottom" id="Docker" order="14" sideWeight="0.69386107" visible="true" weight="0.40353698" />
+      <window_info anchor="bottom" id="Spring" order="15" weight="0.32861635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -965,7 +789,11 @@
       <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.5892308" visible="true" weight="0.17865804" />
       <window_info anchor="right" id="Coverage" order="9" sideWeight="0.41076922" side_tool="true" weight="0.28109854" />
       <window_info anchor="right" id="Google Cloud Storage" order="10" />
+      <window_info anchor="right" id="Maven" order="11" visible="true" weight="0.16478191" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -1002,9 +830,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update readme" />
@@ -1033,21 +872,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add new parameter to change title of diagram" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.71/kotlin-stdlib-common-1.2.71-sources.jar!/kotlin/collections/Maps.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.71/kotlin-stdlib-common-1.2.71-sources.jar!/kotlin/collections/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="111" column="57" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/test" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Colors.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1160,13 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/IndexController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1254,9 +1071,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8/README.txt" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1265,8 +1080,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="199">
-            <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <first_editor relative-caret-position="78">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor />
         </state>
@@ -1294,20 +1109,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input/Anwendungssysteme.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker_images_list.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input/Anwendungssysteme.html" />
+    <entry file="file://$PROJECT_DIR$/docker_images_list.sh" />
     <entry file="file://$PROJECT_DIR$/logs/Readme.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1339,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/shell.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker/start.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1353,13 +1149,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/logs.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/logs.sh" />
     <entry file="file://$PROJECT_DIR$/docker/stop.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1369,8 +1159,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="98">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DirectedGraphGenerator.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.0.RELEASE/spring-boot-actuator-autoconfigure-2.1.0.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/audit/AuditAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.0.13.Final/hibernate-validator-6.0.13.Final.jar!/org/hibernate/validator/internal/constraintvalidators/bv/AssertFalseValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/shell.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1414,7 +1235,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Kotlin SDK</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1426,12 +1247,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DirectedGraphGenerator</last-edited>
+          <last-edited>Spring|DirectedGraphGenerator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

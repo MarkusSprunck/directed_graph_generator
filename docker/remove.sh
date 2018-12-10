@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker rm dgg_app
+docker rm directed-graph-generator
