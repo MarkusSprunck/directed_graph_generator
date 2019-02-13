@@ -4,18 +4,48 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>DirectedGraphGenerator</groupId>
-    <artifactId>DirectedGraphGenerator</artifactId>
-    <version>1.0.4</version>
+    <groupId>com.sw_engineering_candies</groupId>
+    <artifactId>DGG</artifactId>
+    <version>1.0-${timestamp}</version>
 
     <properties>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
         <java.version>1.8</java.version>
         <kotlin.version>1.2.71</kotlin.version>
         <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
         <org.junit.platform.version>1.1.1</org.junit.platform.version>
         <org.junit.jupiter.version>5.1.1</org.junit.jupiter.version>
         <org.apache.poi.version>3.17</org.apache.poi.version>
+        <sonar.source>.</sonar.source>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>linux</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                </os>
+            </activation>
+            <properties>
+                <executor.bash.path>bash</executor.bash.path>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>win64</id>
+            <activation>
+                <os>
+                    <family>!mac</family>
+                </os>
+            </activation>
+            <properties>
+                <!-- change this to you personal path -->
+                <executor.bash.path>C:\Tools\Git-2.19.1-64-bit\Git\bin\bash.exe</executor.bash.path>
+            </properties>
+        </profile>
+    </profiles>
 
     <dependencyManagement>
         <dependencies>
@@ -89,7 +119,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
-         </dependency>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -132,6 +162,8 @@
 
 
     <build>
+        <finalName>ROOT</finalName>
+
         <plugins>
 
             <!-- Java compiler plugin -->
@@ -169,7 +201,7 @@
                         </goals>
                         <configuration>
                             <sourceDirs>
-                                <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
+                                <sourceDir>src/main/java</sourceDir>
                             </sourceDirs>
                         </configuration>
                     </execution>
@@ -181,7 +213,7 @@
                         </goals>
                         <configuration>
                             <sourceDirs>
-                                <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
+                                <sourceDir>${project.basedir}/src/test/java</sourceDir>
                             </sourceDirs>
                         </configuration>
                     </execution>
@@ -219,6 +251,7 @@
                         <include>**/*Test.kt</include>
                         <include>**/*Tests.kt</include>
                     </includes>
+                    <workingDirectory>./logs</workingDirectory>
                 </configuration>
             </plugin>
 
@@ -234,9 +267,11 @@
                 </configuration>
             </plugin>
 
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.2.RELEASE</version>
                 <executions>
                     <execution>
                         <id>repackage</id>
@@ -248,26 +283,24 @@
             </plugin>
 
 
+            <!-- install docker -->
             <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.8</version>
+                <artifactId>exec-maven-plugin</artifactId>
+                <groupId>org.codehaus.mojo</groupId>
                 <executions>
                     <execution>
-                        <id>copy</id>
-                        <phase>package</phase>
-                        <configuration>
-                            <target>
-                                <echo>ANT TASK - copying files....</echo>
-                                <copy todir="./dist" overwrite="true" flatten="true">
-                                    <fileset dir="./target" includes="*.jar">
-                                        <include name="target/*.jar"/>
-                                    </fileset>
-                                </copy>
-                            </target>
-                        </configuration>
+                        <phase>install</phase>
                         <goals>
-                            <goal>run</goal>
+                            <goal>exec</goal>
                         </goals>
+                        <configuration>
+                            <workingDirectory>${basedir}/docker</workingDirectory>
+                            <arguments>
+                                <argument>install.sh</argument>
+                                <argument>${timestamp}</argument>
+                            </arguments>
+                            <executable>${executor.bash.path}</executable>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

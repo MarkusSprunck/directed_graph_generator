@@ -39,6 +39,9 @@ Development
 - UML generation is based on _plantUML_ and this needs _GraphVis_ to run. You find the installation packages 
 here https://graphviz.gitlab.io/download/
 - Java 1.8 JRE will be needed to start the Spring Boot 2.1 application
+- A docker image will be created and started during the build, but you may also run without docker. In the case you use 
+docker, just mount the path /usr/local/bin/data/ in the container to a local folder.
+
 
 Expected Results
 ----------------

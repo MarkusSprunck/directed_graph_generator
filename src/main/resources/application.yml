@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: "staging"
+
+# LOGGING
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} LEVEL=%-5p %m%n"
+
+server:
+  # Host name of your docker
+  host: localhost
+  # Define a custom port instead of the default 8080
+  port: 8080
+
+

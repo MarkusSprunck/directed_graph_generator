@@ -10,6 +10,10 @@ skinparam defaultTextAlignment center
 skinparam packageFontSize  14
 skinparam packageFontName Arial
 
+skinparam nodesep 20
+skinparam ranksep 20
+skinparam linetype polyline
+
 skinparam component {
     StereotypeFontSize 14
     StereotypeFontColor black
@@ -30,13 +34,13 @@ skinparam package<<Transparent>> {
   stereotypeFontColor Transparent
 }
 
-!pragma ratio 0.66
+!pragma ratio 0.50
 
 left to right direction
 
 package "%DIAGRAM_TITLE% - %date%" {
 
-    package "1234567890" <<Transparent>> {
+    package "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890" <<Transparent>> {
 
         '%PACKAGES%
 
