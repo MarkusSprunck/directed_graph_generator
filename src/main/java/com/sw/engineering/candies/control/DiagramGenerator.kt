@@ -22,10 +22,10 @@ object DiagramGenerator {
 
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode, showComplex)
 
-        var result = "<h3>Enter valid URL parameter for type {'graph', 'component'}</h3>"
-
         if (diagramType == "graph") {
-            result = FileUtil.load("templates/main.html")
+
+            // Create animated graph
+            return  FileUtil.load("templates/main.html")
                     .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
                     .replace("##GEOMETRY_LIB##", FileUtil.load("libs/geometry.js"))
                     .replace("##JQUERRY_SPLITTER_LIB##", FileUtil.load("libs/jquery.splitter.js"))
@@ -34,42 +34,52 @@ object DiagramGenerator {
                     .replace("##D3_LIB##", FileUtil.load("libs/d3.v3.min.js"))
                     .replace("##JS_CODE##", FileUtil.load("templates/main.js"))
                     .replace("##GENERATED_DATA##", Model2JSON.getModel(model))
-        }
 
-        if (diagramType == "component") {
+        } else if (diagramType == "component") {
 
+            // create UML component diagram
             val resultPuml = FileUtil.load("templates/component.puml")
                     .replace("'%PACKAGES%", Model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex, colorMode, excelFileName))
                     .replace("%DIAGRAM_TITLE%", diagramTitle)
 
-            // Uncomment just for debugging
-            // File("output/components.puml").writeText(resultPuml)
-
-            // Render SVG diagram
+            // Render SVG diagram into stream
             val reader = SourceStringReader(resultPuml)
             val os = ByteArrayOutputStream()
             reader.outputImage(os, FileFormatOption(FileFormat.SVG))
             os.close()
+            val diagramSVG = String(os.toByteArray(), Charset.forName("UTF-8"))
 
-            // The XML is stored into svg
-            val svg = StringBuilder()
-            svg.append("<html>")
-            svg.append("    <head>")
-            svg.append("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">")
-            svg.append("        <meta charset=\"utf-8\">")
-            svg.append("        <title>UML Components</title>")
-            svg.append("        <link href=\"com.sw_engineering_candies.boundary.main.css\" rel=\"stylesheet\" type=\"text/css\">\n")
-            svg.append("    </head>")
-            svg.append("    <body>")
-            svg.append("        " + String(os.toByteArray(), Charset.forName("UTF-8")))
-            svg.append("    </body>")
-            svg.append("</html>")
-
-            result = svg.toString()
+            // Create html page with embedded diagram
+            val html = StringBuilder()
+            html.append("<html>")
+            html.append("    <head>")
+            html.append("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">")
+            html.append("        <meta charset=\"utf-8\">")
+            html.append("        <title>UML Components</title>")
+            html.append("        <link href=\"com.sw_engineering_candies.boundary.main.css\" rel=\"stylesheet\" type=\"text/css\">\n")
+            html.append("    </head>")
+            html.append("    <body>")
+            html.append("         ").append( diagramSVG )
+            html.append("    </body>")
+            html.append("</html>")
+            return html.toString()
         }
 
-        return result
+        return  """
+                <html>
+                    <head>
+                        <meta charset=\"utf-8\">
+                        <title>DGG</title>
+                        <link href='./main.css' rel='stylesheet' type='text/css'>
+                    </head>
+                    <body>
+                        <div>
+                            Find code and description of valid URL parameter
+                            <a href='https://github.com/MarkusSprunck/directed_graph_generator'>here</a>.
+                        </div>
+                    </body>
+                </html>
+                """
     }
-
 
 }

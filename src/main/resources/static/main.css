@@ -9,7 +9,7 @@ body {
 }
 
 div {
-	font: 14px sans-serif;
+	font: 16px Tahoma;
 }
 
 a:hover {
@@ -73,7 +73,7 @@ a:hover {
 .link.inactive,
 .node.inactive rect,
 .node.inactive text marker#end {
-    stroke: #blue;
+    stroke: #0000FF;
 	opacity: .4;
 }
 

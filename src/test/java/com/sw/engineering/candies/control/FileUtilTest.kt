@@ -8,7 +8,7 @@ class FileUtilTest {
       @Test
     fun readTemplateCss() {
         // given
-        val expected = 3255
+        val expected = 3253
 
         // when
         val result = FileUtil.load("static/main.css")
