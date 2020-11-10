@@ -23,6 +23,7 @@
         <sonar.sources>src/main/kotlin,src/test/kotlin</sonar.sources>
         <sonar.exclusions>**/*Test.kt, **/*TestIT.kt</sonar.exclusions>
         <sonar.tests>src/test</sonar.tests>
+        <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
     </properties>
 
     <dependencyManagement>
