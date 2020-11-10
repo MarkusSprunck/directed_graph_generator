@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +302,7 @@
       <workItem from="1550089865229" duration="6254000" />
       <workItem from="1550261747120" duration="4866000" />
       <workItem from="1555345109875" duration="591000" />
-      <workItem from="1605013876000" duration="8478000" />
-    </task>
-    <task id="LOCAL-00001" summary="Update readme">
-      <created>1539115784045</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1539115784045</updated>
+      <workItem from="1605013876000" duration="9385000" />
     </task>
     <task id="LOCAL-00002" summary="Improve filter pattern and fix bug (missing first node)">
       <created>1539191264379</created>
@@ -639,7 +633,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605026588789</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="- activate test cases in maven">
+      <created>1605026924381</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1605026924381</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- activate test cases in maven">
+      <created>1605027201630</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1605027201631</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -727,45 +735,45 @@
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1052@0.23.1792.1052" timestamp="1605014998123" />
-    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605026588712">
+    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605027201515">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605026588712" />
+    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605027201515" />
     <state x="180" y="134" key="DiffContextDialog" timestamp="1605023231639">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="180" y="134" key="DiffContextDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605023231639" />
-    <state width="1750" height="354" key="GridCell.Tab.0.bottom" timestamp="1605026396652">
+    <state width="1750" height="354" key="GridCell.Tab.0.bottom" timestamp="1605026909682">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605026396652" />
-    <state width="1750" height="354" key="GridCell.Tab.0.center" timestamp="1605026396651">
+    <state width="1750" height="354" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
+    <state width="1750" height="354" key="GridCell.Tab.0.center" timestamp="1605026909682">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605026396651" />
-    <state width="1750" height="354" key="GridCell.Tab.0.left" timestamp="1605026396651">
+    <state width="1750" height="354" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
+    <state width="1750" height="354" key="GridCell.Tab.0.left" timestamp="1605026909682">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605026396651" />
-    <state width="1750" height="354" key="GridCell.Tab.0.right" timestamp="1605026396651">
+    <state width="1750" height="354" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
+    <state width="1750" height="354" key="GridCell.Tab.0.right" timestamp="1605026909682">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605026396651" />
+    <state width="1750" height="354" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
     <state x="602" y="259" key="RollbackChangesDialog" timestamp="1605018771528">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="602" y="259" key="RollbackChangesDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605018771528" />
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605026590320">
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605027203392">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605026590320" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605027203392" />
     <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605026360679">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="597" y="311" width="598" height="476" key="find.popup/0.23.1792.1052@0.23.1792.1052" timestamp="1605026360679" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605024866856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605026793943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>
