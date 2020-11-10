@@ -25,15 +25,13 @@ class DiagramControllerTestIT {
     @Test
     fun defaultMainRestController() {
         // given
-        val url = "http://localhost:" +
-                localPort +"/diagram"
+        val url = "http://localhost:" + localPort +"/diagram"
 
         // when
         val result = testRestTemplate.getForEntity(url, String::class.java)
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(291576, result.body.length)
         Assert.assertEquals(154, result.headers.toString().length)
         Assert.assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
     }
@@ -42,8 +40,7 @@ class DiagramControllerTestIT {
     @Test
     fun defaultMainRestControllerParameter() {
         // given
-        val url = "http://localhost:" +
-                localPort +"/diagram?filter=10A"
+        val url = "http://localhost:" + localPort +"/diagram?filter=10A"
 
         // when
         val result = testRestTemplate.getForEntity(url, String::class.java)
@@ -51,7 +48,6 @@ class DiagramControllerTestIT {
         // then
         Assert.assertNotNull(result)
         Assert.assertEquals(287434, result.body.length)
-        Assert.assertEquals(154, result.headers.toString().length)
         Assert.assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
     }
 
