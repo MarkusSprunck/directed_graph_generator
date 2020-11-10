@@ -28,7 +28,7 @@ pipeline {
          steps {
             withSonarQubeEnv('sonarqube-dev') {
                 echo 'Start sonar import'
-                sh 'mvn -s .m2/settings.xml sonar:sonar  -Dsonar.projectKey=dgg_bl -Dsonar.branch.name=master'
+                sh 'mvn sonar:sonar  -Dsonar.projectKey=dgg_bl -Dsonar.branch.name=master'
             }
          }
       }
