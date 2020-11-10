@@ -10,32 +10,50 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.test.context.junit4.SpringRunner
 
-
-
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 @RunWith(SpringRunner::class)
 @SpringBootTest(classes = [MainApplication::class], webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class IndexControllerTestIT {
-
-    @Value("\${local.server.port}")
-    protected var localPort: Int = 0
+class DiagramControllerTestIT {
 
     @Autowired
     lateinit var testRestTemplate: TestRestTemplate
 
+    @Value("\${local.server.port}")
+    protected var localPort: Int = 0
+
+
     @Test
-    fun defaultIndexController() {
+    fun defaultMainRestController() {
         // given
-        val url = "http://localhost:" + localPort + "/"
+        val url = "http://localhost:" +
+                localPort +"/diagram"
 
         // when
         val result = testRestTemplate.getForEntity(url, String::class.java)
 
         // then
         Assert.assertNotNull(result)
-        Assert.assertEquals(1195, result.body.length)
-        Assert.assertEquals(183, result.headers.toString().length)
-        Assert.assertEquals("<title>Graph Generator</title>", result.body.subSequence(71, 101))
+        Assert.assertEquals(291576, result.body.length)
+        Assert.assertEquals(154, result.headers.toString().length)
+        Assert.assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
     }
+
+
+    @Test
+    fun defaultMainRestControllerParameter() {
+        // given
+        val url = "http://localhost:" +
+                localPort +"/diagram?filter=10A"
+
+        // when
+        val result = testRestTemplate.getForEntity(url, String::class.java)
+
+        // then
+        Assert.assertNotNull(result)
+        Assert.assertEquals(287434, result.body.length)
+        Assert.assertEquals(154, result.headers.toString().length)
+        Assert.assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
+    }
+
 
 }

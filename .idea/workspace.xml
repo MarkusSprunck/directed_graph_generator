@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suppression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/install.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/boundary/IndexController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/IndexController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/Colors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Colors.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/ExcelColumnNumberLinks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberLinks.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/FileUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/FileUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/HtmlUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/HtmlUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/MainApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/Model2HTML.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2HTML.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/Model2JSON.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2JSON.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/control/Model2PlantUml.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/entity/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Model.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sw/engineering/candies/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ApplicationTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/boundary/IndexControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/ExcelColumnNumberTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/ExcelReaderTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/FileUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/FileUtilTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/HtmlUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/HtmlUtilTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/Model2HTMLTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2HTMLTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/Model2JSONTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2JSONTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +59,6 @@
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="1" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myAutoScrollToSource" value="true" />
-    <option name="myAutoScrollFromSource" value="true" />
-    <option name="myElementSize" value="91" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,6 +160,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -176,18 +198,7 @@
       <recent name="$PROJECT_DIR$/input" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in DirectedGraphGenerator">
-    <configuration name="build.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="DirectedGraphGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="PROJECT_INTERPRETER" value="false" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/build.sh" />
-      <option name="PARAMETERS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in directed_graph_generator">
     <configuration name="docker_build.sh" type="BashConfigurationType" factoryName="Bash">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -199,19 +210,6 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shell.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <module name="DirectedGraphGenerator" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="PROJECT_INTERPRETER" value="false" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/docker" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docker/shell.sh" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in DirectedGraphGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraphGenerator" />
       <option name="PACKAGE_NAME" value="" />
@@ -220,6 +218,46 @@
       <option name="TEST_OBJECT" value="package" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="./data" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in directed_graph_generator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="directed_graph_generator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiagramControllerTest.defaultMainRestController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="directed_graph_generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.engineering.candies.boundary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.boundary" />
+      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.DiagramControllerTest" />
+      <option name="METHOD_NAME" value="defaultMainRestController" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexControllerTestIT.defaultIndexController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="directed_graph_generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw.engineering.candies.boundary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.boundary" />
+      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.IndexControllerTestIT" />
+      <option name="METHOD_NAME" value="defaultIndexController" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,18 +278,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="directed-graph-generator:latest" />
-          <option name="command" value="" />
-          <option name="containerName" value="directed-graph-generator" />
-          <option name="entrypoint" value="" />
-          <option name="commandLineOptions" value="" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="directed_graph_generator/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -268,15 +294,19 @@
     </configuration>
     <list>
       <item itemvalue="Docker.directed_graph_generator/Dockerfile" />
-      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="JUnit.All in DirectedGraphGenerator" />
       <item itemvalue="JUnit.Model2PlantUmlTest.toUmlOneLinkShow" />
+      <item itemvalue="JUnit.All in directed_graph_generator" />
+      <item itemvalue="JUnit.DiagramControllerTest.defaultMainRestController" />
+      <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in directed_graph_generator" />
+        <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
         <item itemvalue="JUnit.All in DirectedGraphGenerator" />
+        <item itemvalue="JUnit.DiagramControllerTest.defaultMainRestController" />
         <item itemvalue="JUnit.Model2PlantUmlTest.toUmlOneLinkShow" />
-        <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +335,7 @@
       <workItem from="1550089865229" duration="6254000" />
       <workItem from="1550261747120" duration="4866000" />
       <workItem from="1555345109875" duration="591000" />
-      <workItem from="1605013876000" duration="4135000" />
+      <workItem from="1605013876000" duration="7750000" />
     </task>
     <task id="LOCAL-00001" summary="Update readme">
       <created>1539115784045</created>
@@ -580,40 +610,50 @@
       <option name="project" value="LOCAL" />
       <updated>1550266526316</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="- update dependencies &#10;- add Jenkinsfile&#10;- add OWASP check&#10;- fix compiler warnings">
+      <created>1605019232917</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019232917</updated>
+    </task>
+    <task id="LOCAL-00041" summary="- remove build profiles">
+      <created>1605023235170</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1605023235170</updated>
+    </task>
+    <task id="LOCAL-00042" summary="- fix sonar settings">
+      <created>1605023435018</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1605023435018</updated>
+    </task>
+    <task id="LOCAL-00043" summary="- fix sonar settings">
+      <created>1605023983822</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1605023983822</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- fix sonar settings">
+      <created>1605024293003</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1605024293003</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- fix sonar settings">
+      <created>1605024684416</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1605024684416</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 22h 46m 51s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 22h 47m 46s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 22h 51m 13s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Model2PlantUmlTest_toUmlOneLinkShow - 2019.02.13 at 22h 52m 24s.xml">
-      <configuration name="Model2PlantUmlTest.toUmlOneLinkShow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Model2PlantUmlTest_toUmlOneLinkShow - 2019.02.13 at 22h 53m 34s.xml">
-      <configuration name="Model2PlantUmlTest.toUmlOneLinkShow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Model2PlantUmlTest_toUmlOneLinkShow - 2019.02.13 at 22h 54m 40s.xml">
-      <configuration name="Model2PlantUmlTest.toUmlOneLinkShow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 22h 55m 10s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 22h 57m 22s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 23h 00m 02s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DirectedGraphGenerator - 2019.02.13 at 23h 00m 37s.xml">
-      <configuration name="All in DirectedGraphGenerator" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -664,9 +704,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update readme" />
-    <MESSAGE value="Improve filter pattern and fix bug (missing first node)" />
-    <MESSAGE value="Improve UML graph, automatic colors and new Excel format" />
     <MESSAGE value="Add test cases for model and code cleanup" />
     <MESSAGE value="Improve description" />
     <MESSAGE value="Improve logging and refatoring" />
@@ -689,37 +726,59 @@
     <MESSAGE value="Add new parameter to change title of diagram" />
     <MESSAGE value="- add hyperlinks in the diagrams&#10;- refactoring and code improvements" />
     <MESSAGE value="- refactoring and code improvements&#10;- improved descriptions and link to source code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- refactoring and code improvements&#10;- improved descriptions and link to source code" />
+    <MESSAGE value="- update dependencies &#10;- add Jenkinsfile&#10;- add OWASP check&#10;- fix compiler warnings" />
+    <MESSAGE value="- remove build profiles" />
+    <MESSAGE value="- fix sonar settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix sonar settings" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605025290562">
+      <screen x="0" y="23" width="1792" height="1052" />
+    </state>
+    <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605025290562" />
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605014998123">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1052@0.23.1792.1052" timestamp="1605014998123" />
-    <state width="1750" height="420" key="GridCell.Tab.0.bottom" timestamp="1605019075734">
+    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605024684306">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="420" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605019075734" />
-    <state width="1750" height="420" key="GridCell.Tab.0.center" timestamp="1605019075734">
+    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605024684306" />
+    <state x="180" y="134" key="DiffContextDialog" timestamp="1605023231639">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="420" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605019075734" />
-    <state width="1750" height="420" key="GridCell.Tab.0.left" timestamp="1605019075733">
+    <state x="180" y="134" key="DiffContextDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605023231639" />
+    <state width="1750" height="354" key="GridCell.Tab.0.bottom" timestamp="1605025891053">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="420" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605019075733" />
-    <state width="1750" height="420" key="GridCell.Tab.0.right" timestamp="1605019075734">
+    <state width="1750" height="354" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605025891053" />
+    <state width="1750" height="354" key="GridCell.Tab.0.center" timestamp="1605025891052">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="420" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605019075734" />
+    <state width="1750" height="354" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605025891052" />
+    <state width="1750" height="354" key="GridCell.Tab.0.left" timestamp="1605025891051">
+      <screen x="0" y="23" width="1792" height="1052" />
+    </state>
+    <state width="1750" height="354" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605025891051" />
+    <state width="1750" height="354" key="GridCell.Tab.0.right" timestamp="1605025891052">
+      <screen x="0" y="23" width="1792" height="1052" />
+    </state>
+    <state width="1750" height="354" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605025891052" />
     <state x="602" y="259" key="RollbackChangesDialog" timestamp="1605018771528">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="602" y="259" key="RollbackChangesDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605018771528" />
-    <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605015534310">
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605024685772">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state x="597" y="311" width="598" height="476" key="find.popup/0.23.1792.1052@0.23.1792.1052" timestamp="1605015534310" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605024685772" />
+    <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605023874744">
+      <screen x="0" y="23" width="1792" height="1052" />
+    </state>
+    <state x="597" y="311" width="598" height="476" key="find.popup/0.23.1792.1052@0.23.1792.1052" timestamp="1605023874744" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605024866856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>
