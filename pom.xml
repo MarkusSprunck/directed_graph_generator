@@ -20,7 +20,7 @@
         <executor.bash.path>bash</executor.bash.path>
 
         <!-- Sonar -->
-        <sonar.sources>src/main/java,src/test/java</sonar.sources>
+        <sonar.sources>src/main/kotlin,src/test/kotlin</sonar.sources>
         <sonar.exclusions>**/*Test.kt, **/*TestIT.kt</sonar.exclusions>
     </properties>
 
