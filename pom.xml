@@ -23,8 +23,6 @@
 
         <!-- Sonar -->
         <sonar.sources>src/main/java,src/test/java</sonar.sources>
-        <sonar.exclusions>**/*Test.kt, **/*TestIT.kt
-        </sonar.exclusions>
     </properties>
 
     <dependencyManagement>
