@@ -19,35 +19,9 @@
         <sonar.source>.</sonar.source>
 
         <version.plugin.dependency-check>5.3.2</version.plugin.dependency-check>
+        <executor.bash.path>bash</executor.bash.path>
 
     </properties>
-
-    <profiles>
-        <profile>
-            <id>linux</id>
-            <activation>
-                <os>
-                    <family>mac</family>
-                </os>
-            </activation>
-            <properties>
-                <executor.bash.path>bash</executor.bash.path>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>win64</id>
-            <activation>
-                <os>
-                    <family>!mac</family>
-                </os>
-            </activation>
-            <properties>
-                <!-- change this to you personal path -->
-                <executor.bash.path>C:\Tools\Git-2.19.1-64-bit\Git\bin\bash.exe</executor.bash.path>
-            </properties>
-        </profile>
-    </profiles>
 
     <dependencyManagement>
         <dependencies>
@@ -69,7 +43,6 @@
             <artifactId>plantuml</artifactId>
             <version>1.2018.0</version>
         </dependency>
-
 
         <!-- Kotlin runtime library -->
         <dependency>
