@@ -24,15 +24,6 @@ pipeline {
          }
       }
 
-      stage('Sonar Analysis') {
-         steps {
-            withSonarQubeEnv('sonarqube-dev') {
-                echo 'Start sonar import'
-                sh 'mvn sonar:sonar  -Dsonar.projectKey=dgg_bl -Dsonar.branch.name=master'
-            }
-         }
-      }
-
       stage('Push Image') {
          steps {
             script {
