@@ -310,7 +310,7 @@
                         <configuration>
                             <workingDirectory>${basedir}/docker</workingDirectory>
                             <arguments>
-                                <argument>install.sh</argument>
+                                <argument>build.sh</argument>
                             </arguments>
                             <executable>${executor.bash.path}</executable>
                         </configuration>

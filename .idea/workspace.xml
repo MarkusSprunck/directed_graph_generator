@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +121,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266574996" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -136,12 +137,10 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
-      <recent name="$PROJECT_DIR$/files" />
-      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/input" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="control" />
@@ -160,9 +159,12 @@
       <recent name="" />
       <recent name="com.sw.engineering.candies" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/input" />
+      <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
+      <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$/dist" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in directed_graph_generator">
@@ -302,28 +304,10 @@
       <workItem from="1550089865229" duration="6254000" />
       <workItem from="1550261747120" duration="4866000" />
       <workItem from="1555345109875" duration="591000" />
-      <workItem from="1605013876000" duration="9385000" />
-    </task>
-    <task id="LOCAL-00002" summary="Improve filter pattern and fix bug (missing first node)">
-      <created>1539191264379</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1539191264379</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Improve UML graph, automatic colors and new Excel format">
-      <created>1540582562468</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1540582562468</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add test cases for model and code cleanup">
-      <created>1540619589369</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1540619589369</updated>
+      <workItem from="1605013876000" duration="10104000" />
+      <workItem from="1605077792604" duration="1539000" />
+      <workItem from="1606215943044" duration="3070000" />
+      <workItem from="1606385816231" duration="175000" />
     </task>
     <task id="LOCAL-00005" summary="Improve description">
       <created>1540620620995</created>
@@ -647,7 +631,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605027201631</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="- activate test cases in maven">
+      <created>1605027834313</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605027834313</updated>
+    </task>
+    <task id="LOCAL-00052" summary="- activate test cases in maven">
+      <created>1605027997746</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1605027997746</updated>
+    </task>
+    <task id="LOCAL-00053" summary="- remove sonar">
+      <created>1605098191339</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1605098191339</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -699,7 +704,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve description" />
     <MESSAGE value="Improve logging and refatoring" />
     <MESSAGE value="Move images to subfolder" />
     <MESSAGE value="Cleanup code and add test case" />
@@ -724,49 +728,55 @@
     <MESSAGE value="- remove build profiles" />
     <MESSAGE value="- fix sonar settings" />
     <MESSAGE value="- activate test cases in maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="- activate test cases in maven" />
+    <MESSAGE value="- remove sonar" />
+    <option name="LAST_COMMIT_MESSAGE" value="- remove sonar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605025290562">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605025290562" />
+    <state x="635" y="354" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606385883836">
+      <screen x="0" y="25" width="1792" height="1044" />
+    </state>
+    <state x="635" y="354" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1044@0.25.1792.1044" timestamp="1606385883836" />
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605014998123">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1052@0.23.1792.1052" timestamp="1605014998123" />
-    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605027201515">
+    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605098191255">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605027201515" />
+    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098191255" />
     <state x="180" y="134" key="DiffContextDialog" timestamp="1605023231639">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="180" y="134" key="DiffContextDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605023231639" />
-    <state width="1750" height="354" key="GridCell.Tab.0.bottom" timestamp="1605026909682">
+    <state width="1750" height="477" key="GridCell.Tab.0.bottom" timestamp="1605028352637">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
-    <state width="1750" height="354" key="GridCell.Tab.0.center" timestamp="1605026909682">
+    <state width="1750" height="477" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
+    <state width="1750" height="477" key="GridCell.Tab.0.center" timestamp="1605028352637">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
-    <state width="1750" height="354" key="GridCell.Tab.0.left" timestamp="1605026909682">
+    <state width="1750" height="477" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
+    <state width="1750" height="477" key="GridCell.Tab.0.left" timestamp="1605028352637">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
-    <state width="1750" height="354" key="GridCell.Tab.0.right" timestamp="1605026909682">
+    <state width="1750" height="477" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
+    <state width="1750" height="477" key="GridCell.Tab.0.right" timestamp="1605028352637">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state width="1750" height="354" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605026909682" />
-    <state x="602" y="259" key="RollbackChangesDialog" timestamp="1605018771528">
-      <screen x="0" y="23" width="1792" height="1052" />
+    <state width="1750" height="477" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
+    <state x="602" y="259" key="RollbackChangesDialog" timestamp="1606225698279">
+      <screen x="0" y="25" width="1792" height="1044" />
     </state>
     <state x="602" y="259" key="RollbackChangesDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605018771528" />
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605027203392">
+    <state x="602" y="259" key="RollbackChangesDialog/0.25.1792.1044@0.25.1792.1044" timestamp="1606225698279" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605098192540">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605027203392" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098192540" />
     <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605026360679">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
