@@ -13,4 +13,22 @@
         <cve>CVE-2020-11022</cve>
     </suppress>
 
+    <suppress>
+        <notes><![CDATA[
+        file name: tomcat-embed-core-9.0.39.jar
+        => There is no fixed spring security available at the moment
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.tomcat\.embed/tomcat\-embed\-core@.*$</packageUrl>
+        <cve>CVE-2020-17527</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+        file name: tomcat-embed-websocket-9.0.39.jar
+        => There is no fixed spring security available at the moment
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.tomcat\.embed/tomcat\-embed\-websocket@.*$</packageUrl>
+        <cpe>cpe:/a:apache:tomcat</cpe>
+    </suppress>
+
 </suppressions>

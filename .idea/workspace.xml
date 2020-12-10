@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,14 +305,7 @@
       <workItem from="1605013876000" duration="10104000" />
       <workItem from="1605077792604" duration="1539000" />
       <workItem from="1606215943044" duration="3070000" />
-      <workItem from="1606385816231" duration="175000" />
-    </task>
-    <task id="LOCAL-00005" summary="Improve description">
-      <created>1540620620995</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1540620620995</updated>
+      <workItem from="1606385816231" duration="775000" />
     </task>
     <task id="LOCAL-00006" summary="Improve description">
       <created>1540621916961</created>
@@ -652,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605098191339</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Just create and tag image (don't start container during build)">
+      <created>1606386075384</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1606386075384</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -704,7 +702,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve logging and refatoring" />
     <MESSAGE value="Move images to subfolder" />
     <MESSAGE value="Cleanup code and add test case" />
     <MESSAGE value="Suppress warning" />
@@ -729,7 +726,8 @@
     <MESSAGE value="- fix sonar settings" />
     <MESSAGE value="- activate test cases in maven" />
     <MESSAGE value="- remove sonar" />
-    <option name="LAST_COMMIT_MESSAGE" value="- remove sonar" />
+    <MESSAGE value="Just create and tag image (don't start container during build)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just create and tag image (don't start container during build)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605025290562">
@@ -744,14 +742,16 @@
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
     <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1052@0.23.1792.1052" timestamp="1605014998123" />
-    <state x="454" y="138" key="CommitChangelistDialog2" timestamp="1605098191255">
-      <screen x="0" y="23" width="1792" height="1052" />
+    <state x="454" y="139" key="CommitChangelistDialog2" timestamp="1606386075161">
+      <screen x="0" y="25" width="1792" height="1044" />
     </state>
     <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098191255" />
-    <state x="180" y="134" key="DiffContextDialog" timestamp="1605023231639">
-      <screen x="0" y="23" width="1792" height="1052" />
+    <state x="454" y="139" key="CommitChangelistDialog2/0.25.1792.1044@0.25.1792.1044" timestamp="1606386075161" />
+    <state x="180" y="135" key="DiffContextDialog" timestamp="1606386043026">
+      <screen x="0" y="25" width="1792" height="1044" />
     </state>
     <state x="180" y="134" key="DiffContextDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605023231639" />
+    <state x="180" y="135" key="DiffContextDialog/0.25.1792.1044@0.25.1792.1044" timestamp="1606386043026" />
     <state width="1750" height="477" key="GridCell.Tab.0.bottom" timestamp="1605028352637">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
@@ -773,10 +773,11 @@
     </state>
     <state x="602" y="259" key="RollbackChangesDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605018771528" />
     <state x="602" y="259" key="RollbackChangesDialog/0.25.1792.1044@0.25.1792.1044" timestamp="1606225698279" />
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605098192540">
-      <screen x="0" y="23" width="1792" height="1052" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606386077113">
+      <screen x="0" y="25" width="1792" height="1044" />
     </state>
     <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098192540" />
+    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.25.1792.1044@0.25.1792.1044" timestamp="1606386077113" />
     <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605026360679">
       <screen x="0" y="23" width="1792" height="1052" />
     </state>
