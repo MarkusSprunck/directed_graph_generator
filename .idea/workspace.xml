@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suppression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/suppression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +45,6 @@
       </list>
     </option>
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
@@ -45,14 +54,15 @@
       </GitPushTagMode>
     </option>
   </component>
-  <component name="JupyterTrust" id="0a1702e5-ba3f-4ac6-b07a-074acb31a1ca" />
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
+  <component name="JupyterTrust" id="0a1702e5-ba3f-4ac6-b07a-074acb31a1ca" />
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
@@ -115,11 +125,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266574996" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,11 +151,12 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/input" />
     </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="control" />
-      <recent name="com.sw.engineering.candies.control" />
-      <recent name="" />
-      <recent name="boundary" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
+      <recent name="$PROJECT_DIR$/files" />
+      <recent name="$PROJECT_DIR$/dist" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.sw.engineering.candies" />
@@ -157,15 +169,14 @@
       <recent name="" />
       <recent name="com.sw.engineering.candies" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docker" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
-      <recent name="$PROJECT_DIR$/files" />
-      <recent name="$PROJECT_DIR$/dist" />
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="control" />
+      <recent name="com.sw.engineering.candies.control" />
+      <recent name="" />
+      <recent name="boundary" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in directed_graph_generator">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="docker_build.sh" type="BashConfigurationType" factoryName="Bash">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -197,7 +208,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiagramControllerTest.defaultMainRestController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiagramControllerTestIT.defaultMainRestControllerParameterNotExsiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="directed_graph_generator" />
       <extension name="coverage">
         <pattern>
@@ -206,8 +217,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sw.engineering.candies.boundary" />
-      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.DiagramControllerTest" />
-      <option name="METHOD_NAME" value="defaultMainRestController" />
+      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.DiagramControllerTestIT" />
+      <option name="METHOD_NAME" value="defaultMainRestControllerParameterNotExsiting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,18 +240,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Model2PlantUmlTest.toUmlOneLinkShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DirectedGraphGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sw.engineering.candies.control.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
+    <configuration name="Application" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="directed_graph_generator" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.control" />
-      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.control.Model2PlantUmlTest" />
-      <option name="METHOD_NAME" value="toUmlOneLinkShow" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.Application" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/data" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,18 +280,18 @@
     <list>
       <item itemvalue="Docker.directed_graph_generator/Dockerfile" />
       <item itemvalue="JUnit.All in DirectedGraphGenerator" />
-      <item itemvalue="JUnit.Model2PlantUmlTest.toUmlOneLinkShow" />
       <item itemvalue="JUnit.All in directed_graph_generator" />
-      <item itemvalue="JUnit.DiagramControllerTest.defaultMainRestController" />
       <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
+      <item itemvalue="JUnit.DiagramControllerTestIT.defaultMainRestControllerParameterNotExsiting" />
+      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.DiagramControllerTestIT.defaultMainRestControllerParameterNotExsiting" />
         <item itemvalue="JUnit.All in directed_graph_generator" />
         <item itemvalue="JUnit.IndexControllerTestIT.defaultIndexController" />
         <item itemvalue="JUnit.All in DirectedGraphGenerator" />
-        <item itemvalue="JUnit.DiagramControllerTest.defaultMainRestController" />
-        <item itemvalue="JUnit.Model2PlantUmlTest.toUmlOneLinkShow" />
       </list>
     </recent_temporary>
   </component>
@@ -306,13 +324,9 @@
       <workItem from="1605077792604" duration="1539000" />
       <workItem from="1606215943044" duration="3070000" />
       <workItem from="1606385816231" duration="775000" />
-    </task>
-    <task id="LOCAL-00006" summary="Improve description">
-      <created>1540621916961</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1540621916961</updated>
+      <workItem from="1607620179997" duration="279000" />
+      <workItem from="1612865204653" duration="2603000" />
+      <workItem from="1612867851831" duration="3091000" />
     </task>
     <task id="LOCAL-00007" summary="Improve description">
       <created>1540622177985</created>
@@ -650,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606386075384</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Update dependency check and suppress warning">
+      <created>1607620357224</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1607620357225</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -702,7 +723,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Move images to subfolder" />
     <MESSAGE value="Cleanup code and add test case" />
     <MESSAGE value="Suppress warning" />
     <MESSAGE value="Ignore log files" />
@@ -727,61 +747,19 @@
     <MESSAGE value="- activate test cases in maven" />
     <MESSAGE value="- remove sonar" />
     <MESSAGE value="Just create and tag image (don't start container during build)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just create and tag image (don't start container during build)" />
+    <MESSAGE value="Update dependency check and suppress warning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dependency check and suppress warning" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605025290562">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state x="101" y="123" width="1592" height="852" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605025290562" />
-    <state x="635" y="354" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606385883836">
-      <screen x="0" y="25" width="1792" height="1044" />
-    </state>
-    <state x="635" y="354" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1792.1044@0.25.1792.1044" timestamp="1606385883836" />
-    <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605014998123">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state x="647" y="448" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1052@0.23.1792.1052" timestamp="1605014998123" />
-    <state x="454" y="139" key="CommitChangelistDialog2" timestamp="1606386075161">
-      <screen x="0" y="25" width="1792" height="1044" />
-    </state>
-    <state x="454" y="138" key="CommitChangelistDialog2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098191255" />
-    <state x="454" y="139" key="CommitChangelistDialog2/0.25.1792.1044@0.25.1792.1044" timestamp="1606386075161" />
-    <state x="180" y="135" key="DiffContextDialog" timestamp="1606386043026">
-      <screen x="0" y="25" width="1792" height="1044" />
-    </state>
-    <state x="180" y="134" key="DiffContextDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605023231639" />
-    <state x="180" y="135" key="DiffContextDialog/0.25.1792.1044@0.25.1792.1044" timestamp="1606386043026" />
-    <state width="1750" height="477" key="GridCell.Tab.0.bottom" timestamp="1605028352637">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state width="1750" height="477" key="GridCell.Tab.0.bottom/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
-    <state width="1750" height="477" key="GridCell.Tab.0.center" timestamp="1605028352637">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state width="1750" height="477" key="GridCell.Tab.0.center/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
-    <state width="1750" height="477" key="GridCell.Tab.0.left" timestamp="1605028352637">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state width="1750" height="477" key="GridCell.Tab.0.left/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
-    <state width="1750" height="477" key="GridCell.Tab.0.right" timestamp="1605028352637">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state width="1750" height="477" key="GridCell.Tab.0.right/0.23.1792.1052@0.23.1792.1052" timestamp="1605028352637" />
-    <state x="602" y="259" key="RollbackChangesDialog" timestamp="1606225698279">
-      <screen x="0" y="25" width="1792" height="1044" />
-    </state>
-    <state x="602" y="259" key="RollbackChangesDialog/0.23.1792.1052@0.23.1792.1052" timestamp="1605018771528" />
-    <state x="602" y="259" key="RollbackChangesDialog/0.25.1792.1044@0.25.1792.1044" timestamp="1606225698279" />
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606386077113">
-      <screen x="0" y="25" width="1792" height="1044" />
-    </state>
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.23.1792.1052@0.23.1792.1052" timestamp="1605098192540" />
-    <state x="497" y="289" key="Vcs.Push.Dialog.v2/0.25.1792.1044@0.25.1792.1044" timestamp="1606386077113" />
-    <state x="597" y="311" width="598" height="476" key="find.popup" timestamp="1605026360679">
-      <screen x="0" y="23" width="1792" height="1052" />
-    </state>
-    <state x="597" y="311" width="598" height="476" key="find.popup/0.23.1792.1052@0.23.1792.1052" timestamp="1605026360679" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605026793943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

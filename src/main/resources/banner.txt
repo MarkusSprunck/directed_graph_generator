@@ -8,5 +8,5 @@
 Build with Spring Boot ${spring-boot.version}
 
 Java Version ${java.version}
-Kotlin Version ${kotlin.version}
+Kotlin Version ${version.kotlin}
 Java Runtime Version ${java.runtime.version}

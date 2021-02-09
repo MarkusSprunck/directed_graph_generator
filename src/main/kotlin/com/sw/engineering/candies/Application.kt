@@ -10,7 +10,7 @@ class Application {
 
         @JvmStatic fun main(args: Array<String>) {
             runApplication<MainApplication>(*args) {
-                System.setProperty("kotlin.version", KotlinVersion.CURRENT.toString())
+                System.setProperty("version.kotlin", KotlinVersion.CURRENT.toString())
             }
         }
     }

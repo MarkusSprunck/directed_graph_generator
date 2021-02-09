@@ -1,7 +1,8 @@
 package com.sw.engineering.candies.boundary
 
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
+
 
 class IndexControllerTest {
 
@@ -16,7 +17,7 @@ class IndexControllerTest {
         val result = sut.index()
 
         // then
-        Assert.assertEquals("index.html", result)
+        assertEquals("index.html", result)
      }
 
 

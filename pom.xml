@@ -11,21 +11,28 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <kotlin.version>1.4.10</kotlin.version>
-        <spring.boot.version>2.3.5.RELEASE</spring.boot.version>
-        <org.junit.platform.version>1.3.2</org.junit.platform.version>
-        <org.junit.jupiter.version>5.7.0</org.junit.jupiter.version>
-        <org.apache.poi.version>4.1.2</org.apache.poi.version>
-        <version.plugin.dependency-check>6.0.3</version.plugin.dependency-check>
         <executor.bash.path>bash</executor.bash.path>
+
+        <verison.commons-io>2.8.0</verison.commons-io>
+        <version.apache-poi>5.0.0</version.apache-poi>
+        <version.jackson-module-kotlin>2.12.1</version.jackson-module-kotlin>
+        <version.jasypt-spring-boot-starter>3.0.3</version.jasypt-spring-boot-starter>
+        <version.junit>5.7.0</version.junit>
+        <version.kotlin>1.4.30</version.kotlin>
+        <version.spring.boot>2.4.2</version.spring.boot>
+        <version.plantuml>1.2021.1</version.plantuml>
+
+        <version.kotlin-maven-plugin>1.4.30</version.kotlin-maven-plugin>
+        <version.exec-maven-plugin>3.0.0</version.exec-maven-plugin>
+        <version.plugin.dependency-check>6.0.5</version.plugin.dependency-check>
 
         <!-- Sonar -->
         <sonar.sources>src/main/kotlin,src/test/kotlin</sonar.sources>
         <sonar.exclusions>**/*Test.kt, **/*TestIT.kt</sonar.exclusions>
-     <!--
-        <sonar.tests>src/test</sonar.tests>
-        <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
-        -->
+        <!--
+           <sonar.tests>src/test</sonar.tests>
+           <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
+           -->
     </properties>
 
     <dependencyManagement>
@@ -33,7 +40,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
+                <version>${version.spring.boot}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -42,54 +49,23 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/net.sourceforge.plantuml/plantuml -->
         <dependency>
-            <groupId>net.sourceforge.plantuml</groupId>
-            <artifactId>plantuml</artifactId>
-            <version>1.2018.0</version>
-        </dependency>
-
-        <!-- Kotlin runtime library -->
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-            <version>${kotlin.version}</version>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${version.apache-poi}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-reflect</artifactId>
-            <version>${kotlin.version}</version>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${version.apache-poi}</version>
         </dependency>
-
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib-common</artifactId>
-            <version>${kotlin.version}</version>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${verison.commons-io}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.fasterxml.jackson.module</groupId>
-            <artifactId>jackson-module-kotlin</artifactId>
-            <version>2.11.3</version>
-        </dependency>
-
-        <!-- Libraries for testing support -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${org.junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${org.junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Spring dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -114,33 +90,64 @@
         <dependency>
             <groupId>com.github.ulisesbocchio</groupId>
             <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>1.18</version>
+            <version>${version.jasypt-spring-boot-starter}</version>
         </dependency>
 
-        <!-- Additional libaries for testing  -->
+        <dependency>
+            <groupId>net.sourceforge.plantuml</groupId>
+            <artifactId>plantuml</artifactId>
+            <version>${version.plantuml}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${version.kotlin}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>${version.kotlin}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-common</artifactId>
+            <version>${version.kotlin}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-kotlin</artifactId>
+            <version>${version.jackson-module-kotlin}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>${org.apache.poi.version}</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${org.apache.poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-test</artifactId>
+            <version>${version.kotlin}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -148,8 +155,8 @@
 
     <build>
         <finalName>ROOT</finalName>
-        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+        <sourceDirectory>src/main/kotlin</sourceDirectory>
+        <testSourceDirectory>src/test/kotlin</testSourceDirectory>
         <plugins>
 
             <plugin>
@@ -190,9 +197,9 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
+                <version>${version.kotlin-maven-plugin}</version>
                 <configuration>
-                    <jvmTarget>${java.version}</jvmTarget>
+                    <jvmTarget>1.8</jvmTarget>
                     <compilerPlugins>
                         <plugin>spring</plugin>
                     </compilerPlugins>
@@ -204,11 +211,6 @@
                         <goals>
                             <goal>compile</goal>
                         </goals>
-                        <configuration>
-                            <sourceDirs>
-                                <sourceDir>src/main/kotlin</sourceDir>
-                            </sourceDirs>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>test-compile</id>
@@ -216,18 +218,13 @@
                         <goals>
                             <goal>test-compile</goal>
                         </goals>
-                        <configuration>
-                            <sourceDirs>
-                                <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
-                            </sourceDirs>
-                        </configuration>
                     </execution>
                 </executions>
                 <dependencies>
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-allopen</artifactId>
-                        <version>${kotlin.version}</version>
+                        <version>${version.kotlin}</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -241,7 +238,7 @@
                     <dependency>
                         <groupId>org.junit.jupiter</groupId>
                         <artifactId>junit-jupiter-engine</artifactId>
-                        <version>${org.junit.jupiter.version}</version>
+                        <version>${version.junit}</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -285,7 +282,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.4.RELEASE</version>
+                <version>${version.spring.boot}</version>
                 <executions>
                     <execution>
                         <id>repackage</id>
@@ -301,7 +298,8 @@
             <plugin>
                 <artifactId>exec-maven-plugin</artifactId>
                 <groupId>org.codehaus.mojo</groupId>
-                <executions>
+                <version>${version.exec-maven-plugin}</version>
+                 <executions>
                     <execution>
                         <phase>install</phase>
                         <goals>

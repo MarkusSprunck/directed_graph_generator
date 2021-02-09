@@ -2,8 +2,8 @@ package com.sw.engineering.candies.control
 
 import com.sw.engineering.candies.entity.Model
 import com.sw.engineering.candies.entity.Node
-import org.junit.Assert.assertEquals
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class Model2PlantUmlTest {
 

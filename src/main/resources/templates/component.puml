@@ -28,17 +28,17 @@ skinparam component {
 }
 
 skinparam package<<Transparent>> {
-  borderColor Transparent
-  backgroundColor Transparent
-  fontColor Transparent
-  stereotypeFontColor Transparent
+  borderColor white
+  backgroundColor white
+  fontColor white
+  stereotypeFontColor white
 }
 
 !pragma ratio 0.50
 
 left to right direction
 
-package "%DIAGRAM_TITLE% - %date%" {
+package "%DIAGRAM_TITLE%" {
 
     package "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890" <<Transparent>> {
 

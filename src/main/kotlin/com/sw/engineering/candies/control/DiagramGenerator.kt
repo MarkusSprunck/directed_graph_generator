@@ -56,7 +56,7 @@ object DiagramGenerator {
             html.append("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\">")
             html.append("        <meta charset=\"utf-8\">")
             html.append("        <title>UML Components</title>")
-            html.append("        <link href=\"com.sw_engineering_candies.boundary.main.css\" rel=\"stylesheet\" type=\"text/css\">\n")
+            html.append("        <link href=\"./main.css\" rel=\"stylesheet\" type=\"text/css\">\n")
             html.append("    </head>")
             html.append("    <body>")
             html.append("         ").append( diagramSVG )

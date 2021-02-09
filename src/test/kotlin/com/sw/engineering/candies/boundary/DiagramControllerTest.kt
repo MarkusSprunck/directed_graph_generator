@@ -1,7 +1,8 @@
 package com.sw.engineering.candies.boundary
 
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
+
 
 class DiagramControllerTest {
 
@@ -22,7 +23,7 @@ class DiagramControllerTest {
                 "")
 
         // then
-        Assert.assertEquals("\n" +
+        assertEquals("\n" +
                 "                <html>\n" +
                 "                    <head>\n" +
                 "                        <meta charset=\\\"utf-8\\\">\n" +
