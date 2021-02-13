@@ -3,11 +3,14 @@ package com.sw.engineering.candies.control
 import net.sourceforge.plantuml.FileFormat
 import net.sourceforge.plantuml.FileFormatOption
 import net.sourceforge.plantuml.SourceStringReader
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import java.nio.charset.Charset
 
-object DiagramGenerator {
+@Component
+class DiagramGenerator @Autowired constructor(var model2PlantUml: Model2PlantUml) {
 
     @Throws(IOException::class)
     fun run(excelFileName: String,
@@ -18,14 +21,14 @@ object DiagramGenerator {
             showComplex: Boolean,
             strict: Boolean,
             colorMode: String,
-            diagramTitle:String): String {
+            diagramTitle: String): String {
 
         val model = ExcelReader.parseExcelSheet(excelFileName, sourceApplicationPattern, strict, colorMode, showComplex)
 
         if (diagramType == "graph") {
 
             // Create animated graph
-            return  FileUtil.load("templates/main.html")
+            return FileUtil.load("templates/main.html")
                     .replace("##CSS_DATA##", FileUtil.load("static/main.css"))
                     .replace("##GEOMETRY_LIB##", FileUtil.load("libs/geometry.js"))
                     .replace("##JQUERRY_SPLITTER_LIB##", FileUtil.load("libs/jquery.splitter.js"))
@@ -39,7 +42,7 @@ object DiagramGenerator {
 
             // create UML component diagram
             val resultPuml = FileUtil.load("templates/component.puml")
-                    .replace("'%PACKAGES%", Model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex, colorMode, excelFileName))
+                    .replace("'%PACKAGES%", model2PlantUml.toPlantUmlModel(model, componentName, showLinks, showComplex, colorMode, excelFileName))
                     .replace("%DIAGRAM_TITLE%", diagramTitle)
 
             // Render SVG diagram into stream
@@ -59,13 +62,13 @@ object DiagramGenerator {
             html.append("        <link href=\"./main.css\" rel=\"stylesheet\" type=\"text/css\">\n")
             html.append("    </head>")
             html.append("    <body>")
-            html.append("         ").append( diagramSVG )
+            html.append("         ").append(diagramSVG)
             html.append("    </body>")
             html.append("</html>")
             return html.toString()
         }
 
-        return  """
+        return """
                 <html>
                     <head>
                         <meta charset=\"utf-8\">

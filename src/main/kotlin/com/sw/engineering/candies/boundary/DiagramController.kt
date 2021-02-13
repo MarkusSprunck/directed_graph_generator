@@ -3,6 +3,7 @@ package com.sw.engineering.candies.boundary
 import com.sw.engineering.candies.control.DiagramGenerator
 import org.apache.commons.io.FilenameUtils
 import org.slf4j.LoggerFactory
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Lazy
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @Lazy
 @RestController
-class DiagramController {
+class DiagramController  @Autowired constructor(var diagramGenerator: DiagramGenerator) {
 
     private val log = LoggerFactory.getLogger(DiagramController::class.java)
 
@@ -28,7 +29,7 @@ class DiagramController {
 
         log.info("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
-        val result = DiagramGenerator.run(
+        val result = diagramGenerator.run(
                 FilenameUtils.getName(file),
                 filter.replace("-", "|"),
                 type,

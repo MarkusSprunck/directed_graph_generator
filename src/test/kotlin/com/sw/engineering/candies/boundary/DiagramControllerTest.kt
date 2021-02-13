@@ -2,25 +2,26 @@ package com.sw.engineering.candies.boundary
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.context.SpringBootTest
 
 
-class DiagramControllerTest {
+@SpringBootTest
+class DiagramControllerTest  @Autowired constructor(var sut: DiagramController) {
 
     @Test
     fun defaultMainRestController() {
-        // given
-        val sut = DiagramController()
 
         // when
         val result = sut.diagram("",
                 "",
                 "",
-                false,
-                false,
-                false,
-                "",
-                "",
-                "")
+                showLinks = false,
+                showComplex = false,
+                strict = false,
+                colorMode = "",
+                type = "",
+                title = "")
 
         // then
         assertEquals("\n" +

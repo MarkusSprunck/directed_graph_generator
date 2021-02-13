@@ -2,9 +2,13 @@ package com.sw.engineering.candies.control
 
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.context.SpringBootTest
 import java.io.IOException
 
-class DiagramGeneratorTest {
+
+@SpringBootTest
+class DiagramGeneratorTest  @Autowired constructor(var sut: DiagramGenerator) {
 
     @Test
     @Throws(IOException::class)
@@ -15,14 +19,14 @@ class DiagramGeneratorTest {
              """.trimIndent()
 
         // when
-        val result = DiagramGenerator.run("data_test.xlsx",
+        val result = sut.run("data_test.xlsx",
                 "",
                 "component",
                 "",
-                false,
-                false,
-                false,
-                "location", "")
+                showLinks = false,
+                showComplex = false,
+                strict = false,
+                colorMode = "location", diagramTitle = "")
 
         // then
         assertTrue(result.contains( expected) )

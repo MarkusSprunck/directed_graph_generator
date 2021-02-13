@@ -8,12 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
-import org.springframework.test.context.junit4.SpringRunner
-import java.util.HashMap
-
-
-
-
+import java.util.*
 
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
@@ -29,7 +24,7 @@ class IndexControllerTestIT {
     @Test
     fun defaultIndexController() {
         // given
-        val url = "http://localhost:" + localPort + "/"
+        val url = "http://localhost:$localPort/"
         val params: Map<String, String> = HashMap()
 
         // when

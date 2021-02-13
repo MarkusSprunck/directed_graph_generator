@@ -5,7 +5,7 @@ logging:
 
 server:
   # Host name of your docker
-  host: dgg.muenchen.ihk.de
+  host: localhost
   # Define a custom port instead of the default 8080
   port: 8444
 

@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
-import org.springframework.test.context.junit4.SpringRunner
-import java.util.HashMap
-import kotlin.reflect.jvm.jvmName
+import java.util.*
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 @SpringBootTest(classes = [MainApplication::class], webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -26,7 +24,7 @@ class DiagramControllerTestIT {
     @Test
     fun defaultMainRestController() {
         // given
-        val url = "http://localhost:" + localPort +"/diagram"
+        val url = "http://localhost:$localPort/diagram"
         val params: Map<String, String> = HashMap()
 
         // when
@@ -42,7 +40,7 @@ class DiagramControllerTestIT {
     @Test
     fun defaultMainRestControllerParameter() {
         // given
-        val url = "http://localhost:" + localPort +"/diagram"
+        val url = "http://localhost:$localPort/diagram"
         val params: MutableMap<String, String> = HashMap()
         params["filter"] = "10A"
 

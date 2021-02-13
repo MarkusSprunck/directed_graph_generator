@@ -2,20 +2,16 @@ package com.sw.engineering.candies.control
 
 import com.sw.engineering.candies.entity.Model
 import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Value
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import java.util.*
 
 
-
-object Model2PlantUml {
+@Component
+class Model2PlantUml @Autowired constructor(private val serverProperties: ServerProperties) {
 
     private val log = LoggerFactory.getLogger(Model2PlantUml::class.java)
 
-    @Value("\${server.port}")
-    var port = 8080
-
-    @Value("\${server.host}")
-    var host = "localhost"
 
     fun toPlantUmlModel(model: Model,
                         clusterName: String = "", showLinks: Boolean = false,
@@ -64,7 +60,7 @@ object Model2PlantUml {
                             graphData.append(stereotype)
                             allNodes.add(node.name)
                         }
-                        graphData.append(" [[" ).append(createLink(node.name, showComplex, colorMode, excelFileName))
+                        graphData.append(" [[").append(createLink(node.name, showComplex, colorMode, excelFileName))
                                 .append("{")
                                 .append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
@@ -85,7 +81,7 @@ object Model2PlantUml {
                     linkString.append("[").append(node.name).append("]")
                     linkString.append(" ..> ")
                     val targetName = link.replace("\"", "")
-                    if (!allNodes.contains( targetName)) {
+                    if (!allNodes.contains(targetName)) {
                         graphData.append("[").append(targetName).append("] [[")
                                 .append(createLink(targetName, showComplex, colorMode, excelFileName)).append(" {}]]\n")
                     }
@@ -100,7 +96,7 @@ object Model2PlantUml {
                 for (link in node.depends) {
                     val linkString = StringBuilder()
                     val sourceName = link.replace("\"", "")
-                    if (!allNodes.contains( sourceName)) {
+                    if (!allNodes.contains(sourceName)) {
                         graphData.append("[").append(sourceName).append("] [[")
                                 .append(createLink(sourceName, showComplex, colorMode, excelFileName)).append(" {}]] \n")
                     }
@@ -118,15 +114,15 @@ object Model2PlantUml {
         return graphData.toString()
     }
 
-    private fun createLink(name: String, showComplex: Boolean, colorMode : String, excelFileName: String) =
-            "http://" + host +
-                    ":" + port +
+    private fun createLink(name: String, showComplex: Boolean, colorMode: String, excelFileName: String) =
+            "http://" + serverProperties.host +
+                    ":" + serverProperties.port +
                     "/diagram?type=component" +
-                    "&file=" +excelFileName +
-                    "&strict=false"+
+                    "&file=" + excelFileName +
+                    "&strict=false" +
                     "&diagramTitle=UML-Component" +
                     "&showLinks=true" +
-                    "&showComplex="+showComplex +
+                    "&showComplex=" + showComplex +
                     "&colorMode=" + colorMode +
                     "&filter=" + name
 

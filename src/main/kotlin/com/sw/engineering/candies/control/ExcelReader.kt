@@ -65,7 +65,7 @@ object ExcelReader {
             val protocol = row.getCell(ExcelColumnNumberLinks.PROTOCOL.value).stringCellValue.trim()
             val interfaceName = row.getCell(ExcelColumnNumberLinks.INTERFACE_NAME.value).stringCellValue.trim()
 
-            if (!sourceID.isEmpty() && !targetID.isEmpty()) {
+            if (sourceID.isNotEmpty() && targetID.isNotEmpty()) {
 
                 val appPattern = Pattern.compile(filter)
                 val sourceMatcher = appPattern.matcher(sourceID)
@@ -99,7 +99,7 @@ object ExcelReader {
             val location = row.getCell(ExcelColumnNumberApplications.LOCATION.value).stringCellValue.trim()
 
 
-            if (!id.isEmpty()) {
+            if (id.isNotEmpty()) {
                 val appIdPattern = Pattern.compile(sourceApplicationPattern)
                 val sourceMatcher = appIdPattern.matcher(id)
                 if (sourceMatcher.find(0)) {

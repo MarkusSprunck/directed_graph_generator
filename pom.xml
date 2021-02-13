@@ -24,15 +24,11 @@
 
         <version.kotlin-maven-plugin>1.4.30</version.kotlin-maven-plugin>
         <version.exec-maven-plugin>3.0.0</version.exec-maven-plugin>
-        <version.plugin.dependency-check>6.0.5</version.plugin.dependency-check>
+        <version.plugin.dependency-check>6.1.0</version.plugin.dependency-check>
 
         <!-- Sonar -->
         <sonar.sources>src/main/kotlin,src/test/kotlin</sonar.sources>
         <sonar.exclusions>**/*Test.kt, **/*TestIT.kt</sonar.exclusions>
-        <!--
-           <sonar.tests>src/test</sonar.tests>
-           <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
-           -->
     </properties>
 
     <dependencyManagement>
@@ -54,7 +50,6 @@
             <artifactId>poi</artifactId>
             <version>${version.apache-poi}</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
@@ -65,7 +60,6 @@
             <artifactId>commons-io</artifactId>
             <version>${verison.commons-io}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -76,47 +70,43 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.github.ulisesbocchio</groupId>
             <artifactId>jasypt-spring-boot-starter</artifactId>
             <version>${version.jasypt-spring-boot-starter}</version>
         </dependency>
-
         <dependency>
             <groupId>net.sourceforge.plantuml</groupId>
             <artifactId>plantuml</artifactId>
             <version>${version.plantuml}</version>
         </dependency>
-
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${version.kotlin}</version>
         </dependency>
-
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
             <version>${version.kotlin}</version>
         </dependency>
-
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-common</artifactId>
             <version>${version.kotlin}</version>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-kotlin</artifactId>
@@ -129,20 +119,17 @@
             <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
             <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test</artifactId>
@@ -180,7 +167,6 @@
                 </executions>
             </plugin>
 
-            <!-- Java compiler plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -193,7 +179,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Kotlin compiler plugin -->
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -228,7 +213,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -293,13 +277,11 @@
                 </executions>
             </plugin>
 
-
-            <!-- install docker -->
             <plugin>
                 <artifactId>exec-maven-plugin</artifactId>
                 <groupId>org.codehaus.mojo</groupId>
                 <version>${version.exec-maven-plugin}</version>
-                 <executions>
+                <executions>
                     <execution>
                         <phase>install</phase>
                         <goals>
@@ -315,7 +297,6 @@
                     </execution>
                 </executions>
             </plugin>
-
 
         </plugins>
     </build>
