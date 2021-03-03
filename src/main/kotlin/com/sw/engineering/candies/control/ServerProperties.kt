@@ -5,4 +5,4 @@ import org.springframework.boot.context.properties.ConstructorBinding
 
 @ConstructorBinding
 @ConfigurationProperties("server")
-data class ServerProperties(var port: String, val host: String)
+data class ServerProperties(var port: String, val host: String, var url: String)

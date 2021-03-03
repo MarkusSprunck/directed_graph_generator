@@ -115,8 +115,7 @@ class Model2PlantUml @Autowired constructor(private val serverProperties: Server
     }
 
     private fun createLink(name: String, showComplex: Boolean, colorMode: String, excelFileName: String) =
-            "http://" + serverProperties.host +
-                    ":" + serverProperties.port +
+            serverProperties.url +
                     "/diagram?type=component" +
                     "&file=" + excelFileName +
                     "&strict=false" +

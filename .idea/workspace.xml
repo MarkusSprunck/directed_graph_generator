@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ServerProperties.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelColumnNumberApplications.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ServerProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ServerProperties.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +171,7 @@
       <recent name="boundary" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.All in directed_graph_generator">
     <configuration name="docker_build.sh" type="BashConfigurationType" factoryName="Bash">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -196,8 +185,21 @@
     </configuration>
     <configuration name="All in directed_graph_generator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="directed_graph_generator" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="data" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -304,10 +306,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in directed_graph_generator" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.DiagramControllerTestIT" />
-        <item itemvalue="JUnit.All in directed_graph_generator" />
         <item itemvalue="Python tests.Unittests in test" />
       </list>
     </recent_temporary>
@@ -344,35 +346,10 @@
       <workItem from="1607620179997" duration="279000" />
       <workItem from="1612865204653" duration="2603000" />
       <workItem from="1612867851831" duration="3471000" />
-      <workItem from="1613129979557" duration="7750000" />
-    </task>
-    <task id="LOCAL-00009" summary="Improve logging and refatoring">
-      <created>1541070320181</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1541070320181</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Move images to subfolder">
-      <created>1541085681481</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1541085681481</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Cleanup code and add test case">
-      <created>1541087951212</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1541087951212</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Suppress warning">
-      <created>1541088479653</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1541088479653</updated>
+      <workItem from="1613129979557" duration="7985000" />
+      <workItem from="1613374178138" duration="1054000" />
+      <workItem from="1614675547448" duration="569000" />
+      <workItem from="1614757424505" duration="478000" />
     </task>
     <task id="LOCAL-00013" summary="Ignore log files">
       <created>1541088537740</created>
@@ -689,7 +666,35 @@
       <option name="project" value="LOCAL" />
       <updated>1613130697808</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="- fix broken load of properties in application.yml&#10;- cleanup code">
+      <created>1613174575830</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1613174575830</updated>
+    </task>
+    <task id="LOCAL-00059" summary="- change image tag">
+      <created>1613374793612</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1613374793612</updated>
+    </task>
+    <task id="LOCAL-00060" summary="- change image tag">
+      <created>1613374959344</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1613374959345</updated>
+    </task>
+    <task id="LOCAL-00061" summary="- fix build image">
+      <created>1613375308661</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1613375308661</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -705,12 +710,12 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -741,9 +746,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ignore log files" />
-    <MESSAGE value="Update local state" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Improve Logging" />
     <MESSAGE value="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;" />
     <MESSAGE value="Update documentation" />
@@ -766,7 +768,10 @@
     <MESSAGE value="Update dependency check and suppress warning" />
     <MESSAGE value="Update dependencies" />
     <MESSAGE value="Update default settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update default settings" />
+    <MESSAGE value="- fix broken load of properties in application.yml&#10;- cleanup code" />
+    <MESSAGE value="- change image tag" />
+    <MESSAGE value="- fix build image" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix build image" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605026793943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

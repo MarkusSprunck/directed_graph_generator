@@ -8,5 +8,7 @@ server:
   host: localhost
   # Define a custom port instead of the default 8080
   port: 8444
+  # External Url for links within the diagrams (in the case there is a proxy
+  url: http://localhost:8444
 
 
