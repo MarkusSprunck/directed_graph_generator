@@ -24,7 +24,7 @@
 
         <version.kotlin-maven-plugin>1.4.30</version.kotlin-maven-plugin>
         <version.exec-maven-plugin>3.0.0</version.exec-maven-plugin>
-        <version.plugin.dependency-check>6.1.0</version.plugin.dependency-check>
+        <version.plugin.dependency-check>6.1.1</version.plugin.dependency-check>
 
         <!-- Sonar -->
         <sonar.sources>src/main/kotlin,src/test/kotlin</sonar.sources>
