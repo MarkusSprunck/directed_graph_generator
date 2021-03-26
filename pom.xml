@@ -254,7 +254,7 @@
                 <artifactId>dependency-check-maven</artifactId>
                 <version>${version.plugin.dependency-check}</version>
                 <configuration>
-                    <failBuildOnAnyVulnerability>true</failBuildOnAnyVulnerability>
+                    <failBuildOnAnyVulnerability>false</failBuildOnAnyVulnerability>
                     <suppressionFile>
                         ./suppression.xml
                     </suppressionFile>
