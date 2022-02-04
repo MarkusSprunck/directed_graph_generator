@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Anwendungssysteme.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Colors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Colors.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/HtmlUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/HtmlUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suppression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/suppression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,14 +382,7 @@
       <workItem from="1615215344737" duration="980000" />
       <workItem from="1616762709619" duration="923000" />
       <workItem from="1616838780468" duration="901000" />
-      <workItem from="1643926710285" duration="8893000" />
-    </task>
-    <task id="LOCAL-00018" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
-      <created>1541192929282</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1541192929282</updated>
+      <workItem from="1643926710285" duration="9387000" />
     </task>
     <task id="LOCAL-00019" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
       <created>1541193083738</created>
@@ -745,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616762786785</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Maintenance&#10;&#10;- update dependencies&#10;- update suppression.xml&#10;- change default rendering to 'skinparam linetype ortho'&#10;- use lockback">
+      <created>1643936058036</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1643936058037</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -797,7 +779,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Code cleanup" />
     <MESSAGE value="Ignore" />
     <MESSAGE value="Refactoring - extract JSON specific code to Model2JSON" />
     <MESSAGE value="Refactoring - cleanup model classes" />
@@ -822,7 +803,8 @@
     <MESSAGE value="- add support to change the url in diagram links" />
     <MESSAGE value="OWASP dependency check failed&#10;- suppress CVE-2021-25122, CVE-2021-25329" />
     <MESSAGE value="OWASP dependency check failed&#10;- set failBuildOnAnyVulnerability to false" />
-    <option name="LAST_COMMIT_MESSAGE" value="OWASP dependency check failed&#10;- set failBuildOnAnyVulnerability to false" />
+    <MESSAGE value="Maintenance&#10;&#10;- update dependencies&#10;- update suppression.xml&#10;- change default rendering to 'skinparam linetype ortho'&#10;- use lockback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maintenance&#10;&#10;- update dependencies&#10;- update suppression.xml&#10;- change default rendering to 'skinparam linetype ortho'&#10;- use lockback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
