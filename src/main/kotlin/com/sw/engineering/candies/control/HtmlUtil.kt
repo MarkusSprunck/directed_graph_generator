@@ -23,10 +23,10 @@ object HtmlUtil {
                 '"' -> builder.append("&quot;")
                 '\n' -> builder.append("<br>")
                 '\t' -> builder.append("&nbsp; &nbsp; &nbsp;")
-                else -> if (c.toInt() < 128) {
+                else -> if (c.code < 128) {
                     builder.append(c)
                 } else {
-                    builder.append("&#").append(c.toInt()).append(";")
+                    builder.append("&#").append(c.code).append(";")
                 }
             }
         }

@@ -1,18 +1,18 @@
 package com.sw.engineering.candies.entity
 
-import java.util.*
-
 /**
  *
  * This class stores all information of a single node.
  *
  */
-class Node constructor(name: String,
-                       nameLong: String,
-                       description: String,
-                       stereotypeFirst: String,
-                       stereotypeSecond: String,
-                       stereotypeThird: String ) {
+class Node constructor(
+    name: String,
+    nameLong: String,
+    description: String,
+    stereotypeFirst: String,
+    stereotypeSecond: String,
+    stereotypeThird: String
+) {
 
     // properties of this Node
     internal var name = ""

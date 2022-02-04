@@ -3,7 +3,7 @@
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/src/main/resources/templates" />
+        <option value="$MODULE_DIR$/target/classes/templates" />
       </list>
     </option>
   </component>

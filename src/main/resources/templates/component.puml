@@ -1,7 +1,5 @@
 @startuml
 
-top to bottom direction
-
 skinparam componentStyle uml2
 skinparam handwritten false
 skinparam monochrome false
@@ -10,9 +8,9 @@ skinparam defaultTextAlignment center
 skinparam packageFontSize  14
 skinparam packageFontName Arial
 
-skinparam nodesep 20
-skinparam ranksep 20
-skinparam linetype polyline
+skinparam nodesep 110
+skinparam ranksep 110
+skinparam linetype ortho
 
 skinparam component {
     StereotypeFontSize 14
