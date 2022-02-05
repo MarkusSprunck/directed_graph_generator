@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="">
+    <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="Maintenance&#10;&#10;- fix image tag">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/libs/jquery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/libs/jquery-3.6.0.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery.browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery.splitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/libs/jquery.splitter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suppression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/suppression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +123,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -148,11 +159,11 @@
       <recent name="$PROJECT_DIR$/docker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/libs" />
       <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
       <recent name="$PROJECT_DIR$/files" />
-      <recent name="$PROJECT_DIR$/dist" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.sw.engineering.candies" />
@@ -305,7 +316,7 @@
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sw.engineering.candies.Application" />
-      <option name="WORKING_DIRECTORY" value="file://./data" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../../dgg/data" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
@@ -383,13 +394,9 @@
       <workItem from="1616762709619" duration="923000" />
       <workItem from="1616838780468" duration="901000" />
       <workItem from="1643926710285" duration="9387000" />
-    </task>
-    <task id="LOCAL-00019" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
-      <created>1541193083738</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1541193083738</updated>
+      <workItem from="1643957821363" duration="1086000" />
+      <workItem from="1644052364649" duration="132000" />
+      <workItem from="1644052507528" duration="1630000" />
     </task>
     <task id="LOCAL-00020" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
       <created>1541193114583</created>
@@ -727,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643936058037</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Maintenance&#10;&#10;- fix image tag">
+      <created>1643957949471</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1643957949471</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -779,7 +793,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ignore" />
     <MESSAGE value="Refactoring - extract JSON specific code to Model2JSON" />
     <MESSAGE value="Refactoring - cleanup model classes" />
     <MESSAGE value="Refactoring - improve test cases" />
@@ -804,7 +817,8 @@
     <MESSAGE value="OWASP dependency check failed&#10;- suppress CVE-2021-25122, CVE-2021-25329" />
     <MESSAGE value="OWASP dependency check failed&#10;- set failBuildOnAnyVulnerability to false" />
     <MESSAGE value="Maintenance&#10;&#10;- update dependencies&#10;- update suppression.xml&#10;- change default rendering to 'skinparam linetype ortho'&#10;- use lockback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maintenance&#10;&#10;- update dependencies&#10;- update suppression.xml&#10;- change default rendering to 'skinparam linetype ortho'&#10;- use lockback" />
+    <MESSAGE value="Maintenance&#10;&#10;- fix image tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maintenance&#10;&#10;- fix image tag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
