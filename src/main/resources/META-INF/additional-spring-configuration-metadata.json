@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "server.host",
+      "type": "java.lang.String",
+      "description": "Host name of your docker."
+    },
+    {
+      "name": "server.url",
+      "type": "java.lang.String",
+      "description": "External Url for links within the diagrams (in the case there is a proxy)."
+    }
+  ] }

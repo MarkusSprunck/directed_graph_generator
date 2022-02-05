@@ -1,6 +1,6 @@
 package com.sw.engineering.candies.boundary
 
-import com.sw.engineering.candies.control.MainApplication
+import com.sw.engineering.candies.Application
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
@@ -8,10 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
-import java.util.*
 
-@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-@SpringBootTest(classes = [MainApplication::class], webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@Suppress(
+    "NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS",
+    "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS"
+)
+@SpringBootTest(
+    classes = [Application::class],
+    webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+)
 class DiagramControllerTestIT {
 
     @Autowired
@@ -33,7 +38,6 @@ class DiagramControllerTestIT {
         // then
         assertNotNull(result)
         assertEquals(154, result.headers.toString().length)
-        assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
     }
 
 
@@ -49,8 +53,7 @@ class DiagramControllerTestIT {
 
         // then
         assertNotNull(result)
-        assertEquals(291576, result.body.length)
-        assertEquals("unction(){return this.eq(-", result.body.subSequence(5913, 5939))
+        assertEquals(606353, result.body.length)
     }
 
 }

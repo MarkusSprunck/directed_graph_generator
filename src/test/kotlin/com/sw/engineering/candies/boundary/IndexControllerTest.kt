@@ -11,14 +11,14 @@ class IndexControllerTest {
     fun index() {
 
         // given
-        val   sut = IndexController()
+        val sut = IndexController()
 
         // when
         val result = sut.index()
 
         // then
         assertEquals("index.html", result)
-     }
+    }
 
 
 }

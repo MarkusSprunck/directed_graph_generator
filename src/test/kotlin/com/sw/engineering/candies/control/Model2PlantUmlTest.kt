@@ -21,7 +21,7 @@ class Model2PlantUmlTest @Autowired constructor(var model2PlantUml: Model2PlantU
                 """.trimMargin()
 
         // when
-        val actual =  model2PlantUml.toPlantUmlModel(sut)
+        val actual = model2PlantUml.toPlantUmlModel(sut)
 
         // then
         assertEquals(expected, actual)
@@ -45,12 +45,11 @@ class Model2PlantUmlTest @Autowired constructor(var model2PlantUml: Model2PlantU
         // when
         sut.setNode("A", Node("IDA", "NodeA", "DesA", "S0A", "S1A", "S2A"))
         sut.setNode("B", Node("IDB", "NodeB", "DesB", "S0B", "S1B", "S2B"))
-        val actual =  model2PlantUml.toPlantUmlModel(sut)
+        val actual = model2PlantUml.toPlantUmlModel(sut)
 
         // then
         assertEquals(expected, actual)
     }
-
 
 
     @Test
@@ -72,7 +71,7 @@ class Model2PlantUmlTest @Autowired constructor(var model2PlantUml: Model2PlantU
         sut.setNode("B", Node("IDB", "NodeB", "DesB", "S0B", "S1B", "S2B"))
         sut.getNode("A")?.addDependedOnBy("B", "Link comment")
         sut.getNode("B")?.addDepends("A", "Link comment")
-        val actual =  model2PlantUml.toPlantUmlModel(sut, "", false)
+        val actual = model2PlantUml.toPlantUmlModel(sut, "", false)
 
         // then
         assertEquals(expected, actual)

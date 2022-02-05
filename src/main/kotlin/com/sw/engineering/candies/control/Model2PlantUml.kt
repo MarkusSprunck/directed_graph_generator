@@ -13,7 +13,6 @@ class Model2PlantUml @Autowired constructor(private val serverProperties: Server
 
     private val log = getLogger(Model2PlantUml::class.java.typeName)
 
-
     fun toPlantUmlModel(
         model: Model,
         clusterName: String = "", showLinks: Boolean = false,
@@ -62,11 +61,8 @@ class Model2PlantUml @Autowired constructor(private val serverProperties: Server
                         newName = newName + node.nameLong + "\\n "
                         newName = newName + "(" + node.name + ")"
 
-
-                        val stereotype = " <<" + cluster.getName()
-                            .lowercase(Locale.getDefault()) + ">> "
-                        graphData.append("[").append(newName).append("]").append(" as ")
-                            .append(node.name).append(" ")
+                        val stereotype = " <<" + cluster.getName().lowercase(Locale.getDefault()) + ">> "
+                        graphData.append("[").append(newName).append("]").append(" as ").append(node.name).append(" ")
                         if (showComplex) {
                             graphData.append(stereotype)
                             allNodes.add(node.name)
@@ -78,9 +74,7 @@ class Model2PlantUml @Autowired constructor(private val serverProperties: Server
                                 colorMode,
                                 excelFileName
                             )
-                        )
-                            .append("{")
-                            .append(node.description.replace("\n", "\\n")).append("}]]\n")
+                        ).append("{").append(node.description.replace("\n", "\\n")).append("}]]\n")
                     }
                 }
             }

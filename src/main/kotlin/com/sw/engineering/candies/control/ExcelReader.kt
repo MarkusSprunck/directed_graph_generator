@@ -96,13 +96,10 @@ object ExcelReader {
                     !strict && (sourceMatcher.find(0) || targetMatcher.find(0))
                 ) {
                     if (showComplex) {
-                        model.getNode(sourceID)
-                            ?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
-                        model.getNode(targetID)
-                            ?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
+                        model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
                     } else {
-                        model.getNode(sourceID)
-                            ?.addDependedOnBy(targetID, "$interfaceName\\n")
+                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n")
                         model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n")
                     }
 

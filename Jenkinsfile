@@ -20,7 +20,7 @@ pipeline {
 
       stage('Maven install') {
          steps {
-             sh 'mvn clean install'
+             sh 'mvn clean verify'
          }
       }
 
@@ -28,7 +28,7 @@ pipeline {
          steps {
             script {
                docker.withRegistry('https://ecs-globpidck01.otc.ihkmun', 'global_docker') {
-                   sh  "docker push ecs-globpidck01.otc.ihkmun/dgg/bl:1.3.0"
+                   sh  "docker push ecs-globpidck01.otc.ihkmun/dgg/bl:1.4.0"
                }
             }
          }

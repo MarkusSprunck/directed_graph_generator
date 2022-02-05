@@ -1,14 +1,6 @@
-# LOGGING
-logging:
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} LEVEL=%-5p %m%n"
-
 server:
-  # Host name of your docker
-  host: localhost
-  # Define a custom port instead of the default 8080
   port: 8444
-  # External Url for links within the diagrams (in the case there is a proxy
+  host: localhost
   url: http://localhost:8444
 
 

@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import java.io.IOException
-import kotlin.test.assertContains
-import kotlin.test.assertEquals
 
 
 @SpringBootTest
@@ -29,7 +27,7 @@ class DiagramGeneratorTest @Autowired constructor(var sut: DiagramGenerator) {
         )
 
         // then
-        assertTrue( result.contains("Application 06" ) )
+        assertTrue(result.contains("Application 06"))
 
     }
 

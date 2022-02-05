@@ -9,12 +9,14 @@ class Model2HTMLTest {
     @Test
     fun addDependsUnique() {
         // given
-        val sut = Node("Name A",
-                "Name Long A",
-                "Group XYZ",
-                "XYZ",
-                "",
-                "")
+        val sut = Node(
+            "Name A",
+            "Name Long A",
+            "Group XYZ",
+            "XYZ",
+            "",
+            ""
+        )
         sut.addDepends("Name B")
         sut.addDepends("Name C")
         sut.addDependedOnBy("Name D")
@@ -42,13 +44,15 @@ class Model2HTMLTest {
     @Test
     fun addNoLinks() {
         // given
-        val sut = Node("Name A",
-                "Name Long A",
-                "Group XYZ",
-                "XYZ",
-                "",
-                "")
-         val expected = ("<h3>Name A - Name Long A</h3>" +
+        val sut = Node(
+            "Name A",
+            "Name Long A",
+            "Group XYZ",
+            "XYZ",
+            "",
+            ""
+        )
+        val expected = ("<h3>Name A - Name Long A</h3>" +
                 "<b>Cluster</b>:<br/>XYZ<p/>" +
                 "<b>Location:</b><br/><em><em><p/>" +
                 "<b>Status:</b><br/><em><em><p/>" +

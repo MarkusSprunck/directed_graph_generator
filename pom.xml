@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <version.kotlin>1.5.32</version.kotlin>
+        <version.kotlin>1.5.31</version.kotlin>
         <executor.bash.path>bash</executor.bash.path>
 
 
@@ -81,10 +81,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -190,7 +186,7 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${version.kotlin}</version>
+                <version>1.5.31</version>
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
                     <compilerPlugins>

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 class FileUtilTest {
 
-      @Test
+    @Test
     fun readTemplateCss() {
         // given
         val expected = 3253
@@ -32,7 +32,7 @@ class FileUtilTest {
     @Test
     fun readTemplateHtml() {
         // given
-        val expected = 2715
+        val expected = 2568
 
         // when
         val result = FileUtil.load("templates/main.html")
@@ -44,26 +44,15 @@ class FileUtilTest {
     @Test
     fun readTemplateJQuery() {
         // given
-        val expected = 93112
+        val expected = 410631
 
         // when
-        val result = FileUtil.load("libs/jquery-1.10.2.min.js")
+        val result = FileUtil.load("libs/jquery-3.6.0.js")
 
         // then
         assertEquals(expected, result.length)
     }
 
-    @Test
-    fun readTemplateJQueryBrowser() {
-        // given
-        val expected = 2612
-
-        // when
-        val result = FileUtil.load("libs/jquery.browser.min.js")
-
-        // then
-        assertEquals(expected, result.length)
-    }
 
     @Test
     fun readTemplateD3() {
