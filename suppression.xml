@@ -18,5 +18,196 @@
         <cve>CVE-2022-23181</cve>
     </suppress>
 
+    <suppress>
+        <notes><![CDATA[
+   file name: kotlin-reflect-1.5.31.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-reflect@.*$</packageUrl>
+        <cve>CVE-2022-24329</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: kotlin-stdlib-jdk8-1.5.31.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib\-jdk8@.*$</packageUrl>
+        <cve>CVE-2022-24329</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: poi-ooxml-5.2.0.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.poi/poi\-ooxml@.*$</packageUrl>
+        <cve>CVE-2022-26336</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: poi-5.2.0.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.poi/poi@.*$</packageUrl>
+        <cve>CVE-2022-26336</cve>
+        <cve>CVE-2022-26336</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: plantuml-1.2022.1.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/net\.sourceforge\.plantuml/plantuml@.*$</packageUrl>
+        <cve>CVE-2022-1231</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: poi-ooxml-lite-5.2.0.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.apache\.poi/poi\-ooxml\-lite@.*$</packageUrl>
+        <cve>CVE-2022-26336</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot@.*$</packageUrl>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2013-7315</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2022-22965</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-actuator-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-actuator@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-web-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter\-web@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-json-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter\-json@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-autoconfigure-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-autoconfigure@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-tomcat-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter\-tomcat@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-logging-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter\-logging@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-starter-actuator-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-starter\-actuator@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-actuator-autoconfigure-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-actuator\-autoconfigure@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: spring-boot-configuration-processor-2.6.7.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.boot/spring\-boot\-configuration\-processor@.*$</packageUrl>
+        <cve>CVE-2022-22968</cve>
+        <cve>CVE-2013-4152</cve>
+        <cve>CVE-2014-0054</cve>
+        <cve>CVE-2022-22965</cve>
+        <cve>CVE-2016-1000027</cve>
+        <cve>CVE-2013-7315</cve>
+    </suppress>
 
 </suppressions>

@@ -11,7 +11,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <version.kotlin>1.5.31</version.kotlin>
+        <version.kotlin>1.6.21</version.kotlin>
         <executor.bash.path>bash</executor.bash.path>
 
 
@@ -20,7 +20,7 @@
         <version.jackson-module-kotlin>2.13.1</version.jackson-module-kotlin>
         <version.jasypt-spring-boot-starter>3.0.4</version.jasypt-spring-boot-starter>
         <version.junit>5.8.2</version.junit>
-        <version.spring.boot>2.6.3</version.spring.boot>
+        <version.spring.boot>2.6.7</version.spring.boot>
         <version.plantuml>1.2022.1</version.plantuml>
 
         <version.exec-maven-plugin>3.0.0</version.exec-maven-plugin>
