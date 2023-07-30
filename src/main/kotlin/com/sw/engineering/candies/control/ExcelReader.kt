@@ -4,6 +4,8 @@ import com.sw.engineering.candies.entity.Model
 import com.sw.engineering.candies.entity.Node
 import org.apache.poi.xssf.usermodel.XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 import java.io.File
 import java.io.FileInputStream
 import java.util.logging.Level
@@ -11,7 +13,8 @@ import java.util.logging.Logger.getLogger
 import java.util.regex.Pattern
 
 
-object ExcelReader {
+@Component
+class ExcelReader @Autowired constructor(val serverProperties: ServerProperties) {
 
     private val log = getLogger(ExcelReader::class.java.typeName)
 
@@ -22,14 +25,13 @@ object ExcelReader {
         colorMode: String,
         showComplex: Boolean
     ): Model {
-        log.info("FILE_NAME      = '$excelFileName'")
-        log.info("FILTER_PATTERN = '$filterPattern'")
+        log.fine("FILE_NAME      = '$excelFileName'")
+        log.fine("FILTER_PATTERN = '$filterPattern'")
         val result = Model()
-
 
         val sh = openSheet(excelFileName, "Applications")
         if (sh == null) {
-            log.info("*** SKIP PROCESSING APPLICATIONS - UNABLE TO OPEN SHEET $excelFileName")
+            log.info("SKIP PROCESSING APPLICATIONS - UNABLE TO OPEN SHEET $excelFileName")
             return result
         }
         parseNodes(sh, filterPattern, result, colorMode)
@@ -37,7 +39,7 @@ object ExcelReader {
 
         val sh2 = openSheet(excelFileName, "Links")
         if (sh2 == null) {
-            log.info("*** SKIP PROCESSING LINKS - UNABLE TO OPEN SHEET $excelFileName")
+            log.info("SKIP PROCESSING LINKS - UNABLE TO OPEN SHEET $excelFileName")
             return result
         }
         parseLinks(sh2, filterPattern, result, strict, showComplex)
@@ -47,19 +49,21 @@ object ExcelReader {
 
     private fun openSheet(
         excelFileName: String,
-        sheetName: String,
-        folder: String = "../data/"
+        sheetName: String
     ): XSSFSheet? {
+        val folder = serverProperties.baseFolder
         var result: XSSFSheet? = null
         var fis: FileInputStream? = null
         var wb: XSSFWorkbook? = null
         try {
-            val file = File("$folder$excelFileName")
+            val filePath = "$folder$excelFileName"
+            log.fine("OPEN SHEET : $filePath")
+            val file = File(filePath)
             fis = FileInputStream(file)
             wb = XSSFWorkbook(fis)
             result = wb.getSheet(sheetName)
         } catch (e: Exception) {
-            log.log(Level.SEVERE, "*** OPEN SHEET FAILED : $e")
+            log.warning("OPEN SHEET FAILED : $e")
         } finally {
             wb?.close()
             fis?.close()
@@ -96,14 +100,17 @@ object ExcelReader {
                     !strict && (sourceMatcher.find(0) || targetMatcher.find(0))
                 ) {
                     if (showComplex) {
-                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
-                        model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n($protocol)")
+                        model.getNode(sourceID)
+                            ?.addDependedOnBy(targetID, "$interfaceName\\n($protocol)")
+                        model.getNode(targetID)
+                            ?.addDepends(sourceID, "$interfaceName\\n($protocol)")
                     } else {
-                        model.getNode(sourceID)?.addDependedOnBy(targetID, "$interfaceName\\n")
+                        model.getNode(sourceID)
+                            ?.addDependedOnBy(targetID, "$interfaceName\\n")
                         model.getNode(targetID)?.addDepends(sourceID, "$interfaceName\\n")
                     }
 
-                    log.info("> add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")
+                    log.fine("Add link from $sourceID to $targetID description: '$interfaceName' ($protocol)")
                 }
             }
         }
@@ -136,16 +143,18 @@ object ExcelReader {
                 val appIdPattern = Pattern.compile(sourceApplicationPattern)
                 val sourceMatcher = appIdPattern.matcher(id)
                 if (sourceMatcher.find(0)) {
-                    log.info("> add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
+                    log.fine("Add node with id=$id cluster='$cluster' status='$status' name='$name' colorMode='$colorMode'")
                     when (colorMode) {
                         "cluster" -> result.setNode(
                             id,
                             Node(id, name, description, cluster, location, status)
                         )
+
                         "status" -> result.setNode(
                             id,
                             Node(id, name, description, status, cluster, location)
                         )
+
                         "location" -> result.setNode(
                             id,
                             Node(id, name, description, location, status, cluster)
@@ -155,6 +164,5 @@ object ExcelReader {
             }
         }
     }
-
 
 }

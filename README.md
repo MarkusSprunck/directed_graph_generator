@@ -9,10 +9,10 @@ Minimal Input Data
 All applications and dependencies have to be stored in a table with a fixed column format. All cells have to be text format.
 
 - **Example sheet for applications**
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-apps.png)
+![Image of Example sheet for applications](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-apps.png)
 
 - **Example sheet for links**
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-links.png)
+![Image of Example sheet for links](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/table-links.png)
 
 
 URL Parameters
@@ -28,7 +28,6 @@ hundreds of applications.
 - *showComplex* - the default value is true
 - *strict*  - show just the applications in the filter, the default value is false
 - *colorMode* - decide what is the first stereotype. Allowed values are {"status", "location", "cluster"}
-- *type* - selects the type of diagram, the default value is "graph". Allowed values are {"graph", "component"}
 - *title* - changes the title of the diagram, the default value is "UML Components".
 
 
@@ -52,25 +51,20 @@ The generated html files need no additional libraries, so you may open them in t
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/home.png)
 
 2) Applications in components view with first stereotype is the status
-(http://localhost:8080/diagram?type=component&showLinks=true&colorMode=status):
+(http://localhost:8080/diagramshowLinks=true&colorMode=status):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/status.png)
 
 3) Applications in components view with first stereotype is the cluster
-(http://localhost:8080/diagram?type=component&showLinks=true&colorMode=cluster):
+(http://localhost:8080/diagramshowLinks=true&colorMode=cluster):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/cluster.png)
 
 4) Applications in components view reduced information
-(http://localhost:8080/diagram?type=component&showLinks=true&colorMode=status&showComplex=true&filter=ID01-ID02):
+(http://localhost:8080/diagramshowLinks=true&colorMode=status&showComplex=true&filter=ID01-ID02):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/reduced.png)
 
 5) Applications in components view with simple 
-(http://localhost:8080/diagram?type=component&showLinks=true&showComplex=false):
+(http://localhost:8080/diagramshowLinks=true&showComplex=false):
 ![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/simple.png)
-
-6) Directed graph
-(http://localhost:8080/diagram?type=graph):
-![alt text](https://github.com/MarkusSprunck/directed_graph_generator/blob/master/images/directed-graph.png)
-
 
 
 

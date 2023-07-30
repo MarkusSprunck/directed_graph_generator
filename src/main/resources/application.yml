@@ -1,6 +1,11 @@
+spring:
+  main:
+    banner-mode: "off"
+
 server:
   port: 8444
   host: localhost
   url: http://localhost:8444
+  base-folder: "./data/"
 
 

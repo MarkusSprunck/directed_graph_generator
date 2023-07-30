@@ -5,7 +5,7 @@ package com.sw.engineering.candies.entity
  * This class stores all information of a single node.
  *
  */
-class Node constructor(
+class Node(
     name: String,
     nameLong: String,
     description: String,

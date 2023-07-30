@@ -26,10 +26,10 @@ class DiagramController @Autowired constructor(var diagramGenerator: DiagramGene
         @RequestParam(value = "strict", defaultValue = "false") strict: Boolean,
         @RequestParam(value = "colorMode", defaultValue = "cluster") colorMode: String,
         @RequestParam(value = "type", defaultValue = "graph") type: String,
-        @RequestParam(value = "title", defaultValue = "UML Components") title: String
+        @RequestParam(value = "title", defaultValue = "") title: String
     ): String {
 
-        log.info("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
+        log.finer("Request Diagram | START - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
         val result = diagramGenerator.run(
             FilenameUtils.getName(file),
@@ -43,7 +43,7 @@ class DiagramController @Autowired constructor(var diagramGenerator: DiagramGene
             title
         )
 
-        log.info("Request Diagram | END   - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
+        log.finer("Request Diagram | END   - filter=$filter file=$file package=$componentName showLinks=$showLinks showSimple=$showComplex type=$type")
 
         return result
     }

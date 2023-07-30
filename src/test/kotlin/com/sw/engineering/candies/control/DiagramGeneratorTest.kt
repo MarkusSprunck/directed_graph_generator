@@ -16,14 +16,15 @@ class DiagramGeneratorTest @Autowired constructor(var sut: DiagramGenerator) {
 
         // when
         val result = sut.run(
-            "data_test.xlsx",
-            "",
-            "component",
-            "",
+            excelFileName = "data_test.xlsx",
+            sourceApplicationPattern = "",
+            diagramType = "",
             showLinks = true,
             showComplex = true,
             strict = false,
-            colorMode = "location", diagramTitle = ""
+            colorMode = "location",
+            componentName = "",
+            diagramTitle = ""
         )
 
         // then

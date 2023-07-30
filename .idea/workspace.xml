@@ -8,26 +8,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edb4067-9ec5-4b71-b10a-563c4ff6bc71" name="Default Changelist" comment="Maintenance&#10;&#10;- fix image tag">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/component_without_title.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/directed_graph_generator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DirectedGraphGenerator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker-build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cluster.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/cluster.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/directed-graph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/reduced.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/reduced.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/simple.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/simple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/status.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/status.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/boundary/DiagramController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/DiagramGenerator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ExcelReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/MainApplication.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/Model2PlantUml.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ServerProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/control/ServerProperties.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Cluster.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/sw/engineering/candies/entity/Node.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/d3.v3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/geometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery-3.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery-3.6.0.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/libs/jquery.splitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/component.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/component_with_title.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTest.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/IndexControllerTestIT.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/ExcelReaderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/ExcelReaderTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/FileUtilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/FileUtilTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2HTMLTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2HTMLTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/Model2PlantUmlTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suppression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/suppression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +82,9 @@
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="DockDockBuild.Settings">
+    <option name="codePath" value="$PROJECT_DIR$" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,8 +112,14 @@
     </file-type-list>
   </component>
   <component name="JupyterTrust" id="0a1702e5-ba3f-4ac6-b07a-074acb31a1ca" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenRunner">
-    <option name="jreName" value="1.8" />
+    <option name="jreName" value="temurin-17" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="1k6GxbJKfbobXxjoNZyF7wstoCj" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -134,46 +178,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550266574996" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.50689656" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/markus/Projects/IntelliJ/directed_graph_generator/src/main/resources",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.5653236",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/docker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/libs" />
       <recent name="$PROJECT_DIR$/docker" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/files/UnlimitedJCEPolicyJDK8" />
       <recent name="$PROJECT_DIR$/files" />
     </key>
@@ -195,7 +224,7 @@
       <recent name="boundary" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="docker_build.sh" type="BashConfigurationType" factoryName="Bash">
       <module name="DirectedGraphGenerator" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -207,97 +236,61 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="All in directed_graph_generator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="directed_graph_generator" />
+    <configuration name="All in dgg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dgg" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiagramControllerTestIT.defaultMainRestControllerParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="directed_graph_generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sw.engineering.candies.boundary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.boundary" />
-      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.DiagramControllerTestIT" />
-      <option name="METHOD_NAME" value="defaultMainRestControllerParameter" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="All in dgg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dgg" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiagramGeneratorTest.executeRunColorModeLocationNotComplex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="directed_graph_generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sw.engineering.candies.control.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.control" />
-      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.control.DiagramGeneratorTest" />
-      <option name="METHOD_NAME" value="executeRunColorModeLocationNotComplex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="./logs" />
+    <configuration name="kotlin in dgg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dgg" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexControllerTestIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="directed_graph_generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sw.engineering.candies.boundary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sw.engineering.candies.boundary" />
-      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.boundary.IndexControllerTestIT" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="Application" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sw.engineering.candies.Application" />
+      <module name="dgg" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="directed_graph_generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sw.engineering.candies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sw.engineering.candies.Application" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../../dgg/data" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="directed_graph_generator" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="directed_graph_generator/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
@@ -312,21 +305,42 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.dgg: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="dgg" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.directed_graph_generator/Dockerfile" />
-      <item itemvalue="JUnit.DiagramGeneratorTest.executeRunColorModeLocationNotComplex" />
-      <item itemvalue="JUnit.DiagramControllerTestIT.defaultMainRestControllerParameter" />
-      <item itemvalue="JUnit.IndexControllerTestIT" />
-      <item itemvalue="JUnit.All in directed_graph_generator" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Docker.docker-compose.yml.dgg: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="JUnit.kotlin in dgg" />
+      <item itemvalue="JUnit.All in dgg" />
+      <item itemvalue="Kotlin.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="JUnit.All in directed_graph_generator" />
-        <item itemvalue="JUnit.IndexControllerTestIT" />
-        <item itemvalue="JUnit.DiagramControllerTestIT.defaultMainRestControllerParameter" />
-        <item itemvalue="JUnit.DiagramGeneratorTest.executeRunColorModeLocationNotComplex" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.dgg: Compose Deployment" />
+        <item itemvalue="Kotlin.Application" />
+        <item itemvalue="JUnit.All in dgg" />
+        <item itemvalue="JUnit.kotlin in dgg" />
       </list>
     </recent_temporary>
   </component>
@@ -374,6 +388,7 @@
       <workItem from="1644052364649" duration="132000" />
       <workItem from="1644052507528" duration="2122000" />
       <workItem from="1644091831122" duration="4407000" />
+      <workItem from="1662365606431" duration="1632000" />
     </task>
     <task id="LOCAL-00021" summary="Fix error - &quot;Mixed 'status' and 'location' in animated directed graph&quot;">
       <created>1541193242783</created>
@@ -744,15 +759,6 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -767,7 +773,15 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring - cleanup model classes" />
@@ -801,9 +815,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/control/DiagramGeneratorTest.kt</url>
-          <line>29</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/test/kotlin/com/sw/engineering/candies/boundary/DiagramControllerTestIT.kt</url>
+          <line>54</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -813,10 +827,10 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605026793943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/directed_graph_generator$DiagramGeneratorTest.ic" NAME="DiagramGeneratorTest Coverage Results" MODIFIED="1643933489646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.sw.engineering.candies.control.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/directed_graph_generator$All_in_directed_graph_generator.ic" NAME="All in directed_graph_generator Coverage Results" MODIFIED="1605026793943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

@@ -32,7 +32,7 @@ skinparam package<<Transparent>> {
   stereotypeFontColor white
 }
 
-!pragma ratio 0.50
+!pragma ratio 0.618
 
 left to right direction
 

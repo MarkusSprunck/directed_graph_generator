@@ -37,8 +37,8 @@ class Model2PlantUmlTest @Autowired constructor(var model2PlantUml: Model2PlantU
                 |skinparam componentBorderColor<<s0b>> #d50000
                 |skinparam componentBorderColor<<s0a>> #ffd600
                 |
-                |[ << s2b>> \n  <<S1B>> \n \nNodeB\n (IDB)] as IDB  <<s0b>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&diagramTitle=UML-Component&showLinks=true&showComplex=true&colorMode=location&filter=IDB{DesB}]]
-                |[ << s2a>> \n  <<S1A>> \n \nNodeA\n (IDA)] as IDA  <<s0a>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&diagramTitle=UML-Component&showLinks=true&showComplex=true&colorMode=location&filter=IDA{DesA}]]
+                |[ << s2b>> \n  <<S1B>> \n \nNodeB\n (IDB)] as IDB  <<s0b>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&title=UML-Component-Subview&showLinks=true&showComplex=true&colorMode=location&filter=IDB{DesB}]]
+                |[ << s2a>> \n  <<S1A>> \n \nNodeA\n (IDA)] as IDA  <<s0a>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&title=UML-Component-Subview&showLinks=true&showComplex=true&colorMode=location&filter=IDA{DesA}]]
                 |
                 """.trimMargin()
 
@@ -61,8 +61,8 @@ class Model2PlantUmlTest @Autowired constructor(var model2PlantUml: Model2PlantU
                 |skinparam componentBorderColor<<s0b>> #d50000
                 |skinparam componentBorderColor<<s0a>> #ffd600
                 |
-                |[ << s2b>> \n  <<S1B>> \n \nNodeB\n (IDB)] as IDB  <<s0b>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&diagramTitle=UML-Component&showLinks=true&showComplex=true&colorMode=location&filter=IDB{DesB}]]
-                |[ << s2a>> \n  <<S1A>> \n \nNodeA\n (IDA)] as IDA  <<s0a>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&diagramTitle=UML-Component&showLinks=true&showComplex=true&colorMode=location&filter=IDA{DesA}]]
+                |[ << s2b>> \n  <<S1B>> \n \nNodeB\n (IDB)] as IDB  <<s0b>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&title=UML-Component-Subview&showLinks=true&showComplex=true&colorMode=location&filter=IDB{DesB}]]
+                |[ << s2a>> \n  <<S1A>> \n \nNodeA\n (IDA)] as IDA  <<s0a>>  [[http://localhost:8444/diagram?type=component&file=data.xlsx&strict=false&title=UML-Component-Subview&showLinks=true&showComplex=true&colorMode=location&filter=IDA{DesA}]]
                 |
                 """.trimMargin()
 

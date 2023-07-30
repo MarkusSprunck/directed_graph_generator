@@ -1,9 +1,16 @@
 package com.sw.engineering.candies.control
 
+import com.sw.engineering.candies.Application
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.context.SpringBootTest
 
-class ExcelReaderTest {
+@SpringBootTest(
+    classes = [Application::class],
+    webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+)
+class ExcelReaderTest @Autowired constructor(var excelReader: ExcelReader) {
 
     @Test
     fun readEmptyExcel() {
@@ -11,7 +18,7 @@ class ExcelReaderTest {
         val expected = "{\n}"
 
         // when
-        val model = ExcelReader.parseExcelSheet(
+        val model = excelReader.parseExcelSheet(
             "data_empty.xlsx",
             "",
             false,
@@ -30,7 +37,7 @@ class ExcelReaderTest {
         val expected = "{\n}"
 
         // when
-        val model = ExcelReader.parseExcelSheet(
+        val model = excelReader.parseExcelSheet(
             "data_no_links.xlsx",
             "",
             false,
@@ -50,7 +57,7 @@ class ExcelReaderTest {
 
         // when
         val model =
-            ExcelReader.parseExcelSheet("xxx.xlsx", "", false, "stereotypeFirst", true)
+            excelReader.parseExcelSheet("xxx.xlsx", "", false, "stereotypeFirst", true)
 
         // then
         assertEquals(expected, Model2JSON.getModel(model))
@@ -102,7 +109,7 @@ class ExcelReaderTest {
 
         // when
         val model =
-            ExcelReader.parseExcelSheet("data_test.xlsx", "", false, "cluster", true)
+            excelReader.parseExcelSheet("data_test.xlsx", "", false, "cluster", true)
 
         // then
         assertEquals(expected, Model2JSON.getModel(model))

@@ -1,8 +1,7 @@
 package com.sw.engineering.candies.boundary
 
 import com.sw.engineering.candies.Application
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertNotNull
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
@@ -37,7 +36,7 @@ class DiagramControllerTestIT {
 
         // then
         assertNotNull(result)
-        assertEquals(154, result.headers.toString().length)
+        assertEquals(153, result.headers.toString().length)
     }
 
 
@@ -53,7 +52,7 @@ class DiagramControllerTestIT {
 
         // then
         assertNotNull(result)
-        assertEquals(606353, result.body.length)
+        assertEquals(17372 , result.body?.length!!)
     }
 
 }

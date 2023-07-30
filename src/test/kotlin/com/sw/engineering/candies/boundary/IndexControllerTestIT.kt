@@ -37,7 +37,7 @@ class IndexControllerTestIT {
 
         // then
         assertNotNull(result)
-        assertEquals(1294, result.body.length)
+        assertEquals(1510, result.body?.length)
     }
 
 }
